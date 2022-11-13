@@ -169,11 +169,14 @@ class UMatrixStack private constructor(
     fun isEmpty(): Boolean = stack.size == 1
 
     fun applyToGlobalState() {
+        //#if MC>=11700
         //#if MC>=11800
         //$$ // FIXME preprocessor bug: should remap the intermediary name to yarn no problem
         //$$ RenderSystem.getModelViewStack().multiplyPositionMatrix(stack.last.model)
-        //#elseif MC>=11700
+        //#else
         //$$ RenderSystem.getModelViewStack().method_34425(stack.last.model)
+        //#endif
+        //$$ RenderSystem.applyModelViewMatrix()
         //#else
         stack.last.model.store(MATRIX_BUFFER)
         // Explicit cast to Buffer required so we do not use the JDK9+ override in FloatBuffer
@@ -213,7 +216,6 @@ class UMatrixStack private constructor(
         //#if MC>=11700
         //$$ val stack = RenderSystem.getModelViewStack()
         //$$ stack.push()
-        //$$ RenderSystem.applyModelViewMatrix()
         //#else
         UGraphics.GL.pushMatrix()
         //#endif
@@ -295,5 +297,19 @@ If you are sure that your target class has been updated (such as when calling th
         //#if MC<11700
         private val MATRIX_BUFFER: FloatBuffer = GLAllocation.createDirectFloatBuffer(16)
         //#endif
+
+        /**
+         * Represents an empty matrix stack. That is, a stack with the identity matrix as its sole entry.
+         *
+         * This stack may be passed to consuming APIs which may then assume that the stack is in fact a unit stack and
+         * can therefore skip math that would be redundant in such cases.
+         *
+         * **This stack must not be modified.**
+         * Consumers may compare this stack by reference and ignore its content.
+         * Consumers which are not aware of this stack must still behave correctly, so its content must be correct.
+         * [fork] is fine, [push] is not!
+         */
+        @JvmField
+        val UNIT = UMatrixStack()
     }
 }
