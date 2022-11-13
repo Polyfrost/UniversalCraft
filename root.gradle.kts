@@ -1,12 +1,10 @@
-import gg.essential.gradle.util.*
-
 plugins {
     kotlin("jvm") version "1.6.10" apply false
-    id("gg.essential.multi-version.root")
-    id("gg.essential.multi-version.api-validation")
+    id("cc.polyfrost.multi-version.root")
+    id("cc.polyfrost.multi-version.api-validation")
 }
 
-version = versionFromBuildIdAndBranch()
+version = "243"
 
 preprocess {
     val forge11902 = createNode("1.19.2-forge", 11902, "srg")
