@@ -4,6 +4,7 @@ plugins {
     kotlin("jvm")
     id("cc.polyfrost.multi-version")
     id("cc.polyfrost.defaults")
+    id("cc.polyfrost.defaults.maven-publish")
     `maven-publish`
 }
 
@@ -23,8 +24,4 @@ tasks.jar {
     manifest {
         attributes(mapOf("FMLModType" to "LIBRARY"))
     }
-}
-
-if (project.hasProperty("releasesUsername") && project.hasProperty("releasesPassword")) {
-    setupPublishing("https://repo.polyfrost.cc/releases", "polyfrost", project.property("releasesUsername").toString(), project.property("releasesPassword").toString())
 }
