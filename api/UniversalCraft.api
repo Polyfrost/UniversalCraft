@@ -775,6 +775,13 @@ public abstract class org/polyfrost/oneconfig/libs/universal/UScreen : net/minec
 	public fun setNewGuiScale (I)V
 	public fun setUnlocalizedName (Ljava/lang/String;)V
 	public final fun tick ()V
+	public fun uCharTyped (CLorg/polyfrost/oneconfig/libs/universal/UKeyboard$Modifiers;)Z
+	public fun uKeyPressed (IILorg/polyfrost/oneconfig/libs/universal/UKeyboard$Modifiers;)Z
+	public fun uKeyReleased (IILorg/polyfrost/oneconfig/libs/universal/UKeyboard$Modifiers;)Z
+	public fun uMouseClicked (DDI)Z
+	public fun uMouseDragged (DDIJ)Z
+	public fun uMouseReleased (DDI)Z
+	public fun uMouseScrolled (D)Z
 	public fun updateGuiScale ()V
 }
 
@@ -819,6 +826,13 @@ public abstract class org/polyfrost/oneconfig/libs/universal/UScreen : net/minec
 	public final fun restorePreviousScreen ()V
 	public fun setNewGuiScale (I)V
 	public fun setUnlocalizedName (Ljava/lang/String;)V
+	public fun uCharTyped (CLorg/polyfrost/oneconfig/libs/universal/UKeyboard$Modifiers;)Z
+	public fun uKeyPressed (IILorg/polyfrost/oneconfig/libs/universal/UKeyboard$Modifiers;)Z
+	public fun uKeyReleased (IILorg/polyfrost/oneconfig/libs/universal/UKeyboard$Modifiers;)Z
+	public fun uMouseClicked (DDI)Z
+	public fun uMouseDragged (DDIJ)Z
+	public fun uMouseReleased (DDI)Z
+	public fun uMouseScrolled (D)Z
 	public fun updateGuiScale ()V
 	public final fun updateScreen ()V
 }
@@ -904,6 +918,13 @@ public abstract class org/polyfrost/oneconfig/libs/universal/UScreen : net/minec
 	public fun setNewGuiScale (I)V
 	public fun setUnlocalizedName (Ljava/lang/String;)V
 	public final fun tick ()V
+	public fun uCharTyped (CLorg/polyfrost/oneconfig/libs/universal/UKeyboard$Modifiers;)Z
+	public fun uKeyPressed (IILorg/polyfrost/oneconfig/libs/universal/UKeyboard$Modifiers;)Z
+	public fun uKeyReleased (IILorg/polyfrost/oneconfig/libs/universal/UKeyboard$Modifiers;)Z
+	public fun uMouseClicked (DDI)Z
+	public fun uMouseDragged (DDIJ)Z
+	public fun uMouseReleased (DDI)Z
+	public fun uMouseScrolled (D)Z
 	public fun updateGuiScale ()V
 }
 
