@@ -62,6 +62,8 @@ abstract class UScreen(
     private var smuggleMouseDragged = true
     private var smuggleMouseScrolled = true
 
+    private var lastScanCode = 0
+
     //#if MC>=11502
     //$$ private var lastClick = 0L
     //$$ private var lastDraggedDx = -1.0
@@ -248,13 +250,11 @@ abstract class UScreen(
         onDrawScreen(mouseX, mouseY, partialTicks)
     }
 
-    // TODO: should I bother smuggling the scanCode into these methods to pass to super?
-
     @Deprecated(DEPRECATED_INPUT)
     open fun onKeyPressed(keyCode: Int, typedChar: Char, modifiers: UKeyboard.Modifiers?) {
         //#if MC>=11502
         //$$ if (keyCode != 0) {
-        //$$     smuggleKeyPressed = super.keyPressed(keyCode, 0, modifiers.toInt())
+        //$$     smuggleKeyPressed = super.keyPressed(keyCode, lastScanCode, modifiers.toInt())
         //$$ }
         //$$ if (typedChar != 0.toChar()) {
         //$$     smuggleCharTyped = super.charTyped(typedChar, modifiers.toInt())
@@ -275,7 +275,7 @@ abstract class UScreen(
     open fun onKeyReleased(keyCode: Int, typedChar: Char, modifiers: UKeyboard.Modifiers?) {
         //#if MC>=11502
         //$$ if (keyCode != 0) {
-        //$$     smuggleKeyReleased = super.keyReleased(keyCode, 0, modifiers.toInt())
+        //$$     smuggleKeyReleased = super.keyReleased(keyCode, lastScanCode, modifiers.toInt())
         //$$ }
         //#endif
     }
@@ -329,6 +329,7 @@ abstract class UScreen(
      * @return `true` if the input has been handled, `false` otherwise.
      */
     open fun uKeyPressed(keyCode: Int, scanCode: Int, modifiers: UKeyboard.Modifiers?): Boolean {
+        lastScanCode = scanCode
         @Suppress("DEPRECATION")
         onKeyPressed(keyCode, 0.toChar(), modifiers)
         return smuggleKeyPressed
@@ -343,6 +344,7 @@ abstract class UScreen(
      * @return `true` if the input has been handled, `false` otherwise.
      */
     open fun uKeyReleased(keyCode: Int, scanCode: Int, modifiers: UKeyboard.Modifiers?): Boolean {
+        lastScanCode = scanCode
         @Suppress("DEPRECATION")
         onKeyReleased(keyCode, 0.toChar(), modifiers)
         return smuggleKeyReleased
