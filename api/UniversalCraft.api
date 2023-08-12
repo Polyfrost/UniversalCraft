@@ -1,39 +1,39 @@
-public final class cc/polyfrost/oneconfig/libs/universal/ChatColor : java/lang/Enum {
-	public static final field AQUA Lcc/polyfrost/oneconfig/libs/universal/ChatColor;
-	public static final field BLACK Lcc/polyfrost/oneconfig/libs/universal/ChatColor;
-	public static final field BLUE Lcc/polyfrost/oneconfig/libs/universal/ChatColor;
-	public static final field BOLD Lcc/polyfrost/oneconfig/libs/universal/ChatColor;
+public final class org/polyfrost/oneconfig/libs/universal/ChatColor : java/lang/Enum {
+	public static final field AQUA Lorg/polyfrost/oneconfig/libs/universal/ChatColor;
+	public static final field BLACK Lorg/polyfrost/oneconfig/libs/universal/ChatColor;
+	public static final field BLUE Lorg/polyfrost/oneconfig/libs/universal/ChatColor;
+	public static final field BOLD Lorg/polyfrost/oneconfig/libs/universal/ChatColor;
 	public static final field COLOR_CHAR C
-	public static final field Companion Lcc/polyfrost/oneconfig/libs/universal/ChatColor$Companion;
-	public static final field DARK_AQUA Lcc/polyfrost/oneconfig/libs/universal/ChatColor;
-	public static final field DARK_BLUE Lcc/polyfrost/oneconfig/libs/universal/ChatColor;
-	public static final field DARK_GRAY Lcc/polyfrost/oneconfig/libs/universal/ChatColor;
-	public static final field DARK_GREEN Lcc/polyfrost/oneconfig/libs/universal/ChatColor;
-	public static final field DARK_PURPLE Lcc/polyfrost/oneconfig/libs/universal/ChatColor;
-	public static final field DARK_RED Lcc/polyfrost/oneconfig/libs/universal/ChatColor;
-	public static final field GOLD Lcc/polyfrost/oneconfig/libs/universal/ChatColor;
-	public static final field GRAY Lcc/polyfrost/oneconfig/libs/universal/ChatColor;
-	public static final field GREEN Lcc/polyfrost/oneconfig/libs/universal/ChatColor;
-	public static final field ITALIC Lcc/polyfrost/oneconfig/libs/universal/ChatColor;
-	public static final field LIGHT_PURPLE Lcc/polyfrost/oneconfig/libs/universal/ChatColor;
-	public static final field MAGIC Lcc/polyfrost/oneconfig/libs/universal/ChatColor;
-	public static final field RED Lcc/polyfrost/oneconfig/libs/universal/ChatColor;
-	public static final field RESET Lcc/polyfrost/oneconfig/libs/universal/ChatColor;
-	public static final field STRIKETHROUGH Lcc/polyfrost/oneconfig/libs/universal/ChatColor;
-	public static final field UNDERLINE Lcc/polyfrost/oneconfig/libs/universal/ChatColor;
-	public static final field WHITE Lcc/polyfrost/oneconfig/libs/universal/ChatColor;
-	public static final field YELLOW Lcc/polyfrost/oneconfig/libs/universal/ChatColor;
+	public static final field Companion Lorg/polyfrost/oneconfig/libs/universal/ChatColor$Companion;
+	public static final field DARK_AQUA Lorg/polyfrost/oneconfig/libs/universal/ChatColor;
+	public static final field DARK_BLUE Lorg/polyfrost/oneconfig/libs/universal/ChatColor;
+	public static final field DARK_GRAY Lorg/polyfrost/oneconfig/libs/universal/ChatColor;
+	public static final field DARK_GREEN Lorg/polyfrost/oneconfig/libs/universal/ChatColor;
+	public static final field DARK_PURPLE Lorg/polyfrost/oneconfig/libs/universal/ChatColor;
+	public static final field DARK_RED Lorg/polyfrost/oneconfig/libs/universal/ChatColor;
+	public static final field GOLD Lorg/polyfrost/oneconfig/libs/universal/ChatColor;
+	public static final field GRAY Lorg/polyfrost/oneconfig/libs/universal/ChatColor;
+	public static final field GREEN Lorg/polyfrost/oneconfig/libs/universal/ChatColor;
+	public static final field ITALIC Lorg/polyfrost/oneconfig/libs/universal/ChatColor;
+	public static final field LIGHT_PURPLE Lorg/polyfrost/oneconfig/libs/universal/ChatColor;
+	public static final field MAGIC Lorg/polyfrost/oneconfig/libs/universal/ChatColor;
+	public static final field RED Lorg/polyfrost/oneconfig/libs/universal/ChatColor;
+	public static final field RESET Lorg/polyfrost/oneconfig/libs/universal/ChatColor;
+	public static final field STRIKETHROUGH Lorg/polyfrost/oneconfig/libs/universal/ChatColor;
+	public static final field UNDERLINE Lorg/polyfrost/oneconfig/libs/universal/ChatColor;
+	public static final field WHITE Lorg/polyfrost/oneconfig/libs/universal/ChatColor;
+	public static final field YELLOW Lorg/polyfrost/oneconfig/libs/universal/ChatColor;
 	public final fun getChar ()C
 	public final fun getColor ()Ljava/awt/Color;
 	public final fun isColor ()Z
 	public final fun isFormat ()Z
 	public final fun plus (Ljava/lang/String;)Ljava/lang/String;
 	public fun toString ()Ljava/lang/String;
-	public static fun valueOf (Ljava/lang/String;)Lcc/polyfrost/oneconfig/libs/universal/ChatColor;
-	public static fun values ()[Lcc/polyfrost/oneconfig/libs/universal/ChatColor;
+	public static fun valueOf (Ljava/lang/String;)Lorg/polyfrost/oneconfig/libs/universal/ChatColor;
+	public static fun values ()[Lorg/polyfrost/oneconfig/libs/universal/ChatColor;
 }
 
-public final class cc/polyfrost/oneconfig/libs/universal/ChatColor$Companion {
+public final class org/polyfrost/oneconfig/libs/universal/ChatColor$Companion {
 	public final fun getCOLOR_CODE_PATTERN ()Lkotlin/text/Regex;
 	public final fun getFORMATTING_CODE_PATTERN ()Lkotlin/text/Regex;
 	public final fun stripColorCodes (Ljava/lang/String;)Ljava/lang/String;
@@ -41,37 +41,37 @@ public final class cc/polyfrost/oneconfig/libs/universal/ChatColor$Companion {
 	public final fun translateAlternateColorCodes (CLjava/lang/String;)Ljava/lang/String;
 }
 
-public final class cc/polyfrost/oneconfig/libs/universal/GuiScale : java/lang/Enum {
-	public static final field Auto Lcc/polyfrost/oneconfig/libs/universal/GuiScale;
-	public static final field Companion Lcc/polyfrost/oneconfig/libs/universal/GuiScale$Companion;
-	public static final field Large Lcc/polyfrost/oneconfig/libs/universal/GuiScale;
-	public static final field Medium Lcc/polyfrost/oneconfig/libs/universal/GuiScale;
-	public static final field Small Lcc/polyfrost/oneconfig/libs/universal/GuiScale;
-	public static final field VeryLarge Lcc/polyfrost/oneconfig/libs/universal/GuiScale;
-	public static final fun fromNumber (I)Lcc/polyfrost/oneconfig/libs/universal/GuiScale;
-	public static final fun scaleForScreenSize ()Lcc/polyfrost/oneconfig/libs/universal/GuiScale;
-	public static final fun scaleForScreenSize (I)Lcc/polyfrost/oneconfig/libs/universal/GuiScale;
-	public static fun valueOf (Ljava/lang/String;)Lcc/polyfrost/oneconfig/libs/universal/GuiScale;
-	public static fun values ()[Lcc/polyfrost/oneconfig/libs/universal/GuiScale;
+public final class org/polyfrost/oneconfig/libs/universal/GuiScale : java/lang/Enum {
+	public static final field Auto Lorg/polyfrost/oneconfig/libs/universal/GuiScale;
+	public static final field Companion Lorg/polyfrost/oneconfig/libs/universal/GuiScale$Companion;
+	public static final field Large Lorg/polyfrost/oneconfig/libs/universal/GuiScale;
+	public static final field Medium Lorg/polyfrost/oneconfig/libs/universal/GuiScale;
+	public static final field Small Lorg/polyfrost/oneconfig/libs/universal/GuiScale;
+	public static final field VeryLarge Lorg/polyfrost/oneconfig/libs/universal/GuiScale;
+	public static final fun fromNumber (I)Lorg/polyfrost/oneconfig/libs/universal/GuiScale;
+	public static final fun scaleForScreenSize ()Lorg/polyfrost/oneconfig/libs/universal/GuiScale;
+	public static final fun scaleForScreenSize (I)Lorg/polyfrost/oneconfig/libs/universal/GuiScale;
+	public static fun valueOf (Ljava/lang/String;)Lorg/polyfrost/oneconfig/libs/universal/GuiScale;
+	public static fun values ()[Lorg/polyfrost/oneconfig/libs/universal/GuiScale;
 }
 
-public final class cc/polyfrost/oneconfig/libs/universal/GuiScale$Companion {
-	public final fun fromNumber (I)Lcc/polyfrost/oneconfig/libs/universal/GuiScale;
-	public final fun scaleForScreenSize ()Lcc/polyfrost/oneconfig/libs/universal/GuiScale;
-	public final fun scaleForScreenSize (I)Lcc/polyfrost/oneconfig/libs/universal/GuiScale;
-	public static synthetic fun scaleForScreenSize$default (Lcc/polyfrost/oneconfig/libs/universal/GuiScale$Companion;IILjava/lang/Object;)Lcc/polyfrost/oneconfig/libs/universal/GuiScale;
+public final class org/polyfrost/oneconfig/libs/universal/GuiScale$Companion {
+	public final fun fromNumber (I)Lorg/polyfrost/oneconfig/libs/universal/GuiScale;
+	public final fun scaleForScreenSize ()Lorg/polyfrost/oneconfig/libs/universal/GuiScale;
+	public final fun scaleForScreenSize (I)Lorg/polyfrost/oneconfig/libs/universal/GuiScale;
+	public static synthetic fun scaleForScreenSize$default (Lorg/polyfrost/oneconfig/libs/universal/GuiScale$Companion;IILjava/lang/Object;)Lorg/polyfrost/oneconfig/libs/universal/GuiScale;
 }
 
-public final class cc/polyfrost/oneconfig/libs/universal/UChat {
-	public static final field INSTANCE Lcc/polyfrost/oneconfig/libs/universal/UChat;
+public final class org/polyfrost/oneconfig/libs/universal/UChat {
+	public static final field INSTANCE Lorg/polyfrost/oneconfig/libs/universal/UChat;
 	public static final fun actionBar (Ljava/lang/Object;)V
 	public static final fun addColor (Ljava/lang/String;)Ljava/lang/String;
 	public static final fun chat (Ljava/lang/Object;)V
 	public static final fun say (Ljava/lang/String;)V
 }
 
-public final class cc/polyfrost/oneconfig/libs/universal/UDesktop {
-	public static final field INSTANCE Lcc/polyfrost/oneconfig/libs/universal/UDesktop;
+public final class org/polyfrost/oneconfig/libs/universal/UDesktop {
+	public static final field INSTANCE Lorg/polyfrost/oneconfig/libs/universal/UDesktop;
 	public static final fun browse (Ljava/net/URI;)Z
 	public static final fun edit (Ljava/io/File;)Z
 	public static final fun getClipboardString ()Ljava/lang/String;
@@ -85,7 +85,7 @@ public final class cc/polyfrost/oneconfig/libs/universal/UDesktop {
 	public static final fun setClipboardString (Ljava/lang/String;)V
 }
 
-public class cc/polyfrost/oneconfig/libs/universal/UGraphics {
+public class org/polyfrost/oneconfig/libs/universal/UGraphics {
 	@1.17.1-forge,1.18.2-forge,1.19.2-forge
 	public static field EMPTY_WITH_FONT_ID Lnet/minecraft/network/chat/Style;
 	@1.16.5-forge
@@ -103,32 +103,32 @@ public class cc/polyfrost/oneconfig/libs/universal/UGraphics {
 	public fun <init> (Lnet/minecraft/client/render/BufferBuilder;)V
 	public static fun activeTexture (I)V
 	public static fun areShadersSupported ()Z
-	public fun asUVertexConsumer ()Lcc/polyfrost/oneconfig/libs/universal/vertex/UVertexConsumer;
-	public fun begin (ILcc/polyfrost/oneconfig/libs/universal/UGraphics$CommonVertexFormats;)Lcc/polyfrost/oneconfig/libs/universal/UGraphics;
+	public fun asUVertexConsumer ()Lorg/polyfrost/oneconfig/libs/universal/vertex/UVertexConsumer;
 	@1.17.1-forge,1.18.2-forge,1.19.2-forge
-	public fun begin (ILcom/mojang/blaze3d/vertex/VertexFormat;)Lcc/polyfrost/oneconfig/libs/universal/UGraphics;
+	public fun begin (ILcom/mojang/blaze3d/vertex/VertexFormat;)Lorg/polyfrost/oneconfig/libs/universal/UGraphics;
 	@1.12.2-forge,1.15.2-forge,1.16.5-forge,1.8.9-forge
-	public fun begin (ILnet/minecraft/client/renderer/vertex/VertexFormat;)Lcc/polyfrost/oneconfig/libs/universal/UGraphics;
+	public fun begin (ILnet/minecraft/client/renderer/vertex/VertexFormat;)Lorg/polyfrost/oneconfig/libs/universal/UGraphics;
+	@1.12.2-fabric,1.16.5-fabric,1.17.1-fabric,1.18.2-fabric,1.19-fabric,1.19.1-fabric,1.19.2-fabric,1.8.9-fabric
+	public fun begin (ILnet/minecraft/client/render/VertexFormat;)Lorg/polyfrost/oneconfig/libs/universal/UGraphics;
+	public fun begin (ILorg/polyfrost/oneconfig/libs/universal/UGraphics$CommonVertexFormats;)Lorg/polyfrost/oneconfig/libs/universal/UGraphics;
 	@1.16.5-forge,1.17.1-forge,1.18.2-forge,1.19.2-forge
-	public fun beginRenderLayer (Lnet/minecraft/client/renderer/RenderType;)Lcc/polyfrost/oneconfig/libs/universal/UGraphics;
-	@1.12.2-fabric,1.16.5-fabric,1.17.1-fabric,1.18.2-fabric,1.19-fabric,1.19.1-fabric,1.19.2-fabric,1.8.9-fabric
-	public fun begin (ILnet/minecraft/client/render/VertexFormat;)Lcc/polyfrost/oneconfig/libs/universal/UGraphics;
+	public fun beginRenderLayer (Lnet/minecraft/client/renderer/RenderType;)Lorg/polyfrost/oneconfig/libs/universal/UGraphics;
+	@1.17.1-forge,1.18.2-forge,1.19.2-forge
+	public fun beginWithActiveShader (Lorg/polyfrost/oneconfig/libs/universal/UGraphics$DrawMode;Lcom/mojang/blaze3d/vertex/VertexFormat;)Lorg/polyfrost/oneconfig/libs/universal/UGraphics;
 	@1.16.5-fabric,1.17.1-fabric,1.18.2-fabric,1.19-fabric,1.19.1-fabric,1.19.2-fabric
-	public fun beginRenderLayer (Lnet/minecraft/client/render/RenderLayer;)Lcc/polyfrost/oneconfig/libs/universal/UGraphics;
-	public fun beginWithActiveShader (Lcc/polyfrost/oneconfig/libs/universal/UGraphics$DrawMode;Lcc/polyfrost/oneconfig/libs/universal/UGraphics$CommonVertexFormats;)Lcc/polyfrost/oneconfig/libs/universal/UGraphics;
-	@1.17.1-forge,1.18.2-forge,1.19.2-forge
-	public fun beginWithActiveShader (Lcc/polyfrost/oneconfig/libs/universal/UGraphics$DrawMode;Lcom/mojang/blaze3d/vertex/VertexFormat;)Lcc/polyfrost/oneconfig/libs/universal/UGraphics;
+	public fun beginRenderLayer (Lnet/minecraft/client/render/RenderLayer;)Lorg/polyfrost/oneconfig/libs/universal/UGraphics;
 	@1.12.2-forge,1.15.2-forge,1.16.5-forge,1.8.9-forge
-	public fun beginWithActiveShader (Lcc/polyfrost/oneconfig/libs/universal/UGraphics$DrawMode;Lnet/minecraft/client/renderer/vertex/VertexFormat;)Lcc/polyfrost/oneconfig/libs/universal/UGraphics;
+	public fun beginWithActiveShader (Lorg/polyfrost/oneconfig/libs/universal/UGraphics$DrawMode;Lnet/minecraft/client/renderer/vertex/VertexFormat;)Lorg/polyfrost/oneconfig/libs/universal/UGraphics;
 	@1.12.2-fabric,1.16.5-fabric,1.17.1-fabric,1.18.2-fabric,1.19-fabric,1.19.1-fabric,1.19.2-fabric,1.8.9-fabric
-	public fun beginWithActiveShader (Lcc/polyfrost/oneconfig/libs/universal/UGraphics$DrawMode;Lnet/minecraft/client/render/VertexFormat;)Lcc/polyfrost/oneconfig/libs/universal/UGraphics;
-	public fun beginWithDefaultShader (Lcc/polyfrost/oneconfig/libs/universal/UGraphics$DrawMode;Lcc/polyfrost/oneconfig/libs/universal/UGraphics$CommonVertexFormats;)Lcc/polyfrost/oneconfig/libs/universal/UGraphics;
+	public fun beginWithActiveShader (Lorg/polyfrost/oneconfig/libs/universal/UGraphics$DrawMode;Lnet/minecraft/client/render/VertexFormat;)Lorg/polyfrost/oneconfig/libs/universal/UGraphics;
+	public fun beginWithActiveShader (Lorg/polyfrost/oneconfig/libs/universal/UGraphics$DrawMode;Lorg/polyfrost/oneconfig/libs/universal/UGraphics$CommonVertexFormats;)Lorg/polyfrost/oneconfig/libs/universal/UGraphics;
 	@1.17.1-forge,1.18.2-forge,1.19.2-forge
-	public fun beginWithDefaultShader (Lcc/polyfrost/oneconfig/libs/universal/UGraphics$DrawMode;Lcom/mojang/blaze3d/vertex/VertexFormat;)Lcc/polyfrost/oneconfig/libs/universal/UGraphics;
+	public fun beginWithDefaultShader (Lorg/polyfrost/oneconfig/libs/universal/UGraphics$DrawMode;Lcom/mojang/blaze3d/vertex/VertexFormat;)Lorg/polyfrost/oneconfig/libs/universal/UGraphics;
 	@1.12.2-forge,1.15.2-forge,1.16.5-forge,1.8.9-forge
-	public fun beginWithDefaultShader (Lcc/polyfrost/oneconfig/libs/universal/UGraphics$DrawMode;Lnet/minecraft/client/renderer/vertex/VertexFormat;)Lcc/polyfrost/oneconfig/libs/universal/UGraphics;
+	public fun beginWithDefaultShader (Lorg/polyfrost/oneconfig/libs/universal/UGraphics$DrawMode;Lnet/minecraft/client/renderer/vertex/VertexFormat;)Lorg/polyfrost/oneconfig/libs/universal/UGraphics;
 	@1.12.2-fabric,1.16.5-fabric,1.17.1-fabric,1.18.2-fabric,1.19-fabric,1.19.1-fabric,1.19.2-fabric,1.8.9-fabric
-	public fun beginWithDefaultShader (Lcc/polyfrost/oneconfig/libs/universal/UGraphics$DrawMode;Lnet/minecraft/client/render/VertexFormat;)Lcc/polyfrost/oneconfig/libs/universal/UGraphics;
+	public fun beginWithDefaultShader (Lorg/polyfrost/oneconfig/libs/universal/UGraphics$DrawMode;Lnet/minecraft/client/render/VertexFormat;)Lorg/polyfrost/oneconfig/libs/universal/UGraphics;
+	public fun beginWithDefaultShader (Lorg/polyfrost/oneconfig/libs/universal/UGraphics$DrawMode;Lorg/polyfrost/oneconfig/libs/universal/UGraphics$CommonVertexFormats;)Lorg/polyfrost/oneconfig/libs/universal/UGraphics;
 	public static fun bindTexture (I)V
 	public static fun bindTexture (II)V
 	@1.17.1-forge,1.18.2-forge,1.19.2-forge
@@ -144,9 +144,9 @@ public class cc/polyfrost/oneconfig/libs/universal/UGraphics {
 	@1.12.2-fabric,1.16.5-fabric,1.17.1-fabric,1.18.2-fabric,1.19-fabric,1.19.1-fabric,1.19.2-fabric,1.8.9-fabric
 	public static fun bindTexture (Lnet/minecraft/util/Identifier;)V
 	public static fun blendEquation (I)V
-	public fun color (FFFF)Lcc/polyfrost/oneconfig/libs/universal/UGraphics;
-	public fun color (IIII)Lcc/polyfrost/oneconfig/libs/universal/UGraphics;
-	public fun color (Ljava/awt/Color;)Lcc/polyfrost/oneconfig/libs/universal/UGraphics;
+	public fun color (FFFF)Lorg/polyfrost/oneconfig/libs/universal/UGraphics;
+	public fun color (IIII)Lorg/polyfrost/oneconfig/libs/universal/UGraphics;
+	public fun color (Ljava/awt/Color;)Lorg/polyfrost/oneconfig/libs/universal/UGraphics;
 	public static fun color4f (FFFF)V
 	public static fun configureTexture (ILjava/lang/Runnable;)V
 	public static fun configureTextureUnit (ILjava/lang/Runnable;)V
@@ -164,22 +164,22 @@ public class cc/polyfrost/oneconfig/libs/universal/UGraphics {
 	public static fun draw ()V
 	public fun drawDirect ()V
 	public fun drawSorted (III)V
-	public static fun drawString (Lcc/polyfrost/oneconfig/libs/universal/UMatrixStack;Ljava/lang/String;FFII)V
-	public static fun drawString (Lcc/polyfrost/oneconfig/libs/universal/UMatrixStack;Ljava/lang/String;FFIZ)V
 	public static fun drawString (Ljava/lang/String;FFII)V
 	public static fun drawString (Ljava/lang/String;FFIZ)V
+	public static fun drawString (Lorg/polyfrost/oneconfig/libs/universal/UMatrixStack;Ljava/lang/String;FFII)V
+	public static fun drawString (Lorg/polyfrost/oneconfig/libs/universal/UMatrixStack;Ljava/lang/String;FFIZ)V
 	public static fun enableAlpha ()V
 	public static fun enableBlend ()V
 	public static fun enableDepth ()V
 	public static fun enableLight (I)V
 	public static fun enableLighting ()V
 	public static fun enableTexture2D ()V
-	public fun endVertex ()Lcc/polyfrost/oneconfig/libs/universal/UGraphics;
+	public fun endVertex ()Lorg/polyfrost/oneconfig/libs/universal/UGraphics;
 	public static fun getActiveTexture ()I
 	public static fun getCharWidth (C)F
-	public static fun getEmptyTexture ()Lcc/polyfrost/oneconfig/libs/universal/utils/ReleasedDynamicTexture;
+	public static fun getEmptyTexture ()Lorg/polyfrost/oneconfig/libs/universal/utils/ReleasedDynamicTexture;
 	public static fun getFontHeight ()I
-	public static fun getFromTessellator ()Lcc/polyfrost/oneconfig/libs/universal/UGraphics;
+	public static fun getFromTessellator ()Lorg/polyfrost/oneconfig/libs/universal/UGraphics;
 	public static fun getStringWidth (Ljava/lang/String;)I
 	@1.17.1-forge,1.18.2-forge,1.19.2-forge
 	public static fun getTessellator ()Lcom/mojang/blaze3d/vertex/Tesselator;
@@ -187,8 +187,8 @@ public class cc/polyfrost/oneconfig/libs/universal/UGraphics {
 	public static fun getTessellator ()Lnet/minecraft/client/renderer/Tessellator;
 	@1.12.2-fabric,1.16.5-fabric,1.17.1-fabric,1.18.2-fabric,1.19-fabric,1.19.1-fabric,1.19.2-fabric,1.8.9-fabric
 	public static fun getTessellator ()Lnet/minecraft/client/render/Tessellator;
-	public static fun getTexture (Ljava/awt/image/BufferedImage;)Lcc/polyfrost/oneconfig/libs/universal/utils/ReleasedDynamicTexture;
-	public static fun getTexture (Ljava/io/InputStream;)Lcc/polyfrost/oneconfig/libs/universal/utils/ReleasedDynamicTexture;
+	public static fun getTexture (Ljava/awt/image/BufferedImage;)Lorg/polyfrost/oneconfig/libs/universal/utils/ReleasedDynamicTexture;
+	public static fun getTexture (Ljava/io/InputStream;)Lorg/polyfrost/oneconfig/libs/universal/utils/ReleasedDynamicTexture;
 	public static fun glAttachShader (II)V
 	public static fun glClear (I)V
 	public static fun glClearStencil (I)V
@@ -202,16 +202,16 @@ public class cc/polyfrost/oneconfig/libs/universal/UGraphics {
 	public static fun glLinkProgram (I)V
 	public static fun glUseProgram (I)V
 	public static fun isOpenGl21Supported ()Z
-	public fun light (II)Lcc/polyfrost/oneconfig/libs/universal/UGraphics;
+	public fun light (II)Lorg/polyfrost/oneconfig/libs/universal/UGraphics;
 	public static fun listFormattedStringToWidth (Ljava/lang/String;I)Ljava/util/List;
 	public static fun listFormattedStringToWidth (Ljava/lang/String;IZ)Ljava/util/List;
-	public fun norm (FFF)Lcc/polyfrost/oneconfig/libs/universal/UGraphics;
-	public fun norm (Lcc/polyfrost/oneconfig/libs/universal/UMatrixStack;FFF)Lcc/polyfrost/oneconfig/libs/universal/UGraphics;
-	public fun overlay (II)Lcc/polyfrost/oneconfig/libs/universal/UGraphics;
+	public fun norm (FFF)Lorg/polyfrost/oneconfig/libs/universal/UGraphics;
+	public fun norm (Lorg/polyfrost/oneconfig/libs/universal/UMatrixStack;FFF)Lorg/polyfrost/oneconfig/libs/universal/UGraphics;
+	public fun overlay (II)Lorg/polyfrost/oneconfig/libs/universal/UGraphics;
 	@1.12.2-fabric,1.12.2-forge,1.15.2-forge,1.16.5-fabric,1.16.5-forge,1.8.9-fabric,1.8.9-forge
 	public static fun popMatrix ()V
-	public fun pos (DDD)Lcc/polyfrost/oneconfig/libs/universal/UGraphics;
-	public fun pos (Lcc/polyfrost/oneconfig/libs/universal/UMatrixStack;DDD)Lcc/polyfrost/oneconfig/libs/universal/UGraphics;
+	public fun pos (DDD)Lorg/polyfrost/oneconfig/libs/universal/UGraphics;
+	public fun pos (Lorg/polyfrost/oneconfig/libs/universal/UMatrixStack;DDD)Lorg/polyfrost/oneconfig/libs/universal/UGraphics;
 	@1.12.2-fabric,1.12.2-forge,1.15.2-forge,1.16.5-fabric,1.16.5-forge,1.8.9-fabric,1.8.9-forge
 	public static fun pushMatrix ()V
 	@1.12.2-fabric,1.12.2-forge,1.15.2-forge,1.16.5-fabric,1.16.5-forge,1.8.9-fabric,1.8.9-forge
@@ -224,7 +224,7 @@ public class cc/polyfrost/oneconfig/libs/universal/UGraphics {
 	@1.17.1-fabric,1.17.1-forge,1.18.2-fabric,1.18.2-forge,1.19-fabric,1.19.1-fabric,1.19.2-fabric,1.19.2-forge
 	public static fun setShader (Ljava/util/function/Supplier;)V
 	public static fun shadeModel (I)V
-	public fun tex (DD)Lcc/polyfrost/oneconfig/libs/universal/UGraphics;
+	public fun tex (DD)Lorg/polyfrost/oneconfig/libs/universal/UGraphics;
 	@1.12.2-fabric,1.12.2-forge,1.15.2-forge,1.16.5-fabric,1.16.5-forge,1.8.9-fabric,1.8.9-forge
 	public static fun translate (DDD)V
 	@1.12.2-fabric,1.12.2-forge,1.15.2-forge,1.16.5-fabric,1.16.5-forge,1.8.9-fabric,1.8.9-forge
@@ -232,37 +232,37 @@ public class cc/polyfrost/oneconfig/libs/universal/UGraphics {
 	public static fun tryBlendFuncSeparate (IIII)V
 }
 
-public final class cc/polyfrost/oneconfig/libs/universal/UGraphics$CommonVertexFormats : java/lang/Enum {
-	public static final field POSITION Lcc/polyfrost/oneconfig/libs/universal/UGraphics$CommonVertexFormats;
-	public static final field POSITION_COLOR Lcc/polyfrost/oneconfig/libs/universal/UGraphics$CommonVertexFormats;
-	public static final field POSITION_COLOR_TEXTURE_LIGHT Lcc/polyfrost/oneconfig/libs/universal/UGraphics$CommonVertexFormats;
-	public static final field POSITION_TEXTURE Lcc/polyfrost/oneconfig/libs/universal/UGraphics$CommonVertexFormats;
-	public static final field POSITION_TEXTURE_COLOR Lcc/polyfrost/oneconfig/libs/universal/UGraphics$CommonVertexFormats;
-	public static final field POSITION_TEXTURE_COLOR_LIGHT Lcc/polyfrost/oneconfig/libs/universal/UGraphics$CommonVertexFormats;
-	public static final field POSITION_TEXTURE_COLOR_NORMAL Lcc/polyfrost/oneconfig/libs/universal/UGraphics$CommonVertexFormats;
-	public static final field POSITION_TEXTURE_LIGHT_COLOR Lcc/polyfrost/oneconfig/libs/universal/UGraphics$CommonVertexFormats;
-	public static fun valueOf (Ljava/lang/String;)Lcc/polyfrost/oneconfig/libs/universal/UGraphics$CommonVertexFormats;
-	public static fun values ()[Lcc/polyfrost/oneconfig/libs/universal/UGraphics$CommonVertexFormats;
+public final class org/polyfrost/oneconfig/libs/universal/UGraphics$CommonVertexFormats : java/lang/Enum {
+	public static final field POSITION Lorg/polyfrost/oneconfig/libs/universal/UGraphics$CommonVertexFormats;
+	public static final field POSITION_COLOR Lorg/polyfrost/oneconfig/libs/universal/UGraphics$CommonVertexFormats;
+	public static final field POSITION_COLOR_TEXTURE_LIGHT Lorg/polyfrost/oneconfig/libs/universal/UGraphics$CommonVertexFormats;
+	public static final field POSITION_TEXTURE Lorg/polyfrost/oneconfig/libs/universal/UGraphics$CommonVertexFormats;
+	public static final field POSITION_TEXTURE_COLOR Lorg/polyfrost/oneconfig/libs/universal/UGraphics$CommonVertexFormats;
+	public static final field POSITION_TEXTURE_COLOR_LIGHT Lorg/polyfrost/oneconfig/libs/universal/UGraphics$CommonVertexFormats;
+	public static final field POSITION_TEXTURE_COLOR_NORMAL Lorg/polyfrost/oneconfig/libs/universal/UGraphics$CommonVertexFormats;
+	public static final field POSITION_TEXTURE_LIGHT_COLOR Lorg/polyfrost/oneconfig/libs/universal/UGraphics$CommonVertexFormats;
+	public static fun valueOf (Ljava/lang/String;)Lorg/polyfrost/oneconfig/libs/universal/UGraphics$CommonVertexFormats;
+	public static fun values ()[Lorg/polyfrost/oneconfig/libs/universal/UGraphics$CommonVertexFormats;
 }
 
-public final class cc/polyfrost/oneconfig/libs/universal/UGraphics$DrawMode : java/lang/Enum {
-	public static final field LINES Lcc/polyfrost/oneconfig/libs/universal/UGraphics$DrawMode;
-	public static final field LINE_STRIP Lcc/polyfrost/oneconfig/libs/universal/UGraphics$DrawMode;
-	public static final field QUADS Lcc/polyfrost/oneconfig/libs/universal/UGraphics$DrawMode;
-	public static final field TRIANGLES Lcc/polyfrost/oneconfig/libs/universal/UGraphics$DrawMode;
-	public static final field TRIANGLE_FAN Lcc/polyfrost/oneconfig/libs/universal/UGraphics$DrawMode;
-	public static final field TRIANGLE_STRIP Lcc/polyfrost/oneconfig/libs/universal/UGraphics$DrawMode;
-	public static fun fromGl (I)Lcc/polyfrost/oneconfig/libs/universal/UGraphics$DrawMode;
+public final class org/polyfrost/oneconfig/libs/universal/UGraphics$DrawMode : java/lang/Enum {
+	public static final field LINES Lorg/polyfrost/oneconfig/libs/universal/UGraphics$DrawMode;
+	public static final field LINE_STRIP Lorg/polyfrost/oneconfig/libs/universal/UGraphics$DrawMode;
+	public static final field QUADS Lorg/polyfrost/oneconfig/libs/universal/UGraphics$DrawMode;
+	public static final field TRIANGLES Lorg/polyfrost/oneconfig/libs/universal/UGraphics$DrawMode;
+	public static final field TRIANGLE_FAN Lorg/polyfrost/oneconfig/libs/universal/UGraphics$DrawMode;
+	public static final field TRIANGLE_STRIP Lorg/polyfrost/oneconfig/libs/universal/UGraphics$DrawMode;
+	public static fun fromGl (I)Lorg/polyfrost/oneconfig/libs/universal/UGraphics$DrawMode;
 	@1.16.5-forge,1.17.1-forge,1.18.2-forge,1.19.2-forge
-	public static fun fromRenderLayer (Lnet/minecraft/client/renderer/RenderType;)Lcc/polyfrost/oneconfig/libs/universal/UGraphics$DrawMode;
+	public static fun fromRenderLayer (Lnet/minecraft/client/renderer/RenderType;)Lorg/polyfrost/oneconfig/libs/universal/UGraphics$DrawMode;
 	@1.16.5-fabric,1.17.1-fabric,1.18.2-fabric,1.19-fabric,1.19.1-fabric,1.19.2-fabric
-	public static fun fromRenderLayer (Lnet/minecraft/client/render/RenderLayer;)Lcc/polyfrost/oneconfig/libs/universal/UGraphics$DrawMode;
-	public static fun valueOf (Ljava/lang/String;)Lcc/polyfrost/oneconfig/libs/universal/UGraphics$DrawMode;
-	public static fun values ()[Lcc/polyfrost/oneconfig/libs/universal/UGraphics$DrawMode;
+	public static fun fromRenderLayer (Lnet/minecraft/client/render/RenderLayer;)Lorg/polyfrost/oneconfig/libs/universal/UGraphics$DrawMode;
+	public static fun valueOf (Ljava/lang/String;)Lorg/polyfrost/oneconfig/libs/universal/UGraphics$DrawMode;
+	public static fun values ()[Lorg/polyfrost/oneconfig/libs/universal/UGraphics$DrawMode;
 }
 
 @1.12.2-fabric,1.12.2-forge,1.15.2-forge,1.16.5-fabric,1.16.5-forge,1.8.9-fabric,1.8.9-forge
-public class cc/polyfrost/oneconfig/libs/universal/UGraphics$GL {
+public class org/polyfrost/oneconfig/libs/universal/UGraphics$GL {
 	public fun <init> ()V
 	public static fun popMatrix ()V
 	public static fun pushMatrix ()V
@@ -273,8 +273,8 @@ public class cc/polyfrost/oneconfig/libs/universal/UGraphics$GL {
 	public static fun translate (FFF)V
 }
 
-public final class cc/polyfrost/oneconfig/libs/universal/UGuiButton {
-	public static final field INSTANCE Lcc/polyfrost/oneconfig/libs/universal/UGuiButton;
+public final class org/polyfrost/oneconfig/libs/universal/UGuiButton {
+	public static final field INSTANCE Lorg/polyfrost/oneconfig/libs/universal/UGuiButton;
 	@1.17.1-forge,1.18.2-forge,1.19.2-forge
 	public static final fun getX (Lnet/minecraft/client/gui/components/AbstractWidget;)I
 	@1.17.1-forge,1.18.2-forge,1.19.2-forge
@@ -297,8 +297,8 @@ public final class cc/polyfrost/oneconfig/libs/universal/UGuiButton {
 	public static final fun getY (Lnet/minecraft/client/gui/widget/ButtonWidget;)I
 }
 
-public final class cc/polyfrost/oneconfig/libs/universal/UImage {
-	public static final field Companion Lcc/polyfrost/oneconfig/libs/universal/UImage$Companion;
+public final class org/polyfrost/oneconfig/libs/universal/UImage {
+	public static final field Companion Lorg/polyfrost/oneconfig/libs/universal/UImage$Companion;
 	@1.17.1-forge,1.18.2-forge,1.19.2-forge
 	public fun <init> (Lcom/mojang/blaze3d/platform/NativeImage;)V
 	@1.16.5-forge
@@ -307,8 +307,8 @@ public final class cc/polyfrost/oneconfig/libs/universal/UImage {
 	public fun <init> (Lnet/minecraft/client/texture/NativeImage;)V
 	@1.12.2-fabric,1.12.2-forge,1.15.2-forge,1.8.9-fabric,1.8.9-forge
 	public fun <init> (Ljava/awt/image/BufferedImage;)V
-	public final fun copy ()Lcc/polyfrost/oneconfig/libs/universal/UImage;
-	public final fun copyFrom (Lcc/polyfrost/oneconfig/libs/universal/UImage;)V
+	public final fun copy ()Lorg/polyfrost/oneconfig/libs/universal/UImage;
+	public final fun copyFrom (Lorg/polyfrost/oneconfig/libs/universal/UImage;)V
 	public final fun getHeight ()I
 	@1.17.1-forge,1.18.2-forge,1.19.2-forge
 	public final fun getNativeImage ()Lcom/mojang/blaze3d/platform/NativeImage;
@@ -320,19 +320,19 @@ public final class cc/polyfrost/oneconfig/libs/universal/UImage {
 	public final fun getNativeImage ()Ljava/awt/image/BufferedImage;
 	public final fun getPixelRGBA (II)I
 	public final fun getWidth ()I
-	public static final fun ofSize (II)Lcc/polyfrost/oneconfig/libs/universal/UImage;
-	public static final fun ofSize (IIZ)Lcc/polyfrost/oneconfig/libs/universal/UImage;
+	public static final fun ofSize (II)Lorg/polyfrost/oneconfig/libs/universal/UImage;
+	public static final fun ofSize (IIZ)Lorg/polyfrost/oneconfig/libs/universal/UImage;
 	public final fun setPixelRGBA (III)V
 }
 
-public final class cc/polyfrost/oneconfig/libs/universal/UImage$Companion {
-	public final fun ofSize (II)Lcc/polyfrost/oneconfig/libs/universal/UImage;
-	public final fun ofSize (IIZ)Lcc/polyfrost/oneconfig/libs/universal/UImage;
-	public static synthetic fun ofSize$default (Lcc/polyfrost/oneconfig/libs/universal/UImage$Companion;IIZILjava/lang/Object;)Lcc/polyfrost/oneconfig/libs/universal/UImage;
+public final class org/polyfrost/oneconfig/libs/universal/UImage$Companion {
+	public final fun ofSize (II)Lorg/polyfrost/oneconfig/libs/universal/UImage;
+	public final fun ofSize (IIZ)Lorg/polyfrost/oneconfig/libs/universal/UImage;
+	public static synthetic fun ofSize$default (Lorg/polyfrost/oneconfig/libs/universal/UImage$Companion;IIZILjava/lang/Object;)Lorg/polyfrost/oneconfig/libs/universal/UImage;
 }
 
-public final class cc/polyfrost/oneconfig/libs/universal/UKeyboard {
-	public static final field INSTANCE Lcc/polyfrost/oneconfig/libs/universal/UKeyboard;
+public final class org/polyfrost/oneconfig/libs/universal/UKeyboard {
+	public static final field INSTANCE Lorg/polyfrost/oneconfig/libs/universal/UKeyboard;
 	public static final field KEY_0 I
 	public static final field KEY_1 I
 	public static final field KEY_2 I
@@ -450,7 +450,7 @@ public final class cc/polyfrost/oneconfig/libs/universal/UKeyboard {
 	public static final fun getKeyName (Lnet/minecraft/client/settings/KeyBinding;)Ljava/lang/String;
 	@1.12.2-fabric,1.8.9-fabric
 	public static final fun getKeyName (Lnet/minecraft/client/options/KeyBinding;)Ljava/lang/String;
-	public static final fun getModifiers ()Lcc/polyfrost/oneconfig/libs/universal/UKeyboard$Modifiers;
+	public static final fun getModifiers ()Lorg/polyfrost/oneconfig/libs/universal/UKeyboard$Modifiers;
 	public static final fun isAltKeyDown ()Z
 	public static final fun isCtrlKeyDown ()Z
 	public static final fun isKeyComboCtrlA (I)Z
@@ -464,13 +464,13 @@ public final class cc/polyfrost/oneconfig/libs/universal/UKeyboard {
 	public static final fun isShiftKeyDown ()Z
 }
 
-public final class cc/polyfrost/oneconfig/libs/universal/UKeyboard$Modifiers {
+public final class org/polyfrost/oneconfig/libs/universal/UKeyboard$Modifiers {
 	public fun <init> (ZZZ)V
 	public final fun component1 ()Z
 	public final fun component2 ()Z
 	public final fun component3 ()Z
-	public final fun copy (ZZZ)Lcc/polyfrost/oneconfig/libs/universal/UKeyboard$Modifiers;
-	public static synthetic fun copy$default (Lcc/polyfrost/oneconfig/libs/universal/UKeyboard$Modifiers;ZZZILjava/lang/Object;)Lcc/polyfrost/oneconfig/libs/universal/UKeyboard$Modifiers;
+	public final fun copy (ZZZ)Lorg/polyfrost/oneconfig/libs/universal/UKeyboard$Modifiers;
+	public static synthetic fun copy$default (Lorg/polyfrost/oneconfig/libs/universal/UKeyboard$Modifiers;ZZZILjava/lang/Object;)Lorg/polyfrost/oneconfig/libs/universal/UKeyboard$Modifiers;
 	public fun equals (Ljava/lang/Object;)Z
 	public fun hashCode ()I
 	public final fun isAlt ()Z
@@ -479,17 +479,17 @@ public final class cc/polyfrost/oneconfig/libs/universal/UKeyboard$Modifiers {
 	public fun toString ()Ljava/lang/String;
 }
 
-public final class cc/polyfrost/oneconfig/libs/universal/UMath {
-	public static final field INSTANCE Lcc/polyfrost/oneconfig/libs/universal/UMath;
+public final class org/polyfrost/oneconfig/libs/universal/UMath {
+	public static final field INSTANCE Lorg/polyfrost/oneconfig/libs/universal/UMath;
 	public static final fun clampFloat (FFF)F
 	public static final fun clampInt (III)I
 	public static final fun sqrtDouble (D)F
 	public static final fun wrapAngleTo180 (D)D
 }
 
-public final class cc/polyfrost/oneconfig/libs/universal/UMatrixStack {
-	public static final field Companion Lcc/polyfrost/oneconfig/libs/universal/UMatrixStack$Companion;
-	public static final field UNIT Lcc/polyfrost/oneconfig/libs/universal/UMatrixStack;
+public final class org/polyfrost/oneconfig/libs/universal/UMatrixStack {
+	public static final field Companion Lorg/polyfrost/oneconfig/libs/universal/UMatrixStack$Companion;
+	public static final field UNIT Lorg/polyfrost/oneconfig/libs/universal/UMatrixStack;
 	public fun <init> ()V
 	@1.17.1-forge,1.18.2-forge,1.19.2-forge
 	public fun <init> (Lcom/mojang/blaze3d/vertex/PoseStack$Pose;)V
@@ -504,7 +504,7 @@ public final class cc/polyfrost/oneconfig/libs/universal/UMatrixStack {
 	@1.16.5-fabric,1.17.1-fabric,1.18.2-fabric,1.19-fabric,1.19.1-fabric,1.19.2-fabric
 	public fun <init> (Lnet/minecraft/client/util/math/MatrixStack;)V
 	public final fun applyToGlobalState ()V
-	public final fun fork ()Lcc/polyfrost/oneconfig/libs/universal/UMatrixStack;
+	public final fun fork ()Lorg/polyfrost/oneconfig/libs/universal/UMatrixStack;
 	public final fun isEmpty ()Z
 	@1.17.1-forge,1.18.2-forge,1.19.2-forge
 	public final fun multiply (Lcom/mojang/math/Quaternion;)V
@@ -516,13 +516,13 @@ public final class cc/polyfrost/oneconfig/libs/universal/UMatrixStack {
 	public final fun multiply (Lnet/minecraft/client/renderer/Quaternion;)V
 	@1.12.2-fabric,1.12.2-forge,1.8.9-fabric,1.8.9-forge
 	public final fun multiply (Lorg/lwjgl/util/vector/Quaternion;)V
-	public final fun peek ()Lcc/polyfrost/oneconfig/libs/universal/UMatrixStack$Entry;
+	public final fun peek ()Lorg/polyfrost/oneconfig/libs/universal/UMatrixStack$Entry;
 	public final fun pop ()V
 	public final fun push ()V
 	public final fun replaceGlobalState ()V
 	public final fun rotate (FFFF)V
 	public final fun rotate (FFFFZ)V
-	public static synthetic fun rotate$default (Lcc/polyfrost/oneconfig/libs/universal/UMatrixStack;FFFFZILjava/lang/Object;)V
+	public static synthetic fun rotate$default (Lorg/polyfrost/oneconfig/libs/universal/UMatrixStack;FFFFZILjava/lang/Object;)V
 	public final fun runReplacingGlobalState (Ljava/lang/Runnable;)V
 	public final fun runReplacingGlobalState (Lkotlin/jvm/functions/Function0;)Ljava/lang/Object;
 	public final fun runWithGlobalState (Ljava/lang/Runnable;)V
@@ -539,17 +539,17 @@ public final class cc/polyfrost/oneconfig/libs/universal/UMatrixStack {
 	public final fun translate (FFF)V
 }
 
-public final class cc/polyfrost/oneconfig/libs/universal/UMatrixStack$Companion {
+public final class org/polyfrost/oneconfig/libs/universal/UMatrixStack$Companion {
 }
 
-public final class cc/polyfrost/oneconfig/libs/universal/UMatrixStack$Compat {
+public final class org/polyfrost/oneconfig/libs/universal/UMatrixStack$Compat {
 	public static final field DEPRECATED Ljava/lang/String;
-	public static final field INSTANCE Lcc/polyfrost/oneconfig/libs/universal/UMatrixStack$Compat;
-	public final fun get ()Lcc/polyfrost/oneconfig/libs/universal/UMatrixStack;
-	public final fun runLegacyMethod (Lcc/polyfrost/oneconfig/libs/universal/UMatrixStack;Lkotlin/jvm/functions/Function0;)Ljava/lang/Object;
+	public static final field INSTANCE Lorg/polyfrost/oneconfig/libs/universal/UMatrixStack$Compat;
+	public final fun get ()Lorg/polyfrost/oneconfig/libs/universal/UMatrixStack;
+	public final fun runLegacyMethod (Lorg/polyfrost/oneconfig/libs/universal/UMatrixStack;Lkotlin/jvm/functions/Function0;)Ljava/lang/Object;
 }
 
-public final class cc/polyfrost/oneconfig/libs/universal/UMatrixStack$Entry {
+public final class org/polyfrost/oneconfig/libs/universal/UMatrixStack$Entry {
 	@1.17.1-forge,1.18.2-forge,1.19.2-forge
 	public fun <init> (Lcom/mojang/math/Matrix4f;Lcom/mojang/math/Matrix3f;)V
 	@1.17.1-forge,1.18.2-forge,1.19.2-forge
@@ -557,9 +557,9 @@ public final class cc/polyfrost/oneconfig/libs/universal/UMatrixStack$Entry {
 	@1.17.1-forge,1.18.2-forge,1.19.2-forge
 	public final fun component2 ()Lcom/mojang/math/Matrix3f;
 	@1.17.1-forge,1.18.2-forge,1.19.2-forge
-	public final fun copy (Lcom/mojang/math/Matrix4f;Lcom/mojang/math/Matrix3f;)Lcc/polyfrost/oneconfig/libs/universal/UMatrixStack$Entry;
+	public final fun copy (Lcom/mojang/math/Matrix4f;Lcom/mojang/math/Matrix3f;)Lorg/polyfrost/oneconfig/libs/universal/UMatrixStack$Entry;
 	@1.17.1-forge,1.18.2-forge,1.19.2-forge
-	public static synthetic fun copy$default (Lcc/polyfrost/oneconfig/libs/universal/UMatrixStack$Entry;Lcom/mojang/math/Matrix4f;Lcom/mojang/math/Matrix3f;ILjava/lang/Object;)Lcc/polyfrost/oneconfig/libs/universal/UMatrixStack$Entry;
+	public static synthetic fun copy$default (Lorg/polyfrost/oneconfig/libs/universal/UMatrixStack$Entry;Lcom/mojang/math/Matrix4f;Lcom/mojang/math/Matrix3f;ILjava/lang/Object;)Lorg/polyfrost/oneconfig/libs/universal/UMatrixStack$Entry;
 	@1.16.5-forge
 	public fun <init> (Lnet/minecraft/util/math/vector/Matrix4f;Lnet/minecraft/util/math/vector/Matrix3f;)V
 	@1.16.5-forge
@@ -567,9 +567,9 @@ public final class cc/polyfrost/oneconfig/libs/universal/UMatrixStack$Entry {
 	@1.16.5-forge
 	public final fun component2 ()Lnet/minecraft/util/math/vector/Matrix3f;
 	@1.16.5-forge
-	public final fun copy (Lnet/minecraft/util/math/vector/Matrix4f;Lnet/minecraft/util/math/vector/Matrix3f;)Lcc/polyfrost/oneconfig/libs/universal/UMatrixStack$Entry;
+	public final fun copy (Lnet/minecraft/util/math/vector/Matrix4f;Lnet/minecraft/util/math/vector/Matrix3f;)Lorg/polyfrost/oneconfig/libs/universal/UMatrixStack$Entry;
 	@1.16.5-forge
-	public static synthetic fun copy$default (Lcc/polyfrost/oneconfig/libs/universal/UMatrixStack$Entry;Lnet/minecraft/util/math/vector/Matrix4f;Lnet/minecraft/util/math/vector/Matrix3f;ILjava/lang/Object;)Lcc/polyfrost/oneconfig/libs/universal/UMatrixStack$Entry;
+	public static synthetic fun copy$default (Lorg/polyfrost/oneconfig/libs/universal/UMatrixStack$Entry;Lnet/minecraft/util/math/vector/Matrix4f;Lnet/minecraft/util/math/vector/Matrix3f;ILjava/lang/Object;)Lorg/polyfrost/oneconfig/libs/universal/UMatrixStack$Entry;
 	@1.16.5-fabric,1.17.1-fabric,1.18.2-fabric,1.19-fabric,1.19.1-fabric,1.19.2-fabric
 	public fun <init> (Lnet/minecraft/util/math/Matrix4f;Lnet/minecraft/util/math/Matrix3f;)V
 	@1.16.5-fabric,1.17.1-fabric,1.18.2-fabric,1.19-fabric,1.19.1-fabric,1.19.2-fabric
@@ -577,9 +577,9 @@ public final class cc/polyfrost/oneconfig/libs/universal/UMatrixStack$Entry {
 	@1.16.5-fabric,1.17.1-fabric,1.18.2-fabric,1.19-fabric,1.19.1-fabric,1.19.2-fabric
 	public final fun component2 ()Lnet/minecraft/util/math/Matrix3f;
 	@1.16.5-fabric,1.17.1-fabric,1.18.2-fabric,1.19-fabric,1.19.1-fabric,1.19.2-fabric
-	public final fun copy (Lnet/minecraft/util/math/Matrix4f;Lnet/minecraft/util/math/Matrix3f;)Lcc/polyfrost/oneconfig/libs/universal/UMatrixStack$Entry;
+	public final fun copy (Lnet/minecraft/util/math/Matrix4f;Lnet/minecraft/util/math/Matrix3f;)Lorg/polyfrost/oneconfig/libs/universal/UMatrixStack$Entry;
 	@1.16.5-fabric,1.17.1-fabric,1.18.2-fabric,1.19-fabric,1.19.1-fabric,1.19.2-fabric
-	public static synthetic fun copy$default (Lcc/polyfrost/oneconfig/libs/universal/UMatrixStack$Entry;Lnet/minecraft/util/math/Matrix4f;Lnet/minecraft/util/math/Matrix3f;ILjava/lang/Object;)Lcc/polyfrost/oneconfig/libs/universal/UMatrixStack$Entry;
+	public static synthetic fun copy$default (Lorg/polyfrost/oneconfig/libs/universal/UMatrixStack$Entry;Lnet/minecraft/util/math/Matrix4f;Lnet/minecraft/util/math/Matrix3f;ILjava/lang/Object;)Lorg/polyfrost/oneconfig/libs/universal/UMatrixStack$Entry;
 	@1.15.2-forge
 	public fun <init> (Lnet/minecraft/client/renderer/Matrix4f;Lnet/minecraft/client/renderer/Matrix3f;)V
 	@1.15.2-forge
@@ -587,9 +587,9 @@ public final class cc/polyfrost/oneconfig/libs/universal/UMatrixStack$Entry {
 	@1.15.2-forge
 	public final fun component2 ()Lnet/minecraft/client/renderer/Matrix3f;
 	@1.15.2-forge
-	public final fun copy (Lnet/minecraft/client/renderer/Matrix4f;Lnet/minecraft/client/renderer/Matrix3f;)Lcc/polyfrost/oneconfig/libs/universal/UMatrixStack$Entry;
+	public final fun copy (Lnet/minecraft/client/renderer/Matrix4f;Lnet/minecraft/client/renderer/Matrix3f;)Lorg/polyfrost/oneconfig/libs/universal/UMatrixStack$Entry;
 	@1.15.2-forge
-	public static synthetic fun copy$default (Lcc/polyfrost/oneconfig/libs/universal/UMatrixStack$Entry;Lnet/minecraft/client/renderer/Matrix4f;Lnet/minecraft/client/renderer/Matrix3f;ILjava/lang/Object;)Lcc/polyfrost/oneconfig/libs/universal/UMatrixStack$Entry;
+	public static synthetic fun copy$default (Lorg/polyfrost/oneconfig/libs/universal/UMatrixStack$Entry;Lnet/minecraft/client/renderer/Matrix4f;Lnet/minecraft/client/renderer/Matrix3f;ILjava/lang/Object;)Lorg/polyfrost/oneconfig/libs/universal/UMatrixStack$Entry;
 	@1.12.2-fabric,1.12.2-forge,1.8.9-fabric,1.8.9-forge
 	public fun <init> (Lorg/lwjgl/util/vector/Matrix4f;Lorg/lwjgl/util/vector/Matrix3f;)V
 	@1.12.2-fabric,1.12.2-forge,1.8.9-fabric,1.8.9-forge
@@ -597,10 +597,10 @@ public final class cc/polyfrost/oneconfig/libs/universal/UMatrixStack$Entry {
 	@1.12.2-fabric,1.12.2-forge,1.8.9-fabric,1.8.9-forge
 	public final fun component2 ()Lorg/lwjgl/util/vector/Matrix3f;
 	@1.12.2-fabric,1.12.2-forge,1.8.9-fabric,1.8.9-forge
-	public final fun copy (Lorg/lwjgl/util/vector/Matrix4f;Lorg/lwjgl/util/vector/Matrix3f;)Lcc/polyfrost/oneconfig/libs/universal/UMatrixStack$Entry;
+	public final fun copy (Lorg/lwjgl/util/vector/Matrix4f;Lorg/lwjgl/util/vector/Matrix3f;)Lorg/polyfrost/oneconfig/libs/universal/UMatrixStack$Entry;
 	@1.12.2-fabric,1.12.2-forge,1.8.9-fabric,1.8.9-forge
-	public static synthetic fun copy$default (Lcc/polyfrost/oneconfig/libs/universal/UMatrixStack$Entry;Lorg/lwjgl/util/vector/Matrix4f;Lorg/lwjgl/util/vector/Matrix3f;ILjava/lang/Object;)Lcc/polyfrost/oneconfig/libs/universal/UMatrixStack$Entry;
-	public final fun deepCopy ()Lcc/polyfrost/oneconfig/libs/universal/UMatrixStack$Entry;
+	public static synthetic fun copy$default (Lorg/polyfrost/oneconfig/libs/universal/UMatrixStack$Entry;Lorg/lwjgl/util/vector/Matrix4f;Lorg/lwjgl/util/vector/Matrix3f;ILjava/lang/Object;)Lorg/polyfrost/oneconfig/libs/universal/UMatrixStack$Entry;
+	public final fun deepCopy ()Lorg/polyfrost/oneconfig/libs/universal/UMatrixStack$Entry;
 	public fun equals (Ljava/lang/Object;)Z
 	@1.17.1-forge,1.18.2-forge,1.19.2-forge
 	public final fun getModel ()Lcom/mojang/math/Matrix4f;
@@ -633,8 +633,8 @@ public final class cc/polyfrost/oneconfig/libs/universal/UMatrixStack$Entry {
 	public fun toString ()Ljava/lang/String;
 }
 
-public final class cc/polyfrost/oneconfig/libs/universal/UMinecraft {
-	public static final field INSTANCE Lcc/polyfrost/oneconfig/libs/universal/UMinecraft;
+public final class org/polyfrost/oneconfig/libs/universal/UMinecraft {
+	public static final field INSTANCE Lorg/polyfrost/oneconfig/libs/universal/UMinecraft;
 	public static final field isRunningOnMac Z
 	@1.17.1-forge,1.18.2-forge,1.19.2-forge
 	public static final fun getChatGUI ()Lnet/minecraft/client/gui/components/ChatComponent;
@@ -693,34 +693,34 @@ public final class cc/polyfrost/oneconfig/libs/universal/UMinecraft {
 	public static final fun setGuiScale (I)V
 }
 
-public final class cc/polyfrost/oneconfig/libs/universal/UMouse {
-	public static final field INSTANCE Lcc/polyfrost/oneconfig/libs/universal/UMouse;
+public final class org/polyfrost/oneconfig/libs/universal/UMouse {
+	public static final field INSTANCE Lorg/polyfrost/oneconfig/libs/universal/UMouse;
 	public static final fun getScaledX ()D
 	public static final fun getScaledY ()D
 	public static final fun getTrueX ()D
 	public static final fun getTrueY ()D
 }
 
-public final class cc/polyfrost/oneconfig/libs/universal/UMouse$Raw {
-	public static final field INSTANCE Lcc/polyfrost/oneconfig/libs/universal/UMouse$Raw;
+public final class org/polyfrost/oneconfig/libs/universal/UMouse$Raw {
+	public static final field INSTANCE Lorg/polyfrost/oneconfig/libs/universal/UMouse$Raw;
 	public static final fun getX ()D
 	public static final fun getY ()D
 }
 
-public final class cc/polyfrost/oneconfig/libs/universal/UMouse$Scaled {
-	public static final field INSTANCE Lcc/polyfrost/oneconfig/libs/universal/UMouse$Scaled;
+public final class org/polyfrost/oneconfig/libs/universal/UMouse$Scaled {
+	public static final field INSTANCE Lorg/polyfrost/oneconfig/libs/universal/UMouse$Scaled;
 	public static final fun getX ()D
 	public static final fun getY ()D
 }
 
-public final class cc/polyfrost/oneconfig/libs/universal/UPacket {
-	public static final field INSTANCE Lcc/polyfrost/oneconfig/libs/universal/UPacket;
-	public static final fun sendActionBarMessage (Lcc/polyfrost/oneconfig/libs/universal/wrappers/message/UTextComponent;)V
-	public static final fun sendChatMessage (Lcc/polyfrost/oneconfig/libs/universal/wrappers/message/UTextComponent;)V
+public final class org/polyfrost/oneconfig/libs/universal/UPacket {
+	public static final field INSTANCE Lorg/polyfrost/oneconfig/libs/universal/UPacket;
+	public static final fun sendActionBarMessage (Lorg/polyfrost/oneconfig/libs/universal/wrappers/message/UTextComponent;)V
+	public static final fun sendChatMessage (Lorg/polyfrost/oneconfig/libs/universal/wrappers/message/UTextComponent;)V
 }
 
-public final class cc/polyfrost/oneconfig/libs/universal/UResolution {
-	public static final field INSTANCE Lcc/polyfrost/oneconfig/libs/universal/UResolution;
+public final class org/polyfrost/oneconfig/libs/universal/UResolution {
+	public static final field INSTANCE Lorg/polyfrost/oneconfig/libs/universal/UResolution;
 	public static final fun getScaleFactor ()D
 	public static final fun getScaledHeight ()I
 	public static final fun getScaledWidth ()I
@@ -731,15 +731,15 @@ public final class cc/polyfrost/oneconfig/libs/universal/UResolution {
 }
 
 @1.17.1-forge,1.18.2-forge,1.19.2-forge
-public abstract class cc/polyfrost/oneconfig/libs/universal/UScreen : net/minecraft/client/gui/screens/Screen {
-	public static final field Companion Lcc/polyfrost/oneconfig/libs/universal/UScreen$Companion;
+public abstract class org/polyfrost/oneconfig/libs/universal/UScreen : net/minecraft/client/gui/screens/Screen {
+	public static final field Companion Lorg/polyfrost/oneconfig/libs/universal/UScreen$Companion;
 	public fun <init> ()V
 	public fun <init> (Z)V
 	public fun <init> (ZI)V
 	public synthetic fun <init> (ZIILkotlin/jvm/internal/DefaultConstructorMarker;)V
 	public fun <init> (ZILjava/lang/String;)V
 	public synthetic fun <init> (ZILjava/lang/String;ILkotlin/jvm/internal/DefaultConstructorMarker;)V
-	public fun <init> (ZLcc/polyfrost/oneconfig/libs/universal/GuiScale;)V
+	public fun <init> (ZLorg/polyfrost/oneconfig/libs/universal/GuiScale;)V
 	public final fun charTyped (CI)Z
 	public static final fun displayScreen (Lnet/minecraft/client/gui/screens/Screen;)V
 	public static final fun getCurrentScreen ()Lnet/minecraft/client/gui/screens/Screen;
@@ -756,12 +756,12 @@ public abstract class cc/polyfrost/oneconfig/libs/universal/UScreen : net/minecr
 	public final fun mouseReleased (DDI)Z
 	public final fun mouseScrolled (DDD)Z
 	public fun onDrawBackground (I)V
-	public fun onDrawBackground (Lcc/polyfrost/oneconfig/libs/universal/UMatrixStack;I)V
-	public final fun onDrawBackgroundCompat (Lcc/polyfrost/oneconfig/libs/universal/UMatrixStack;I)V
+	public fun onDrawBackground (Lorg/polyfrost/oneconfig/libs/universal/UMatrixStack;I)V
+	public final fun onDrawBackgroundCompat (Lorg/polyfrost/oneconfig/libs/universal/UMatrixStack;I)V
 	public fun onDrawScreen (IIF)V
-	public fun onDrawScreen (Lcc/polyfrost/oneconfig/libs/universal/UMatrixStack;IIF)V
-	public fun onKeyPressed (ICLcc/polyfrost/oneconfig/libs/universal/UKeyboard$Modifiers;)V
-	public fun onKeyReleased (ICLcc/polyfrost/oneconfig/libs/universal/UKeyboard$Modifiers;)V
+	public fun onDrawScreen (Lorg/polyfrost/oneconfig/libs/universal/UMatrixStack;IIF)V
+	public fun onKeyPressed (ICLorg/polyfrost/oneconfig/libs/universal/UKeyboard$Modifiers;)V
+	public fun onKeyReleased (ICLorg/polyfrost/oneconfig/libs/universal/UKeyboard$Modifiers;)V
 	public fun onMouseClicked (DDI)V
 	public fun onMouseDragged (DDIJ)V
 	public fun onMouseReleased (DDI)V
@@ -779,15 +779,15 @@ public abstract class cc/polyfrost/oneconfig/libs/universal/UScreen : net/minecr
 }
 
 @1.12.2-forge,1.8.9-forge
-public abstract class cc/polyfrost/oneconfig/libs/universal/UScreen : net/minecraft/client/gui/GuiScreen {
-	public static final field Companion Lcc/polyfrost/oneconfig/libs/universal/UScreen$Companion;
+public abstract class org/polyfrost/oneconfig/libs/universal/UScreen : net/minecraft/client/gui/GuiScreen {
+	public static final field Companion Lorg/polyfrost/oneconfig/libs/universal/UScreen$Companion;
 	public fun <init> ()V
 	public fun <init> (Z)V
 	public fun <init> (ZI)V
 	public synthetic fun <init> (ZIILkotlin/jvm/internal/DefaultConstructorMarker;)V
 	public fun <init> (ZILjava/lang/String;)V
 	public synthetic fun <init> (ZILjava/lang/String;ILkotlin/jvm/internal/DefaultConstructorMarker;)V
-	public fun <init> (ZLcc/polyfrost/oneconfig/libs/universal/GuiScale;)V
+	public fun <init> (ZLorg/polyfrost/oneconfig/libs/universal/GuiScale;)V
 	public static final fun displayScreen (Lnet/minecraft/client/gui/GuiScreen;)V
 	public final fun drawScreen (IIF)V
 	public final fun drawWorldBackground (I)V
@@ -803,13 +803,13 @@ public abstract class cc/polyfrost/oneconfig/libs/universal/UScreen : net/minecr
 	protected final fun mouseClicked (III)V
 	protected final fun mouseReleased (III)V
 	public fun onDrawBackground (I)V
-	public fun onDrawBackground (Lcc/polyfrost/oneconfig/libs/universal/UMatrixStack;I)V
-	public final fun onDrawBackgroundCompat (Lcc/polyfrost/oneconfig/libs/universal/UMatrixStack;I)V
+	public fun onDrawBackground (Lorg/polyfrost/oneconfig/libs/universal/UMatrixStack;I)V
+	public final fun onDrawBackgroundCompat (Lorg/polyfrost/oneconfig/libs/universal/UMatrixStack;I)V
 	public fun onDrawScreen (IIF)V
-	public fun onDrawScreen (Lcc/polyfrost/oneconfig/libs/universal/UMatrixStack;IIF)V
+	public fun onDrawScreen (Lorg/polyfrost/oneconfig/libs/universal/UMatrixStack;IIF)V
 	public final fun onGuiClosed ()V
-	public fun onKeyPressed (ICLcc/polyfrost/oneconfig/libs/universal/UKeyboard$Modifiers;)V
-	public fun onKeyReleased (ICLcc/polyfrost/oneconfig/libs/universal/UKeyboard$Modifiers;)V
+	public fun onKeyPressed (ICLorg/polyfrost/oneconfig/libs/universal/UKeyboard$Modifiers;)V
+	public fun onKeyReleased (ICLorg/polyfrost/oneconfig/libs/universal/UKeyboard$Modifiers;)V
 	public fun onMouseClicked (DDI)V
 	public fun onMouseDragged (DDIJ)V
 	public fun onMouseReleased (DDI)V
@@ -824,15 +824,15 @@ public abstract class cc/polyfrost/oneconfig/libs/universal/UScreen : net/minecr
 }
 
 @1.12.2-fabric,1.15.2-forge,1.16.5-fabric,1.16.5-forge,1.17.1-fabric,1.18.2-fabric,1.19-fabric,1.19.1-fabric,1.19.2-fabric,1.8.9-fabric
-public abstract class cc/polyfrost/oneconfig/libs/universal/UScreen : net/minecraft/client/gui/screen/Screen {
-	public static final field Companion Lcc/polyfrost/oneconfig/libs/universal/UScreen$Companion;
+public abstract class org/polyfrost/oneconfig/libs/universal/UScreen : net/minecraft/client/gui/screen/Screen {
+	public static final field Companion Lorg/polyfrost/oneconfig/libs/universal/UScreen$Companion;
 	public fun <init> ()V
 	public fun <init> (Z)V
 	public fun <init> (ZI)V
 	public synthetic fun <init> (ZIILkotlin/jvm/internal/DefaultConstructorMarker;)V
 	public fun <init> (ZILjava/lang/String;)V
 	public synthetic fun <init> (ZILjava/lang/String;ILkotlin/jvm/internal/DefaultConstructorMarker;)V
-	public fun <init> (ZLcc/polyfrost/oneconfig/libs/universal/GuiScale;)V
+	public fun <init> (ZLorg/polyfrost/oneconfig/libs/universal/GuiScale;)V
 	@1.15.2-forge,1.16.5-fabric,1.16.5-forge,1.17.1-fabric,1.18.2-fabric,1.19-fabric,1.19.1-fabric,1.19.2-fabric
 	public final fun charTyped (CI)Z
 	public static final fun displayScreen (Lnet/minecraft/client/gui/screen/Screen;)V
@@ -874,12 +874,12 @@ public abstract class cc/polyfrost/oneconfig/libs/universal/UScreen : net/minecr
 	@1.12.2-fabric,1.8.9-fabric
 	protected final fun mouseReleased (III)V
 	public fun onDrawBackground (I)V
-	public fun onDrawBackground (Lcc/polyfrost/oneconfig/libs/universal/UMatrixStack;I)V
-	public final fun onDrawBackgroundCompat (Lcc/polyfrost/oneconfig/libs/universal/UMatrixStack;I)V
+	public fun onDrawBackground (Lorg/polyfrost/oneconfig/libs/universal/UMatrixStack;I)V
+	public final fun onDrawBackgroundCompat (Lorg/polyfrost/oneconfig/libs/universal/UMatrixStack;I)V
 	public fun onDrawScreen (IIF)V
-	public fun onDrawScreen (Lcc/polyfrost/oneconfig/libs/universal/UMatrixStack;IIF)V
-	public fun onKeyPressed (ICLcc/polyfrost/oneconfig/libs/universal/UKeyboard$Modifiers;)V
-	public fun onKeyReleased (ICLcc/polyfrost/oneconfig/libs/universal/UKeyboard$Modifiers;)V
+	public fun onDrawScreen (Lorg/polyfrost/oneconfig/libs/universal/UMatrixStack;IIF)V
+	public fun onKeyPressed (ICLorg/polyfrost/oneconfig/libs/universal/UKeyboard$Modifiers;)V
+	public fun onKeyReleased (ICLorg/polyfrost/oneconfig/libs/universal/UKeyboard$Modifiers;)V
 	public fun onMouseClicked (DDI)V
 	public fun onMouseDragged (DDIJ)V
 	public fun onMouseReleased (DDI)V
@@ -907,7 +907,7 @@ public abstract class cc/polyfrost/oneconfig/libs/universal/UScreen : net/minecr
 	public fun updateGuiScale ()V
 }
 
-public final class cc/polyfrost/oneconfig/libs/universal/UScreen$Companion {
+public final class org/polyfrost/oneconfig/libs/universal/UScreen$Companion {
 	@1.17.1-forge,1.18.2-forge,1.19.2-forge
 	public final fun displayScreen (Lnet/minecraft/client/gui/screens/Screen;)V
 	@1.17.1-forge,1.18.2-forge,1.19.2-forge
@@ -922,11 +922,11 @@ public final class cc/polyfrost/oneconfig/libs/universal/UScreen$Companion {
 	public final fun getCurrentScreen ()Lnet/minecraft/client/gui/screen/Screen;
 }
 
-public final class cc/polyfrost/oneconfig/libs/universal/USound {
-	public static final field INSTANCE Lcc/polyfrost/oneconfig/libs/universal/USound;
+public final class org/polyfrost/oneconfig/libs/universal/USound {
+	public static final field INSTANCE Lorg/polyfrost/oneconfig/libs/universal/USound;
 	public final fun playButtonPress ()V
 	public final fun playButtonPress (F)V
-	public static synthetic fun playButtonPress$default (Lcc/polyfrost/oneconfig/libs/universal/USound;FILjava/lang/Object;)V
+	public static synthetic fun playButtonPress$default (Lorg/polyfrost/oneconfig/libs/universal/USound;FILjava/lang/Object;)V
 	public final fun playExpSound ()V
 	public final fun playLevelupSound ()V
 	public final fun playPlingSound ()V
@@ -944,142 +944,142 @@ public final class cc/polyfrost/oneconfig/libs/universal/USound {
 	public final fun playSoundStatic (Lnet/minecraft/client/sound/SoundEvent;FF)V
 }
 
-public final class cc/polyfrost/oneconfig/libs/universal/shader/BlendState {
-	public static final field Companion Lcc/polyfrost/oneconfig/libs/universal/shader/BlendState$Companion;
-	public static final field DISABLED Lcc/polyfrost/oneconfig/libs/universal/shader/BlendState;
-	public static final field NORMAL Lcc/polyfrost/oneconfig/libs/universal/shader/BlendState;
-	public fun <init> (Lcc/polyfrost/oneconfig/libs/universal/shader/BlendState$Equation;Lcc/polyfrost/oneconfig/libs/universal/shader/BlendState$Param;Lcc/polyfrost/oneconfig/libs/universal/shader/BlendState$Param;Lcc/polyfrost/oneconfig/libs/universal/shader/BlendState$Param;Lcc/polyfrost/oneconfig/libs/universal/shader/BlendState$Param;Z)V
-	public synthetic fun <init> (Lcc/polyfrost/oneconfig/libs/universal/shader/BlendState$Equation;Lcc/polyfrost/oneconfig/libs/universal/shader/BlendState$Param;Lcc/polyfrost/oneconfig/libs/universal/shader/BlendState$Param;Lcc/polyfrost/oneconfig/libs/universal/shader/BlendState$Param;Lcc/polyfrost/oneconfig/libs/universal/shader/BlendState$Param;ZILkotlin/jvm/internal/DefaultConstructorMarker;)V
+public final class org/polyfrost/oneconfig/libs/universal/shader/BlendState {
+	public static final field Companion Lorg/polyfrost/oneconfig/libs/universal/shader/BlendState$Companion;
+	public static final field DISABLED Lorg/polyfrost/oneconfig/libs/universal/shader/BlendState;
+	public static final field NORMAL Lorg/polyfrost/oneconfig/libs/universal/shader/BlendState;
+	public fun <init> (Lorg/polyfrost/oneconfig/libs/universal/shader/BlendState$Equation;Lorg/polyfrost/oneconfig/libs/universal/shader/BlendState$Param;Lorg/polyfrost/oneconfig/libs/universal/shader/BlendState$Param;Lorg/polyfrost/oneconfig/libs/universal/shader/BlendState$Param;Lorg/polyfrost/oneconfig/libs/universal/shader/BlendState$Param;Z)V
+	public synthetic fun <init> (Lorg/polyfrost/oneconfig/libs/universal/shader/BlendState$Equation;Lorg/polyfrost/oneconfig/libs/universal/shader/BlendState$Param;Lorg/polyfrost/oneconfig/libs/universal/shader/BlendState$Param;Lorg/polyfrost/oneconfig/libs/universal/shader/BlendState$Param;Lorg/polyfrost/oneconfig/libs/universal/shader/BlendState$Param;ZILkotlin/jvm/internal/DefaultConstructorMarker;)V
 	public final fun activate ()V
-	public static final fun active ()Lcc/polyfrost/oneconfig/libs/universal/shader/BlendState;
-	public final fun component1 ()Lcc/polyfrost/oneconfig/libs/universal/shader/BlendState$Equation;
-	public final fun component2 ()Lcc/polyfrost/oneconfig/libs/universal/shader/BlendState$Param;
-	public final fun component3 ()Lcc/polyfrost/oneconfig/libs/universal/shader/BlendState$Param;
-	public final fun component4 ()Lcc/polyfrost/oneconfig/libs/universal/shader/BlendState$Param;
-	public final fun component5 ()Lcc/polyfrost/oneconfig/libs/universal/shader/BlendState$Param;
+	public static final fun active ()Lorg/polyfrost/oneconfig/libs/universal/shader/BlendState;
+	public final fun component1 ()Lorg/polyfrost/oneconfig/libs/universal/shader/BlendState$Equation;
+	public final fun component2 ()Lorg/polyfrost/oneconfig/libs/universal/shader/BlendState$Param;
+	public final fun component3 ()Lorg/polyfrost/oneconfig/libs/universal/shader/BlendState$Param;
+	public final fun component4 ()Lorg/polyfrost/oneconfig/libs/universal/shader/BlendState$Param;
+	public final fun component5 ()Lorg/polyfrost/oneconfig/libs/universal/shader/BlendState$Param;
 	public final fun component6 ()Z
-	public final fun copy (Lcc/polyfrost/oneconfig/libs/universal/shader/BlendState$Equation;Lcc/polyfrost/oneconfig/libs/universal/shader/BlendState$Param;Lcc/polyfrost/oneconfig/libs/universal/shader/BlendState$Param;Lcc/polyfrost/oneconfig/libs/universal/shader/BlendState$Param;Lcc/polyfrost/oneconfig/libs/universal/shader/BlendState$Param;Z)Lcc/polyfrost/oneconfig/libs/universal/shader/BlendState;
-	public static synthetic fun copy$default (Lcc/polyfrost/oneconfig/libs/universal/shader/BlendState;Lcc/polyfrost/oneconfig/libs/universal/shader/BlendState$Equation;Lcc/polyfrost/oneconfig/libs/universal/shader/BlendState$Param;Lcc/polyfrost/oneconfig/libs/universal/shader/BlendState$Param;Lcc/polyfrost/oneconfig/libs/universal/shader/BlendState$Param;Lcc/polyfrost/oneconfig/libs/universal/shader/BlendState$Param;ZILjava/lang/Object;)Lcc/polyfrost/oneconfig/libs/universal/shader/BlendState;
+	public final fun copy (Lorg/polyfrost/oneconfig/libs/universal/shader/BlendState$Equation;Lorg/polyfrost/oneconfig/libs/universal/shader/BlendState$Param;Lorg/polyfrost/oneconfig/libs/universal/shader/BlendState$Param;Lorg/polyfrost/oneconfig/libs/universal/shader/BlendState$Param;Lorg/polyfrost/oneconfig/libs/universal/shader/BlendState$Param;Z)Lorg/polyfrost/oneconfig/libs/universal/shader/BlendState;
+	public static synthetic fun copy$default (Lorg/polyfrost/oneconfig/libs/universal/shader/BlendState;Lorg/polyfrost/oneconfig/libs/universal/shader/BlendState$Equation;Lorg/polyfrost/oneconfig/libs/universal/shader/BlendState$Param;Lorg/polyfrost/oneconfig/libs/universal/shader/BlendState$Param;Lorg/polyfrost/oneconfig/libs/universal/shader/BlendState$Param;Lorg/polyfrost/oneconfig/libs/universal/shader/BlendState$Param;ZILjava/lang/Object;)Lorg/polyfrost/oneconfig/libs/universal/shader/BlendState;
 	public fun equals (Ljava/lang/Object;)Z
-	public final fun getDstAlpha ()Lcc/polyfrost/oneconfig/libs/universal/shader/BlendState$Param;
-	public final fun getDstRgb ()Lcc/polyfrost/oneconfig/libs/universal/shader/BlendState$Param;
+	public final fun getDstAlpha ()Lorg/polyfrost/oneconfig/libs/universal/shader/BlendState$Param;
+	public final fun getDstRgb ()Lorg/polyfrost/oneconfig/libs/universal/shader/BlendState$Param;
 	public final fun getEnabled ()Z
-	public final fun getEquation ()Lcc/polyfrost/oneconfig/libs/universal/shader/BlendState$Equation;
+	public final fun getEquation ()Lorg/polyfrost/oneconfig/libs/universal/shader/BlendState$Equation;
 	@1.17.1-forge,1.18.2-forge,1.19.2-forge
 	public final fun getMc ()Lcom/mojang/blaze3d/shaders/BlendMode;
 	@1.17.1-fabric,1.18.2-fabric,1.19-fabric,1.19.1-fabric,1.19.2-fabric
 	public final fun getMc ()Lnet/minecraft/client/gl/GlBlendState;
 	public final fun getSeparate ()Z
-	public final fun getSrcAlpha ()Lcc/polyfrost/oneconfig/libs/universal/shader/BlendState$Param;
-	public final fun getSrcRgb ()Lcc/polyfrost/oneconfig/libs/universal/shader/BlendState$Param;
+	public final fun getSrcAlpha ()Lorg/polyfrost/oneconfig/libs/universal/shader/BlendState$Param;
+	public final fun getSrcRgb ()Lorg/polyfrost/oneconfig/libs/universal/shader/BlendState$Param;
 	public fun hashCode ()I
 	public fun toString ()Ljava/lang/String;
 }
 
-public final class cc/polyfrost/oneconfig/libs/universal/shader/BlendState$Companion {
-	public final fun active ()Lcc/polyfrost/oneconfig/libs/universal/shader/BlendState;
+public final class org/polyfrost/oneconfig/libs/universal/shader/BlendState$Companion {
+	public final fun active ()Lorg/polyfrost/oneconfig/libs/universal/shader/BlendState;
 }
 
-public final class cc/polyfrost/oneconfig/libs/universal/shader/BlendState$Equation : java/lang/Enum {
-	public static final field ADD Lcc/polyfrost/oneconfig/libs/universal/shader/BlendState$Equation;
-	public static final field Companion Lcc/polyfrost/oneconfig/libs/universal/shader/BlendState$Equation$Companion;
-	public static final field MAX Lcc/polyfrost/oneconfig/libs/universal/shader/BlendState$Equation;
-	public static final field MIN Lcc/polyfrost/oneconfig/libs/universal/shader/BlendState$Equation;
-	public static final field REVERSE_SUBTRACT Lcc/polyfrost/oneconfig/libs/universal/shader/BlendState$Equation;
-	public static final field SUBTRACT Lcc/polyfrost/oneconfig/libs/universal/shader/BlendState$Equation;
-	public static final fun fromGl (I)Lcc/polyfrost/oneconfig/libs/universal/shader/BlendState$Equation;
-	public static fun valueOf (Ljava/lang/String;)Lcc/polyfrost/oneconfig/libs/universal/shader/BlendState$Equation;
-	public static fun values ()[Lcc/polyfrost/oneconfig/libs/universal/shader/BlendState$Equation;
+public final class org/polyfrost/oneconfig/libs/universal/shader/BlendState$Equation : java/lang/Enum {
+	public static final field ADD Lorg/polyfrost/oneconfig/libs/universal/shader/BlendState$Equation;
+	public static final field Companion Lorg/polyfrost/oneconfig/libs/universal/shader/BlendState$Equation$Companion;
+	public static final field MAX Lorg/polyfrost/oneconfig/libs/universal/shader/BlendState$Equation;
+	public static final field MIN Lorg/polyfrost/oneconfig/libs/universal/shader/BlendState$Equation;
+	public static final field REVERSE_SUBTRACT Lorg/polyfrost/oneconfig/libs/universal/shader/BlendState$Equation;
+	public static final field SUBTRACT Lorg/polyfrost/oneconfig/libs/universal/shader/BlendState$Equation;
+	public static final fun fromGl (I)Lorg/polyfrost/oneconfig/libs/universal/shader/BlendState$Equation;
+	public static fun valueOf (Ljava/lang/String;)Lorg/polyfrost/oneconfig/libs/universal/shader/BlendState$Equation;
+	public static fun values ()[Lorg/polyfrost/oneconfig/libs/universal/shader/BlendState$Equation;
 }
 
-public final class cc/polyfrost/oneconfig/libs/universal/shader/BlendState$Equation$Companion {
-	public final fun fromGl (I)Lcc/polyfrost/oneconfig/libs/universal/shader/BlendState$Equation;
+public final class org/polyfrost/oneconfig/libs/universal/shader/BlendState$Equation$Companion {
+	public final fun fromGl (I)Lorg/polyfrost/oneconfig/libs/universal/shader/BlendState$Equation;
 }
 
-public final class cc/polyfrost/oneconfig/libs/universal/shader/BlendState$Param : java/lang/Enum {
-	public static final field Companion Lcc/polyfrost/oneconfig/libs/universal/shader/BlendState$Param$Companion;
-	public static final field DST_ALPHA Lcc/polyfrost/oneconfig/libs/universal/shader/BlendState$Param;
-	public static final field DST_COLOR Lcc/polyfrost/oneconfig/libs/universal/shader/BlendState$Param;
-	public static final field ONE Lcc/polyfrost/oneconfig/libs/universal/shader/BlendState$Param;
-	public static final field ONE_MINUS_DST_ALPHA Lcc/polyfrost/oneconfig/libs/universal/shader/BlendState$Param;
-	public static final field ONE_MINUS_DST_COLOR Lcc/polyfrost/oneconfig/libs/universal/shader/BlendState$Param;
-	public static final field ONE_MINUS_SRC_ALPHA Lcc/polyfrost/oneconfig/libs/universal/shader/BlendState$Param;
-	public static final field ONE_MINUS_SRC_COLOR Lcc/polyfrost/oneconfig/libs/universal/shader/BlendState$Param;
-	public static final field SRC_ALPHA Lcc/polyfrost/oneconfig/libs/universal/shader/BlendState$Param;
-	public static final field SRC_COLOR Lcc/polyfrost/oneconfig/libs/universal/shader/BlendState$Param;
-	public static final field ZERO Lcc/polyfrost/oneconfig/libs/universal/shader/BlendState$Param;
-	public static final fun fromGl (I)Lcc/polyfrost/oneconfig/libs/universal/shader/BlendState$Param;
-	public static fun valueOf (Ljava/lang/String;)Lcc/polyfrost/oneconfig/libs/universal/shader/BlendState$Param;
-	public static fun values ()[Lcc/polyfrost/oneconfig/libs/universal/shader/BlendState$Param;
+public final class org/polyfrost/oneconfig/libs/universal/shader/BlendState$Param : java/lang/Enum {
+	public static final field Companion Lorg/polyfrost/oneconfig/libs/universal/shader/BlendState$Param$Companion;
+	public static final field DST_ALPHA Lorg/polyfrost/oneconfig/libs/universal/shader/BlendState$Param;
+	public static final field DST_COLOR Lorg/polyfrost/oneconfig/libs/universal/shader/BlendState$Param;
+	public static final field ONE Lorg/polyfrost/oneconfig/libs/universal/shader/BlendState$Param;
+	public static final field ONE_MINUS_DST_ALPHA Lorg/polyfrost/oneconfig/libs/universal/shader/BlendState$Param;
+	public static final field ONE_MINUS_DST_COLOR Lorg/polyfrost/oneconfig/libs/universal/shader/BlendState$Param;
+	public static final field ONE_MINUS_SRC_ALPHA Lorg/polyfrost/oneconfig/libs/universal/shader/BlendState$Param;
+	public static final field ONE_MINUS_SRC_COLOR Lorg/polyfrost/oneconfig/libs/universal/shader/BlendState$Param;
+	public static final field SRC_ALPHA Lorg/polyfrost/oneconfig/libs/universal/shader/BlendState$Param;
+	public static final field SRC_COLOR Lorg/polyfrost/oneconfig/libs/universal/shader/BlendState$Param;
+	public static final field ZERO Lorg/polyfrost/oneconfig/libs/universal/shader/BlendState$Param;
+	public static final fun fromGl (I)Lorg/polyfrost/oneconfig/libs/universal/shader/BlendState$Param;
+	public static fun valueOf (Ljava/lang/String;)Lorg/polyfrost/oneconfig/libs/universal/shader/BlendState$Param;
+	public static fun values ()[Lorg/polyfrost/oneconfig/libs/universal/shader/BlendState$Param;
 }
 
-public final class cc/polyfrost/oneconfig/libs/universal/shader/BlendState$Param$Companion {
-	public final fun fromGl (I)Lcc/polyfrost/oneconfig/libs/universal/shader/BlendState$Param;
+public final class org/polyfrost/oneconfig/libs/universal/shader/BlendState$Param$Companion {
+	public final fun fromGl (I)Lorg/polyfrost/oneconfig/libs/universal/shader/BlendState$Param;
 }
 
-public abstract interface class cc/polyfrost/oneconfig/libs/universal/shader/Float2Uniform : cc/polyfrost/oneconfig/libs/universal/shader/ShaderUniform {
+public abstract interface class org/polyfrost/oneconfig/libs/universal/shader/Float2Uniform : org/polyfrost/oneconfig/libs/universal/shader/ShaderUniform {
 	public abstract fun setValue (FF)V
 }
 
-public abstract interface class cc/polyfrost/oneconfig/libs/universal/shader/Float3Uniform : cc/polyfrost/oneconfig/libs/universal/shader/ShaderUniform {
+public abstract interface class org/polyfrost/oneconfig/libs/universal/shader/Float3Uniform : org/polyfrost/oneconfig/libs/universal/shader/ShaderUniform {
 	public abstract fun setValue (FFF)V
 }
 
-public abstract interface class cc/polyfrost/oneconfig/libs/universal/shader/Float4Uniform : cc/polyfrost/oneconfig/libs/universal/shader/ShaderUniform {
+public abstract interface class org/polyfrost/oneconfig/libs/universal/shader/Float4Uniform : org/polyfrost/oneconfig/libs/universal/shader/ShaderUniform {
 	public abstract fun setValue (FFFF)V
 }
 
-public abstract interface class cc/polyfrost/oneconfig/libs/universal/shader/FloatMatrixUniform : cc/polyfrost/oneconfig/libs/universal/shader/ShaderUniform {
+public abstract interface class org/polyfrost/oneconfig/libs/universal/shader/FloatMatrixUniform : org/polyfrost/oneconfig/libs/universal/shader/ShaderUniform {
 	public abstract fun setValue ([F)V
 }
 
-public abstract interface class cc/polyfrost/oneconfig/libs/universal/shader/FloatUniform : cc/polyfrost/oneconfig/libs/universal/shader/ShaderUniform {
+public abstract interface class org/polyfrost/oneconfig/libs/universal/shader/FloatUniform : org/polyfrost/oneconfig/libs/universal/shader/ShaderUniform {
 	public abstract fun setValue (F)V
 }
 
-public abstract interface class cc/polyfrost/oneconfig/libs/universal/shader/IntUniform : cc/polyfrost/oneconfig/libs/universal/shader/ShaderUniform {
+public abstract interface class org/polyfrost/oneconfig/libs/universal/shader/IntUniform : org/polyfrost/oneconfig/libs/universal/shader/ShaderUniform {
 	public abstract fun setValue (I)V
 }
 
-public abstract interface class cc/polyfrost/oneconfig/libs/universal/shader/SamplerUniform : cc/polyfrost/oneconfig/libs/universal/shader/ShaderUniform {
+public abstract interface class org/polyfrost/oneconfig/libs/universal/shader/SamplerUniform : org/polyfrost/oneconfig/libs/universal/shader/ShaderUniform {
 	public abstract fun setValue (I)V
 }
 
-public abstract interface class cc/polyfrost/oneconfig/libs/universal/shader/ShaderUniform {
+public abstract interface class org/polyfrost/oneconfig/libs/universal/shader/ShaderUniform {
 	public abstract fun getLocation ()I
 }
 
-public abstract interface class cc/polyfrost/oneconfig/libs/universal/shader/UShader {
-	public static final field Companion Lcc/polyfrost/oneconfig/libs/universal/shader/UShader$Companion;
+public abstract interface class org/polyfrost/oneconfig/libs/universal/shader/UShader {
+	public static final field Companion Lorg/polyfrost/oneconfig/libs/universal/shader/UShader$Companion;
 	public abstract fun bind ()V
-	public fun getFloat2Uniform (Ljava/lang/String;)Lcc/polyfrost/oneconfig/libs/universal/shader/Float2Uniform;
-	public abstract fun getFloat2UniformOrNull (Ljava/lang/String;)Lcc/polyfrost/oneconfig/libs/universal/shader/Float2Uniform;
-	public fun getFloat3Uniform (Ljava/lang/String;)Lcc/polyfrost/oneconfig/libs/universal/shader/Float3Uniform;
-	public abstract fun getFloat3UniformOrNull (Ljava/lang/String;)Lcc/polyfrost/oneconfig/libs/universal/shader/Float3Uniform;
-	public fun getFloat4Uniform (Ljava/lang/String;)Lcc/polyfrost/oneconfig/libs/universal/shader/Float4Uniform;
-	public abstract fun getFloat4UniformOrNull (Ljava/lang/String;)Lcc/polyfrost/oneconfig/libs/universal/shader/Float4Uniform;
-	public fun getFloatMatrixUniform (Ljava/lang/String;)Lcc/polyfrost/oneconfig/libs/universal/shader/FloatMatrixUniform;
-	public abstract fun getFloatMatrixUniformOrNull (Ljava/lang/String;)Lcc/polyfrost/oneconfig/libs/universal/shader/FloatMatrixUniform;
-	public fun getFloatUniform (Ljava/lang/String;)Lcc/polyfrost/oneconfig/libs/universal/shader/FloatUniform;
-	public abstract fun getFloatUniformOrNull (Ljava/lang/String;)Lcc/polyfrost/oneconfig/libs/universal/shader/FloatUniform;
-	public fun getIntUniform (Ljava/lang/String;)Lcc/polyfrost/oneconfig/libs/universal/shader/IntUniform;
-	public abstract fun getIntUniformOrNull (Ljava/lang/String;)Lcc/polyfrost/oneconfig/libs/universal/shader/IntUniform;
-	public fun getSamplerUniform (Ljava/lang/String;)Lcc/polyfrost/oneconfig/libs/universal/shader/SamplerUniform;
-	public abstract fun getSamplerUniformOrNull (Ljava/lang/String;)Lcc/polyfrost/oneconfig/libs/universal/shader/SamplerUniform;
+	public fun getFloat2Uniform (Ljava/lang/String;)Lorg/polyfrost/oneconfig/libs/universal/shader/Float2Uniform;
+	public abstract fun getFloat2UniformOrNull (Ljava/lang/String;)Lorg/polyfrost/oneconfig/libs/universal/shader/Float2Uniform;
+	public fun getFloat3Uniform (Ljava/lang/String;)Lorg/polyfrost/oneconfig/libs/universal/shader/Float3Uniform;
+	public abstract fun getFloat3UniformOrNull (Ljava/lang/String;)Lorg/polyfrost/oneconfig/libs/universal/shader/Float3Uniform;
+	public fun getFloat4Uniform (Ljava/lang/String;)Lorg/polyfrost/oneconfig/libs/universal/shader/Float4Uniform;
+	public abstract fun getFloat4UniformOrNull (Ljava/lang/String;)Lorg/polyfrost/oneconfig/libs/universal/shader/Float4Uniform;
+	public fun getFloatMatrixUniform (Ljava/lang/String;)Lorg/polyfrost/oneconfig/libs/universal/shader/FloatMatrixUniform;
+	public abstract fun getFloatMatrixUniformOrNull (Ljava/lang/String;)Lorg/polyfrost/oneconfig/libs/universal/shader/FloatMatrixUniform;
+	public fun getFloatUniform (Ljava/lang/String;)Lorg/polyfrost/oneconfig/libs/universal/shader/FloatUniform;
+	public abstract fun getFloatUniformOrNull (Ljava/lang/String;)Lorg/polyfrost/oneconfig/libs/universal/shader/FloatUniform;
+	public fun getIntUniform (Ljava/lang/String;)Lorg/polyfrost/oneconfig/libs/universal/shader/IntUniform;
+	public abstract fun getIntUniformOrNull (Ljava/lang/String;)Lorg/polyfrost/oneconfig/libs/universal/shader/IntUniform;
+	public fun getSamplerUniform (Ljava/lang/String;)Lorg/polyfrost/oneconfig/libs/universal/shader/SamplerUniform;
+	public abstract fun getSamplerUniformOrNull (Ljava/lang/String;)Lorg/polyfrost/oneconfig/libs/universal/shader/SamplerUniform;
 	public abstract fun getUsable ()Z
 	public abstract fun unbind ()V
 }
 
-public final class cc/polyfrost/oneconfig/libs/universal/shader/UShader$Companion {
-	public final fun fromLegacyShader (Ljava/lang/String;Ljava/lang/String;Lcc/polyfrost/oneconfig/libs/universal/shader/BlendState;)Lcc/polyfrost/oneconfig/libs/universal/shader/UShader;
+public final class org/polyfrost/oneconfig/libs/universal/shader/UShader$Companion {
+	public final fun fromLegacyShader (Ljava/lang/String;Ljava/lang/String;Lorg/polyfrost/oneconfig/libs/universal/shader/BlendState;)Lorg/polyfrost/oneconfig/libs/universal/shader/UShader;
 	@1.17.1-forge,1.18.2-forge,1.19.2-forge
-	public final fun fromMcShader (Lnet/minecraft/client/renderer/ShaderInstance;Lcc/polyfrost/oneconfig/libs/universal/shader/BlendState;)Lcc/polyfrost/oneconfig/libs/universal/shader/UShader;
+	public final fun fromMcShader (Lnet/minecraft/client/renderer/ShaderInstance;Lorg/polyfrost/oneconfig/libs/universal/shader/BlendState;)Lorg/polyfrost/oneconfig/libs/universal/shader/UShader;
 	@1.17.1-fabric,1.18.2-fabric,1.19-fabric,1.19.1-fabric,1.19.2-fabric
-	public final fun fromMcShader (Lnet/minecraft/client/render/Shader;Lcc/polyfrost/oneconfig/libs/universal/shader/BlendState;)Lcc/polyfrost/oneconfig/libs/universal/shader/UShader;
+	public final fun fromMcShader (Lnet/minecraft/client/render/Shader;Lorg/polyfrost/oneconfig/libs/universal/shader/BlendState;)Lorg/polyfrost/oneconfig/libs/universal/shader/UShader;
 }
 
 @1.15.2-forge,1.16.5-forge
-public final class cc/polyfrost/oneconfig/libs/universal/utils/ReleasedDynamicTexture : net/minecraft/client/renderer/texture/Texture {
+public final class org/polyfrost/oneconfig/libs/universal/utils/ReleasedDynamicTexture : net/minecraft/client/renderer/texture/Texture {
 	public fun <init> (II)V
 	public fun <init> (Lnet/minecraft/client/renderer/texture/NativeImage;)V
 	@1.16.5-forge
@@ -1097,18 +1097,18 @@ public final class cc/polyfrost/oneconfig/libs/universal/utils/ReleasedDynamicTe
 }
 
 @1.12.2-fabric,1.12.2-forge,1.8.9-fabric,1.8.9-forge
-public final class cc/polyfrost/oneconfig/libs/universal/shader/UShader$DefaultImpls {
-	public static fun getFloat2Uniform (Lcc/polyfrost/oneconfig/libs/universal/shader/UShader;Ljava/lang/String;)Lcc/polyfrost/oneconfig/libs/universal/shader/Float2Uniform;
-	public static fun getFloat3Uniform (Lcc/polyfrost/oneconfig/libs/universal/shader/UShader;Ljava/lang/String;)Lcc/polyfrost/oneconfig/libs/universal/shader/Float3Uniform;
-	public static fun getFloat4Uniform (Lcc/polyfrost/oneconfig/libs/universal/shader/UShader;Ljava/lang/String;)Lcc/polyfrost/oneconfig/libs/universal/shader/Float4Uniform;
-	public static fun getFloatMatrixUniform (Lcc/polyfrost/oneconfig/libs/universal/shader/UShader;Ljava/lang/String;)Lcc/polyfrost/oneconfig/libs/universal/shader/FloatMatrixUniform;
-	public static fun getFloatUniform (Lcc/polyfrost/oneconfig/libs/universal/shader/UShader;Ljava/lang/String;)Lcc/polyfrost/oneconfig/libs/universal/shader/FloatUniform;
-	public static fun getIntUniform (Lcc/polyfrost/oneconfig/libs/universal/shader/UShader;Ljava/lang/String;)Lcc/polyfrost/oneconfig/libs/universal/shader/IntUniform;
-	public static fun getSamplerUniform (Lcc/polyfrost/oneconfig/libs/universal/shader/UShader;Ljava/lang/String;)Lcc/polyfrost/oneconfig/libs/universal/shader/SamplerUniform;
+public final class org/polyfrost/oneconfig/libs/universal/shader/UShader$DefaultImpls {
+	public static fun getFloat2Uniform (Lorg/polyfrost/oneconfig/libs/universal/shader/UShader;Ljava/lang/String;)Lorg/polyfrost/oneconfig/libs/universal/shader/Float2Uniform;
+	public static fun getFloat3Uniform (Lorg/polyfrost/oneconfig/libs/universal/shader/UShader;Ljava/lang/String;)Lorg/polyfrost/oneconfig/libs/universal/shader/Float3Uniform;
+	public static fun getFloat4Uniform (Lorg/polyfrost/oneconfig/libs/universal/shader/UShader;Ljava/lang/String;)Lorg/polyfrost/oneconfig/libs/universal/shader/Float4Uniform;
+	public static fun getFloatMatrixUniform (Lorg/polyfrost/oneconfig/libs/universal/shader/UShader;Ljava/lang/String;)Lorg/polyfrost/oneconfig/libs/universal/shader/FloatMatrixUniform;
+	public static fun getFloatUniform (Lorg/polyfrost/oneconfig/libs/universal/shader/UShader;Ljava/lang/String;)Lorg/polyfrost/oneconfig/libs/universal/shader/FloatUniform;
+	public static fun getIntUniform (Lorg/polyfrost/oneconfig/libs/universal/shader/UShader;Ljava/lang/String;)Lorg/polyfrost/oneconfig/libs/universal/shader/IntUniform;
+	public static fun getSamplerUniform (Lorg/polyfrost/oneconfig/libs/universal/shader/UShader;Ljava/lang/String;)Lorg/polyfrost/oneconfig/libs/universal/shader/SamplerUniform;
 }
 
 @1.12.2-forge,1.17.1-forge,1.18.2-forge,1.19.2-forge,1.8.9-forge
-public final class cc/polyfrost/oneconfig/libs/universal/utils/ReleasedDynamicTexture : net/minecraft/client/renderer/texture/AbstractTexture {
+public final class org/polyfrost/oneconfig/libs/universal/utils/ReleasedDynamicTexture : net/minecraft/client/renderer/texture/AbstractTexture {
 	public fun <init> (II)V
 	@1.17.1-forge,1.18.2-forge,1.19.2-forge
 	public fun <init> (Lcom/mojang/blaze3d/platform/NativeImage;)V
@@ -1142,7 +1142,7 @@ public final class cc/polyfrost/oneconfig/libs/universal/utils/ReleasedDynamicTe
 }
 
 @1.12.2-fabric,1.16.5-fabric,1.17.1-fabric,1.18.2-fabric,1.19-fabric,1.19.1-fabric,1.19.2-fabric,1.8.9-fabric
-public final class cc/polyfrost/oneconfig/libs/universal/utils/ReleasedDynamicTexture : net/minecraft/client/texture/AbstractTexture {
+public final class org/polyfrost/oneconfig/libs/universal/utils/ReleasedDynamicTexture : net/minecraft/client/texture/AbstractTexture {
 	public fun <init> (II)V
 	@1.16.5-fabric,1.17.1-fabric,1.18.2-fabric,1.19-fabric,1.19.1-fabric,1.19.2-fabric
 	public fun <init> (Lnet/minecraft/client/texture/NativeImage;)V
@@ -1166,54 +1166,54 @@ public final class cc/polyfrost/oneconfig/libs/universal/utils/ReleasedDynamicTe
 	public final fun uploadTexture ()V
 }
 
-public abstract interface class cc/polyfrost/oneconfig/libs/universal/vertex/UVertexConsumer {
-	public static final field Companion Lcc/polyfrost/oneconfig/libs/universal/vertex/UVertexConsumer$Companion;
-	public fun color (FFFF)Lcc/polyfrost/oneconfig/libs/universal/vertex/UVertexConsumer;
-	public abstract fun color (IIII)Lcc/polyfrost/oneconfig/libs/universal/vertex/UVertexConsumer;
-	public fun color (Ljava/awt/Color;)Lcc/polyfrost/oneconfig/libs/universal/vertex/UVertexConsumer;
-	public abstract fun endVertex ()Lcc/polyfrost/oneconfig/libs/universal/vertex/UVertexConsumer;
-	public abstract fun light (II)Lcc/polyfrost/oneconfig/libs/universal/vertex/UVertexConsumer;
-	public abstract fun norm (Lcc/polyfrost/oneconfig/libs/universal/UMatrixStack;FFF)Lcc/polyfrost/oneconfig/libs/universal/vertex/UVertexConsumer;
+public abstract interface class org/polyfrost/oneconfig/libs/universal/vertex/UVertexConsumer {
+	public static final field Companion Lorg/polyfrost/oneconfig/libs/universal/vertex/UVertexConsumer$Companion;
+	public fun color (FFFF)Lorg/polyfrost/oneconfig/libs/universal/vertex/UVertexConsumer;
+	public abstract fun color (IIII)Lorg/polyfrost/oneconfig/libs/universal/vertex/UVertexConsumer;
+	public fun color (Ljava/awt/Color;)Lorg/polyfrost/oneconfig/libs/universal/vertex/UVertexConsumer;
+	public abstract fun endVertex ()Lorg/polyfrost/oneconfig/libs/universal/vertex/UVertexConsumer;
+	public abstract fun light (II)Lorg/polyfrost/oneconfig/libs/universal/vertex/UVertexConsumer;
+	public abstract fun norm (Lorg/polyfrost/oneconfig/libs/universal/UMatrixStack;FFF)Lorg/polyfrost/oneconfig/libs/universal/vertex/UVertexConsumer;
 	@1.8.9-forge
-	public static fun of (Lnet/minecraft/client/renderer/WorldRenderer;)Lcc/polyfrost/oneconfig/libs/universal/vertex/UVertexConsumer;
+	public static fun of (Lnet/minecraft/client/renderer/WorldRenderer;)Lorg/polyfrost/oneconfig/libs/universal/vertex/UVertexConsumer;
 	@1.17.1-forge,1.18.2-forge,1.19.2-forge
-	public static fun of (Lcom/mojang/blaze3d/vertex/VertexConsumer;)Lcc/polyfrost/oneconfig/libs/universal/vertex/UVertexConsumer;
+	public static fun of (Lcom/mojang/blaze3d/vertex/VertexConsumer;)Lorg/polyfrost/oneconfig/libs/universal/vertex/UVertexConsumer;
 	@1.16.5-forge
-	public static fun of (Lcom/mojang/blaze3d/vertex/IVertexBuilder;)Lcc/polyfrost/oneconfig/libs/universal/vertex/UVertexConsumer;
+	public static fun of (Lcom/mojang/blaze3d/vertex/IVertexBuilder;)Lorg/polyfrost/oneconfig/libs/universal/vertex/UVertexConsumer;
 	@1.16.5-fabric,1.17.1-fabric,1.18.2-fabric,1.19-fabric,1.19.1-fabric,1.19.2-fabric
-	public static fun of (Lnet/minecraft/client/render/VertexConsumer;)Lcc/polyfrost/oneconfig/libs/universal/vertex/UVertexConsumer;
+	public static fun of (Lnet/minecraft/client/render/VertexConsumer;)Lorg/polyfrost/oneconfig/libs/universal/vertex/UVertexConsumer;
 	@1.12.2-forge,1.15.2-forge
-	public static fun of (Lnet/minecraft/client/renderer/BufferBuilder;)Lcc/polyfrost/oneconfig/libs/universal/vertex/UVertexConsumer;
+	public static fun of (Lnet/minecraft/client/renderer/BufferBuilder;)Lorg/polyfrost/oneconfig/libs/universal/vertex/UVertexConsumer;
 	@1.12.2-fabric,1.8.9-fabric
-	public static fun of (Lnet/minecraft/client/render/BufferBuilder;)Lcc/polyfrost/oneconfig/libs/universal/vertex/UVertexConsumer;
-	public abstract fun overlay (II)Lcc/polyfrost/oneconfig/libs/universal/vertex/UVertexConsumer;
-	public abstract fun pos (Lcc/polyfrost/oneconfig/libs/universal/UMatrixStack;DDD)Lcc/polyfrost/oneconfig/libs/universal/vertex/UVertexConsumer;
-	public abstract fun tex (DD)Lcc/polyfrost/oneconfig/libs/universal/vertex/UVertexConsumer;
+	public static fun of (Lnet/minecraft/client/render/BufferBuilder;)Lorg/polyfrost/oneconfig/libs/universal/vertex/UVertexConsumer;
+	public abstract fun overlay (II)Lorg/polyfrost/oneconfig/libs/universal/vertex/UVertexConsumer;
+	public abstract fun pos (Lorg/polyfrost/oneconfig/libs/universal/UMatrixStack;DDD)Lorg/polyfrost/oneconfig/libs/universal/vertex/UVertexConsumer;
+	public abstract fun tex (DD)Lorg/polyfrost/oneconfig/libs/universal/vertex/UVertexConsumer;
 }
 
-public final class cc/polyfrost/oneconfig/libs/universal/vertex/UVertexConsumer$Companion {
+public final class org/polyfrost/oneconfig/libs/universal/vertex/UVertexConsumer$Companion {
 	@1.8.9-forge
-	public final fun of (Lnet/minecraft/client/renderer/WorldRenderer;)Lcc/polyfrost/oneconfig/libs/universal/vertex/UVertexConsumer;
+	public final fun of (Lnet/minecraft/client/renderer/WorldRenderer;)Lorg/polyfrost/oneconfig/libs/universal/vertex/UVertexConsumer;
 	@1.17.1-forge,1.18.2-forge,1.19.2-forge
-	public final fun of (Lcom/mojang/blaze3d/vertex/VertexConsumer;)Lcc/polyfrost/oneconfig/libs/universal/vertex/UVertexConsumer;
+	public final fun of (Lcom/mojang/blaze3d/vertex/VertexConsumer;)Lorg/polyfrost/oneconfig/libs/universal/vertex/UVertexConsumer;
 	@1.16.5-forge
-	public final fun of (Lcom/mojang/blaze3d/vertex/IVertexBuilder;)Lcc/polyfrost/oneconfig/libs/universal/vertex/UVertexConsumer;
+	public final fun of (Lcom/mojang/blaze3d/vertex/IVertexBuilder;)Lorg/polyfrost/oneconfig/libs/universal/vertex/UVertexConsumer;
 	@1.16.5-fabric,1.17.1-fabric,1.18.2-fabric,1.19-fabric,1.19.1-fabric,1.19.2-fabric
-	public final fun of (Lnet/minecraft/client/render/VertexConsumer;)Lcc/polyfrost/oneconfig/libs/universal/vertex/UVertexConsumer;
+	public final fun of (Lnet/minecraft/client/render/VertexConsumer;)Lorg/polyfrost/oneconfig/libs/universal/vertex/UVertexConsumer;
 	@1.12.2-forge,1.15.2-forge
-	public final fun of (Lnet/minecraft/client/renderer/BufferBuilder;)Lcc/polyfrost/oneconfig/libs/universal/vertex/UVertexConsumer;
+	public final fun of (Lnet/minecraft/client/renderer/BufferBuilder;)Lorg/polyfrost/oneconfig/libs/universal/vertex/UVertexConsumer;
 	@1.12.2-fabric,1.8.9-fabric
-	public final fun of (Lnet/minecraft/client/render/BufferBuilder;)Lcc/polyfrost/oneconfig/libs/universal/vertex/UVertexConsumer;
+	public final fun of (Lnet/minecraft/client/render/BufferBuilder;)Lorg/polyfrost/oneconfig/libs/universal/vertex/UVertexConsumer;
 }
 
 @1.12.2-fabric,1.12.2-forge,1.8.9-fabric,1.8.9-forge
-public final class cc/polyfrost/oneconfig/libs/universal/vertex/UVertexConsumer$DefaultImpls {
-	public static fun color (Lcc/polyfrost/oneconfig/libs/universal/vertex/UVertexConsumer;FFFF)Lcc/polyfrost/oneconfig/libs/universal/vertex/UVertexConsumer;
-	public static fun color (Lcc/polyfrost/oneconfig/libs/universal/vertex/UVertexConsumer;Ljava/awt/Color;)Lcc/polyfrost/oneconfig/libs/universal/vertex/UVertexConsumer;
+public final class org/polyfrost/oneconfig/libs/universal/vertex/UVertexConsumer$DefaultImpls {
+	public static fun color (Lorg/polyfrost/oneconfig/libs/universal/vertex/UVertexConsumer;FFFF)Lorg/polyfrost/oneconfig/libs/universal/vertex/UVertexConsumer;
+	public static fun color (Lorg/polyfrost/oneconfig/libs/universal/vertex/UVertexConsumer;Ljava/awt/Color;)Lorg/polyfrost/oneconfig/libs/universal/vertex/UVertexConsumer;
 }
 
-public final class cc/polyfrost/oneconfig/libs/universal/wrappers/UPlayer {
-	public static final field INSTANCE Lcc/polyfrost/oneconfig/libs/universal/wrappers/UPlayer;
+public final class org/polyfrost/oneconfig/libs/universal/wrappers/UPlayer {
+	public static final field INSTANCE Lorg/polyfrost/oneconfig/libs/universal/wrappers/UPlayer;
 	@1.17.1-forge,1.18.2-forge,1.19.2-forge
 	public static final fun getPlayer ()Lnet/minecraft/client/player/LocalPlayer;
 	@1.16.5-fabric,1.17.1-fabric,1.18.2-fabric,1.19-fabric,1.19.1-fabric,1.19.2-fabric
@@ -1232,34 +1232,34 @@ public final class cc/polyfrost/oneconfig/libs/universal/wrappers/UPlayer {
 	public static final fun getPrevPosZ ()D
 	public static final fun getUUID ()Ljava/util/UUID;
 	public static final fun hasPlayer ()Z
-	public static final fun sendClientSideMessage (Lcc/polyfrost/oneconfig/libs/universal/wrappers/message/UTextComponent;)V
+	public static final fun sendClientSideMessage (Lorg/polyfrost/oneconfig/libs/universal/wrappers/message/UTextComponent;)V
 }
 
-public final class cc/polyfrost/oneconfig/libs/universal/wrappers/message/UMessage {
-	public fun <init> (Lcc/polyfrost/oneconfig/libs/universal/wrappers/message/UTextComponent;)V
+public final class org/polyfrost/oneconfig/libs/universal/wrappers/message/UMessage {
+	public fun <init> (Lorg/polyfrost/oneconfig/libs/universal/wrappers/message/UTextComponent;)V
 	public fun <init> ([Ljava/lang/Object;)V
 	public final fun actionBar ()V
-	public final fun addTextComponent (ILjava/lang/Object;)Lcc/polyfrost/oneconfig/libs/universal/wrappers/message/UMessage;
-	public final fun addTextComponent (Ljava/lang/Object;)Lcc/polyfrost/oneconfig/libs/universal/wrappers/message/UMessage;
+	public final fun addTextComponent (ILjava/lang/Object;)Lorg/polyfrost/oneconfig/libs/universal/wrappers/message/UMessage;
+	public final fun addTextComponent (Ljava/lang/Object;)Lorg/polyfrost/oneconfig/libs/universal/wrappers/message/UMessage;
 	public final fun chat ()V
 	public final fun edit ([Ljava/lang/Object;)V
 	public final fun getChatLineId ()I
-	public final fun getChatMessage ()Lcc/polyfrost/oneconfig/libs/universal/wrappers/message/UTextComponent;
+	public final fun getChatMessage ()Lorg/polyfrost/oneconfig/libs/universal/wrappers/message/UTextComponent;
 	public final fun getFormattedText ()Ljava/lang/String;
 	public final fun getMessageParts ()Ljava/util/List;
 	public final fun getUnformattedText ()Ljava/lang/String;
 	public final fun isFormatted ()Z
 	public final fun isRecursive ()Z
-	public final fun mutable ()Lcc/polyfrost/oneconfig/libs/universal/wrappers/message/UMessage;
+	public final fun mutable ()Lorg/polyfrost/oneconfig/libs/universal/wrappers/message/UMessage;
 	public final fun setChatLineId (I)V
 	public final fun setFormatted (Z)V
 	public final fun setRecursive (Z)V
-	public final fun setTextComponent (ILjava/lang/Object;)Lcc/polyfrost/oneconfig/libs/universal/wrappers/message/UMessage;
+	public final fun setTextComponent (ILjava/lang/Object;)Lorg/polyfrost/oneconfig/libs/universal/wrappers/message/UMessage;
 }
 
 @1.8.9-forge
-public final class cc/polyfrost/oneconfig/libs/universal/wrappers/message/UTextComponent : net/minecraft/util/IChatComponent {
-	public static final field Companion Lcc/polyfrost/oneconfig/libs/universal/wrappers/message/UTextComponent$Companion;
+public final class org/polyfrost/oneconfig/libs/universal/wrappers/message/UTextComponent : net/minecraft/util/IChatComponent {
+	public static final field Companion Lorg/polyfrost/oneconfig/libs/universal/wrappers/message/UTextComponent$Companion;
 	public fun <init> (Ljava/lang/String;)V
 	public fun <init> (Lnet/minecraft/util/IChatComponent;)V
 	public final fun actionBar ()V
@@ -1281,19 +1281,19 @@ public final class cc/polyfrost/oneconfig/libs/universal/wrappers/message/UTextC
 	public fun getUnformattedTextForChat ()Ljava/lang/String;
 	public fun iterator ()Ljava/util/Iterator;
 	public fun setChatStyle (Lnet/minecraft/util/ChatStyle;)Lnet/minecraft/util/IChatComponent;
-	public final fun setClick (Lnet/minecraft/event/ClickEvent$Action;Ljava/lang/String;)Lcc/polyfrost/oneconfig/libs/universal/wrappers/message/UTextComponent;
+	public final fun setClick (Lnet/minecraft/event/ClickEvent$Action;Ljava/lang/String;)Lorg/polyfrost/oneconfig/libs/universal/wrappers/message/UTextComponent;
 	public final fun setClickAction (Lnet/minecraft/event/ClickEvent$Action;)V
 	public final fun setClickValue (Ljava/lang/String;)V
 	public final fun setFormatted (Z)V
-	public final fun setHover (Lnet/minecraft/event/HoverEvent$Action;Ljava/lang/Object;)Lcc/polyfrost/oneconfig/libs/universal/wrappers/message/UTextComponent;
+	public final fun setHover (Lnet/minecraft/event/HoverEvent$Action;Ljava/lang/Object;)Lorg/polyfrost/oneconfig/libs/universal/wrappers/message/UTextComponent;
 	public final fun setHoverAction (Lnet/minecraft/event/HoverEvent$Action;)V
 	public final fun setHoverValue (Ljava/lang/Object;)V
 	public final fun setText (Ljava/lang/String;)V
 }
 
 @1.19.2-forge
-public final class cc/polyfrost/oneconfig/libs/universal/wrappers/message/UTextComponent : net/minecraft/network/chat/Component {
-	public static final field Companion Lcc/polyfrost/oneconfig/libs/universal/wrappers/message/UTextComponent$Companion;
+public final class org/polyfrost/oneconfig/libs/universal/wrappers/message/UTextComponent : net/minecraft/network/chat/Component {
+	public static final field Companion Lorg/polyfrost/oneconfig/libs/universal/wrappers/message/UTextComponent$Companion;
 	public fun <init> (Ljava/lang/String;)V
 	public fun <init> (Lnet/minecraft/network/chat/Component;)V
 	public fun <init> (Lnet/minecraft/network/chat/MutableComponent;)V
@@ -1317,11 +1317,11 @@ public final class cc/polyfrost/oneconfig/libs/universal/wrappers/message/UTextC
 	public final fun getUnformattedText ()Ljava/lang/String;
 	public fun getVisualOrderText ()Lnet/minecraft/util/FormattedCharSequence;
 	public fun plainCopy ()Lnet/minecraft/network/chat/MutableComponent;
-	public final fun setClick (Lnet/minecraft/network/chat/ClickEvent$Action;Ljava/lang/String;)Lcc/polyfrost/oneconfig/libs/universal/wrappers/message/UTextComponent;
+	public final fun setClick (Lnet/minecraft/network/chat/ClickEvent$Action;Ljava/lang/String;)Lorg/polyfrost/oneconfig/libs/universal/wrappers/message/UTextComponent;
 	public final fun setClickAction (Lnet/minecraft/network/chat/ClickEvent$Action;)V
 	public final fun setClickValue (Ljava/lang/String;)V
 	public final fun setFormatted (Z)V
-	public final fun setHover (Lnet/minecraft/network/chat/HoverEvent$Action;Ljava/lang/Object;)Lcc/polyfrost/oneconfig/libs/universal/wrappers/message/UTextComponent;
+	public final fun setHover (Lnet/minecraft/network/chat/HoverEvent$Action;Ljava/lang/Object;)Lorg/polyfrost/oneconfig/libs/universal/wrappers/message/UTextComponent;
 	public final fun setHoverAction (Lnet/minecraft/network/chat/HoverEvent$Action;)V
 	public final fun setHoverValue (Ljava/lang/Object;)V
 	public final fun setText (Ljava/lang/String;)V
@@ -1330,8 +1330,8 @@ public final class cc/polyfrost/oneconfig/libs/universal/wrappers/message/UTextC
 }
 
 @1.17.1-forge,1.18.2-forge
-public final class cc/polyfrost/oneconfig/libs/universal/wrappers/message/UTextComponent : net/minecraft/network/chat/MutableComponent {
-	public static final field Companion Lcc/polyfrost/oneconfig/libs/universal/wrappers/message/UTextComponent$Companion;
+public final class org/polyfrost/oneconfig/libs/universal/wrappers/message/UTextComponent : net/minecraft/network/chat/MutableComponent {
+	public static final field Companion Lorg/polyfrost/oneconfig/libs/universal/wrappers/message/UTextComponent$Companion;
 	public fun <init> (Ljava/lang/String;)V
 	public fun <init> (Lnet/minecraft/network/chat/Component;)V
 	public fun <init> (Lnet/minecraft/network/chat/MutableComponent;)V
@@ -1357,11 +1357,11 @@ public final class cc/polyfrost/oneconfig/libs/universal/wrappers/message/UTextC
 	public final fun getUnformattedText ()Ljava/lang/String;
 	public fun getVisualOrderText ()Lnet/minecraft/util/FormattedCharSequence;
 	public fun plainCopy ()Lnet/minecraft/network/chat/MutableComponent;
-	public final fun setClick (Lnet/minecraft/network/chat/ClickEvent$Action;Ljava/lang/String;)Lcc/polyfrost/oneconfig/libs/universal/wrappers/message/UTextComponent;
+	public final fun setClick (Lnet/minecraft/network/chat/ClickEvent$Action;Ljava/lang/String;)Lorg/polyfrost/oneconfig/libs/universal/wrappers/message/UTextComponent;
 	public final fun setClickAction (Lnet/minecraft/network/chat/ClickEvent$Action;)V
 	public final fun setClickValue (Ljava/lang/String;)V
 	public final fun setFormatted (Z)V
-	public final fun setHover (Lnet/minecraft/network/chat/HoverEvent$Action;Ljava/lang/Object;)Lcc/polyfrost/oneconfig/libs/universal/wrappers/message/UTextComponent;
+	public final fun setHover (Lnet/minecraft/network/chat/HoverEvent$Action;Ljava/lang/Object;)Lorg/polyfrost/oneconfig/libs/universal/wrappers/message/UTextComponent;
 	public final fun setHoverAction (Lnet/minecraft/network/chat/HoverEvent$Action;)V
 	public final fun setHoverValue (Ljava/lang/Object;)V
 	public fun setStyle (Lnet/minecraft/network/chat/Style;)Lnet/minecraft/network/chat/MutableComponent;
@@ -1377,8 +1377,8 @@ public final class cc/polyfrost/oneconfig/libs/universal/wrappers/message/UTextC
 }
 
 @1.16.5-forge
-public final class cc/polyfrost/oneconfig/libs/universal/wrappers/message/UTextComponent : net/minecraft/util/text/IFormattableTextComponent {
-	public static final field Companion Lcc/polyfrost/oneconfig/libs/universal/wrappers/message/UTextComponent$Companion;
+public final class org/polyfrost/oneconfig/libs/universal/wrappers/message/UTextComponent : net/minecraft/util/text/IFormattableTextComponent {
+	public static final field Companion Lorg/polyfrost/oneconfig/libs/universal/wrappers/message/UTextComponent$Companion;
 	public fun <init> (Ljava/lang/String;)V
 	public fun <init> (Lnet/minecraft/util/text/IFormattableTextComponent;)V
 	public fun <init> (Lnet/minecraft/util/text/ITextComponent;)V
@@ -1412,11 +1412,11 @@ public final class cc/polyfrost/oneconfig/libs/universal/wrappers/message/UTextC
 	public fun mergeStyle (Lnet/minecraft/util/text/TextFormatting;)Lnet/minecraft/util/text/IFormattableTextComponent;
 	public fun mergeStyle ([Lnet/minecraft/util/text/TextFormatting;)Lnet/minecraft/util/text/IFormattableTextComponent;
 	public fun modifyStyle (Ljava/util/function/UnaryOperator;)Lnet/minecraft/util/text/IFormattableTextComponent;
-	public final fun setClick (Lnet/minecraft/util/text/event/ClickEvent$Action;Ljava/lang/String;)Lcc/polyfrost/oneconfig/libs/universal/wrappers/message/UTextComponent;
+	public final fun setClick (Lnet/minecraft/util/text/event/ClickEvent$Action;Ljava/lang/String;)Lorg/polyfrost/oneconfig/libs/universal/wrappers/message/UTextComponent;
 	public final fun setClickAction (Lnet/minecraft/util/text/event/ClickEvent$Action;)V
 	public final fun setClickValue (Ljava/lang/String;)V
 	public final fun setFormatted (Z)V
-	public final fun setHover (Lnet/minecraft/util/text/event/HoverEvent$Action;Ljava/lang/Object;)Lcc/polyfrost/oneconfig/libs/universal/wrappers/message/UTextComponent;
+	public final fun setHover (Lnet/minecraft/util/text/event/HoverEvent$Action;Ljava/lang/Object;)Lorg/polyfrost/oneconfig/libs/universal/wrappers/message/UTextComponent;
 	public final fun setHoverAction (Lnet/minecraft/util/text/event/HoverEvent$Action;)V
 	public final fun setHoverValue (Ljava/lang/Object;)V
 	public fun setStyle (Lnet/minecraft/util/text/Style;)Lnet/minecraft/util/text/IFormattableTextComponent;
@@ -1424,8 +1424,8 @@ public final class cc/polyfrost/oneconfig/libs/universal/wrappers/message/UTextC
 }
 
 @1.16.5-fabric,1.17.1-fabric,1.18.2-fabric
-public final class cc/polyfrost/oneconfig/libs/universal/wrappers/message/UTextComponent : net/minecraft/text/MutableText {
-	public static final field Companion Lcc/polyfrost/oneconfig/libs/universal/wrappers/message/UTextComponent$Companion;
+public final class org/polyfrost/oneconfig/libs/universal/wrappers/message/UTextComponent : net/minecraft/text/MutableText {
+	public static final field Companion Lorg/polyfrost/oneconfig/libs/universal/wrappers/message/UTextComponent$Companion;
 	public fun <init> (Ljava/lang/String;)V
 	public fun <init> (Lnet/minecraft/text/MutableText;)V
 	public fun <init> (Lnet/minecraft/text/Text;)V
@@ -1453,11 +1453,11 @@ public final class cc/polyfrost/oneconfig/libs/universal/wrappers/message/UTextC
 	public fun getStyle ()Lnet/minecraft/text/Style;
 	public final fun getText ()Ljava/lang/String;
 	public final fun getUnformattedText ()Ljava/lang/String;
-	public final fun setClick (Lnet/minecraft/text/ClickEvent$Action;Ljava/lang/String;)Lcc/polyfrost/oneconfig/libs/universal/wrappers/message/UTextComponent;
+	public final fun setClick (Lnet/minecraft/text/ClickEvent$Action;Ljava/lang/String;)Lorg/polyfrost/oneconfig/libs/universal/wrappers/message/UTextComponent;
 	public final fun setClickAction (Lnet/minecraft/text/ClickEvent$Action;)V
 	public final fun setClickValue (Ljava/lang/String;)V
 	public final fun setFormatted (Z)V
-	public final fun setHover (Lnet/minecraft/text/HoverEvent$Action;Ljava/lang/Object;)Lcc/polyfrost/oneconfig/libs/universal/wrappers/message/UTextComponent;
+	public final fun setHover (Lnet/minecraft/text/HoverEvent$Action;Ljava/lang/Object;)Lorg/polyfrost/oneconfig/libs/universal/wrappers/message/UTextComponent;
 	public final fun setHoverAction (Lnet/minecraft/text/HoverEvent$Action;)V
 	public final fun setHoverValue (Ljava/lang/Object;)V
 	public fun setStyle (Lnet/minecraft/text/Style;)Lnet/minecraft/text/MutableText;
@@ -1471,8 +1471,8 @@ public final class cc/polyfrost/oneconfig/libs/universal/wrappers/message/UTextC
 }
 
 @1.12.2-forge,1.15.2-forge
-public final class cc/polyfrost/oneconfig/libs/universal/wrappers/message/UTextComponent : net/minecraft/util/text/ITextComponent {
-	public static final field Companion Lcc/polyfrost/oneconfig/libs/universal/wrappers/message/UTextComponent$Companion;
+public final class org/polyfrost/oneconfig/libs/universal/wrappers/message/UTextComponent : net/minecraft/util/text/ITextComponent {
+	public static final field Companion Lorg/polyfrost/oneconfig/libs/universal/wrappers/message/UTextComponent$Companion;
 	public fun <init> (Ljava/lang/String;)V
 	public fun <init> (Lnet/minecraft/util/text/ITextComponent;)V
 	public final fun actionBar ()V
@@ -1511,11 +1511,11 @@ public final class cc/polyfrost/oneconfig/libs/universal/wrappers/message/UTextC
 	@1.12.2-forge
 	public fun getUnformattedText ()Ljava/lang/String;
 	public fun iterator ()Ljava/util/Iterator;
-	public final fun setClick (Lnet/minecraft/util/text/event/ClickEvent$Action;Ljava/lang/String;)Lcc/polyfrost/oneconfig/libs/universal/wrappers/message/UTextComponent;
+	public final fun setClick (Lnet/minecraft/util/text/event/ClickEvent$Action;Ljava/lang/String;)Lorg/polyfrost/oneconfig/libs/universal/wrappers/message/UTextComponent;
 	public final fun setClickAction (Lnet/minecraft/util/text/event/ClickEvent$Action;)V
 	public final fun setClickValue (Ljava/lang/String;)V
 	public final fun setFormatted (Z)V
-	public final fun setHover (Lnet/minecraft/util/text/event/HoverEvent$Action;Ljava/lang/Object;)Lcc/polyfrost/oneconfig/libs/universal/wrappers/message/UTextComponent;
+	public final fun setHover (Lnet/minecraft/util/text/event/HoverEvent$Action;Ljava/lang/Object;)Lorg/polyfrost/oneconfig/libs/universal/wrappers/message/UTextComponent;
 	public final fun setHoverAction (Lnet/minecraft/util/text/event/HoverEvent$Action;)V
 	public final fun setHoverValue (Ljava/lang/Object;)V
 	public fun setStyle (Lnet/minecraft/util/text/Style;)Lnet/minecraft/util/text/ITextComponent;
@@ -1527,8 +1527,8 @@ public final class cc/polyfrost/oneconfig/libs/universal/wrappers/message/UTextC
 }
 
 @1.12.2-fabric,1.19-fabric,1.19.1-fabric,1.19.2-fabric,1.8.9-fabric
-public final class cc/polyfrost/oneconfig/libs/universal/wrappers/message/UTextComponent : net/minecraft/text/Text {
-	public static final field Companion Lcc/polyfrost/oneconfig/libs/universal/wrappers/message/UTextComponent$Companion;
+public final class org/polyfrost/oneconfig/libs/universal/wrappers/message/UTextComponent : net/minecraft/text/Text {
+	public static final field Companion Lorg/polyfrost/oneconfig/libs/universal/wrappers/message/UTextComponent$Companion;
 	public fun <init> (Ljava/lang/String;)V
 	@1.19-fabric,1.19.1-fabric,1.19.2-fabric
 	public fun <init> (Lnet/minecraft/text/MutableText;)V
@@ -1576,11 +1576,11 @@ public final class cc/polyfrost/oneconfig/libs/universal/wrappers/message/UTextC
 	public final fun getUnformattedText ()Ljava/lang/String;
 	@1.12.2-fabric,1.8.9-fabric
 	public fun iterator ()Ljava/util/Iterator;
-	public final fun setClick (Lnet/minecraft/text/ClickEvent$Action;Ljava/lang/String;)Lcc/polyfrost/oneconfig/libs/universal/wrappers/message/UTextComponent;
+	public final fun setClick (Lnet/minecraft/text/ClickEvent$Action;Ljava/lang/String;)Lorg/polyfrost/oneconfig/libs/universal/wrappers/message/UTextComponent;
 	public final fun setClickAction (Lnet/minecraft/text/ClickEvent$Action;)V
 	public final fun setClickValue (Ljava/lang/String;)V
 	public final fun setFormatted (Z)V
-	public final fun setHover (Lnet/minecraft/text/HoverEvent$Action;Ljava/lang/Object;)Lcc/polyfrost/oneconfig/libs/universal/wrappers/message/UTextComponent;
+	public final fun setHover (Lnet/minecraft/text/HoverEvent$Action;Ljava/lang/Object;)Lorg/polyfrost/oneconfig/libs/universal/wrappers/message/UTextComponent;
 	public final fun setHoverAction (Lnet/minecraft/text/HoverEvent$Action;)V
 	public final fun setHoverValue (Ljava/lang/Object;)V
 	@1.12.2-fabric,1.8.9-fabric
@@ -1592,8 +1592,8 @@ public final class cc/polyfrost/oneconfig/libs/universal/wrappers/message/UTextC
 	public fun visit (Lnet/minecraft/text/StringVisitable$Visitor;)Ljava/util/Optional;
 }
 
-public final class cc/polyfrost/oneconfig/libs/universal/wrappers/message/UTextComponent$Companion {
-	public final fun from (Ljava/lang/Object;)Lcc/polyfrost/oneconfig/libs/universal/wrappers/message/UTextComponent;
+public final class org/polyfrost/oneconfig/libs/universal/wrappers/message/UTextComponent$Companion {
+	public final fun from (Ljava/lang/Object;)Lorg/polyfrost/oneconfig/libs/universal/wrappers/message/UTextComponent;
 	public final fun stripFormatting (Ljava/lang/String;)Ljava/lang/String;
 }
 

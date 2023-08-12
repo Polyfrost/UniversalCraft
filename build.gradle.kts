@@ -8,7 +8,7 @@ plugins {
     `maven-publish`
 }
 
-group = "cc.polyfrost"
+group = "org.polyfrost"
 
 java.withSourcesJar()
 tasks.compileKotlin.setJvmDefault(if (platform.mcVersion >= 11400) "all" else "all-compatibility")

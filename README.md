@@ -24,18 +24,18 @@ To use the latest builds, use the following dependency format, use the build ref
 <details><summary>Forge</summary>
 
 ```kotlin
-implementation("cc.polyfrost:universalcraft-$mcVersion-$mcPlatform:$buildNumber")
+implementation("org.polyfrost:universalcraft-$mcVersion-$mcPlatform:$buildNumber")
 ```
 </details>
 <details><summary>Fabric</summary>
 
 Groovy
 ```groovy
-modImplementation(include("cc.polyfrost:universalcraft-$mcVersion-$mcPlatform:$buildNumber"))
+modImplementation(include("org.polyfrost:universalcraft-$mcVersion-$mcPlatform:$buildNumber"))
 ```
 Kotlin
 ```kotlin
-modImplementation(include("cc.polyfrost:universalcraft-$mcVersion-$mcPlatform:$buildNumber")!!)
+modImplementation(include("org.polyfrost:universalcraft-$mcVersion-$mcPlatform:$buildNumber")!!)
 ```
 </details>
 
