@@ -1,10 +1,10 @@
-import cc.polyfrost.gradle.util.*
+import org.polyfrost.gradle.util.*
 
 plugins {
     kotlin("jvm")
-    id("cc.polyfrost.multi-version")
-    id("cc.polyfrost.defaults")
-    id("cc.polyfrost.defaults.maven-publish")
+    id("org.polyfrost.multi-version")
+    id("org.polyfrost.defaults")
+    id("org.polyfrost.defaults.maven-publish")
     `maven-publish`
 }
 
