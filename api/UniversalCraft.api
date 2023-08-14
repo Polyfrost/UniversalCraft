@@ -802,6 +802,7 @@ public abstract class org/polyfrost/oneconfig/libs/universal/UScreen : net/minec
 	public fun getNewGuiScale ()I
 	public final fun getRestoreCurrentGuiOnClose ()Z
 	public fun getUnlocalizedName ()Ljava/lang/String;
+	public fun handleKeyboardInput ()V
 	public final fun handleMouseInput ()V
 	public final fun initGui ()V
 	public fun initScreen (II)V
@@ -860,6 +861,8 @@ public abstract class org/polyfrost/oneconfig/libs/universal/UScreen : net/minec
 	public fun getUnlocalizedName ()Ljava/lang/String;
 	@1.15.2-forge,1.16.5-fabric,1.16.5-forge,1.17.1-fabric,1.18.2-fabric,1.19-fabric,1.19.1-fabric,1.19.2-fabric
 	protected final fun init ()V
+	@1.12.2-fabric,1.8.9-fabric
+	public fun handleKeyboard ()V
 	@1.12.2-fabric,1.8.9-fabric
 	public final fun handleMouse ()V
 	@1.12.2-fabric,1.8.9-fabric
