@@ -1,6 +1,6 @@
 package gg.essential.universal
 
-import org.polyfrost.oneconfig.libs.universal.shader.MCShader
+import gg.essential.universal.shader.MCShader
 import net.minecraft.resource.InputSupplier
 import net.minecraft.resource.Resource
 import net.minecraft.resource.ResourcePack
