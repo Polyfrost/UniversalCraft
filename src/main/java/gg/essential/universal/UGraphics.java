@@ -9,7 +9,6 @@ import java.util.Arrays;
 import java.util.List;
 import java.util.regex.Pattern;
 
-import gg.essential.universal.ChatColor;
 import gg.essential.universal.utils.ReleasedDynamicTexture;
 import gg.essential.universal.vertex.UVertexConsumer;
 import net.minecraft.client.renderer.GlStateManager;

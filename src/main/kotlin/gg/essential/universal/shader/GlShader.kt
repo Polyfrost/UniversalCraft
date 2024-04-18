@@ -24,10 +24,8 @@ internal class GlShader(
     private val blendState: BlendState,
 ) : UShader {
     private var program: Int = UGraphics.glCreateProgram()
-    private var vertShader: Int =
-        UGraphics.glCreateShader(GL20.GL_VERTEX_SHADER)
-    private var fragShader: Int =
-        UGraphics.glCreateShader(GL20.GL_FRAGMENT_SHADER)
+    private var vertShader: Int = UGraphics.glCreateShader(GL20.GL_VERTEX_SHADER)
+    private var fragShader: Int = UGraphics.glCreateShader(GL20.GL_FRAGMENT_SHADER)
     private var samplers = mutableMapOf<String, DirectSamplerUniform>()
 
     override var usable = false
@@ -114,17 +112,8 @@ internal class GlShader(
             if (CORE) glShaderSource(shader, source) else glShaderSourceARB(shader, source)
             UGraphics.glCompileShader(shader)
 
-            if (UGraphics.glGetShaderi(
-                    shader,
-                    GL20.GL_COMPILE_STATUS
-                ) != 1
-            ) {
-                println(
-                    UGraphics.glGetShaderInfoLog(
-                        shader,
-                        32768
-                    )
-                )
+            if (UGraphics.glGetShaderi(shader, GL20.GL_COMPILE_STATUS) != 1) {
+                println(UGraphics.glGetShaderInfoLog(shader, 32768))
                 return
             }
 
@@ -145,33 +134,15 @@ internal class GlShader(
             ARBShaderObjects.glDeleteObjectARB(fragShader)
         }
 
-        if (UGraphics.glGetProgrami(
-                program,
-                GL20.GL_LINK_STATUS
-            ) != 1
-        ) {
-            println(
-                UGraphics.glGetProgramInfoLog(
-                    program,
-                    32768
-                )
-            )
+        if (UGraphics.glGetProgrami(program, GL20.GL_LINK_STATUS) != 1) {
+            println(UGraphics.glGetProgramInfoLog(program, 32768))
             return
         }
 
         if (CORE) glValidateProgram(program) else glValidateProgramARB(program)
 
-        if (UGraphics.glGetProgrami(
-                program,
-                GL20.GL_VALIDATE_STATUS
-            ) != 1
-        ) {
-            println(
-                UGraphics.glGetProgramInfoLog(
-                    program,
-                    32768
-                )
-            )
+        if (UGraphics.glGetProgrami(program, GL20.GL_VALIDATE_STATUS) != 1) {
+            println(UGraphics.glGetProgramInfoLog(program, 32768))
             return
         }
 
