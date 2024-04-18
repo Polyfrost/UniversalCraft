@@ -1,6 +1,6 @@
 package org.polyfrost.oneconfig.libs.universal.shader
 
-import gg.essential.universal.UGraphics
+import org.polyfrost.oneconfig.libs.universal.UGraphics
 
 //#if MC>=11700
 //$$ import net.minecraft.client.render.Shader
