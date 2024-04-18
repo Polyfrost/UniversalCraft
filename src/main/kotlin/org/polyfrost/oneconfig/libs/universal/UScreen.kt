@@ -2,6 +2,10 @@ package org.polyfrost.oneconfig.libs.universal
 
 import net.minecraft.client.gui.GuiScreen
 
+//#if MC>=12000
+//$$ import net.minecraft.client.gui.DrawContext
+//#endif
+
 //#if MC>=11502
 //$$ import org.polyfrost.oneconfig.libs.universal.UKeyboard.toInt
 //$$ import org.polyfrost.oneconfig.libs.universal.UKeyboard.toModifiers
@@ -71,6 +75,7 @@ abstract class UScreen(
     //$$ private var lastDraggedDy = -1.0
     //$$ private var lastScrolledX = -1.0
     //$$ private var lastScrolledY = -1.0
+    //$$ private var lastScrolledDX = 0.0
     //$$
     //$$ final override fun init() {
     //$$     updateGuiScale()
@@ -83,7 +88,12 @@ abstract class UScreen(
     //$$ override fun getTitle(): ITextComponent = TranslationTextComponent(unlocalizedName ?: "")
     //#endif
     //$$
-    //#if MC>=11602
+    //#if MC>=12000
+    //$$ final override fun render(context: DrawContext, mouseX: Int, mouseY: Int, delta: Float) {
+    //$$     drawContexts.add(context)
+    //$$     onDrawScreenCompat(UMatrixStack(context.matrices), mouseX, mouseY, delta)
+    //$$     drawContexts.removeLast()
+    //#elseif MC>=11602
     //$$ final override fun render(matrixStack: MatrixStack, mouseX: Int, mouseY: Int, partialTicks: Float) {
     //$$     onDrawScreenCompat(UMatrixStack(matrixStack), mouseX, mouseY, partialTicks)
     //#else
@@ -120,7 +130,12 @@ abstract class UScreen(
     //$$     return uMouseDragged(x, y, mouseButton, UMinecraft.getTime() - lastClick)
     //$$ }
     //$$
+    //#if MC>=12002
+    //$$ override fun mouseScrolled(mouseX: Double, mouseY: Double, horizontalAmount: Double, delta: Double): Boolean {
+    //$$     lastScrolledDX = horizontalAmount
+    //#else
     //$$ final override fun mouseScrolled(mouseX: Double, mouseY: Double, delta: Double): Boolean {
+    //#endif
     //$$     lastScrolledX = mouseX
     //$$     lastScrolledY = mouseY
     //$$     return uMouseScrolled(delta)
@@ -134,7 +149,27 @@ abstract class UScreen(
     //$$         UMinecraft.guiScale = guiScaleToRestore
     //$$ }
     //$$
-    //#if MC>=11602
+    //#if MC>=12000
+    //#if MC>=12002
+    //$$ private var lastBackgroundMouseX = 0
+    //$$ private var lastBackgroundMouseY = 0
+    //$$ private var lastBackgroundDelta = 0f
+    //$$ final override fun renderBackground(context: DrawContext, mouseX: Int, mouseY: Int, delta: Float) {
+    //$$     lastBackgroundMouseX = mouseX
+    //$$     lastBackgroundMouseY = mouseY
+    //$$     lastBackgroundDelta = delta
+    //#else
+    //$$ final override fun renderBackground(context: DrawContext) {
+    //#endif
+    //$$     drawContexts.add(context)
+    //$$     onDrawBackgroundCompat(UMatrixStack(context.matrices), 0)
+    //$$     drawContexts.removeLast()
+    //$$ }
+    //#elseif MC>=11904
+    //$$ final override fun renderBackground(matrixStack: MatrixStack) {
+    //$$     onDrawBackgroundCompat(UMatrixStack(matrixStack), 0)
+    //$$ }
+    //#elseif MC>=11602
     //$$ final override fun renderBackground(matrixStack: MatrixStack, vOffset: Int) {
     //$$     onDrawBackgroundCompat(UMatrixStack(matrixStack), vOffset)
     //$$ }
@@ -233,7 +268,11 @@ abstract class UScreen(
     }
 
     open fun onDrawScreen(matrixStack: UMatrixStack, mouseX: Int, mouseY: Int, partialTicks: Float) {
-        //#if MC>=11602
+        //#if MC>=12000
+        //$$ withDrawContext(matrixStack) { drawContext ->
+        //$$     super.render(drawContext, mouseX, mouseY, partialTicks)
+        //$$ }
+        //#elseif MC>=11602
         //$$ super.render(matrixStack.toMC(), mouseX, mouseY, partialTicks)
         //#else
         matrixStack.runWithGlobalState {
@@ -325,7 +364,9 @@ abstract class UScreen(
 
     @Deprecated(DEPRECATED_INPUT)
     open fun onMouseScrolled(delta: Double) {
-        //#if MC>=11502
+        //#if MC>=12002
+        //$$ super.mouseScrolled(lastScrolledX, lastScrolledY, lastScrolledDX, delta)
+        //#elseif MC>=11502
         //$$ super.mouseScrolled(lastScrolledX, lastScrolledY, delta)
         //#endif
     }
@@ -445,7 +486,17 @@ abstract class UScreen(
     }
 
     open fun onDrawBackground(matrixStack: UMatrixStack, tint: Int) {
-        //#if MC>=11602
+        //#if MC>=12000
+        //$$ withDrawContext(matrixStack) { drawContext ->
+            //#if MC>=12002
+            //$$ super.renderBackground(drawContext, lastBackgroundMouseX, lastBackgroundMouseY, lastBackgroundDelta)
+            //#else
+            //$$ super.renderBackground(drawContext)
+            //#endif
+        //$$ }
+        //#elseif MC>=11904
+        //$$ super.renderBackground(matrixStack.toMC())
+        //#elseif MC>=11602
         //$$ super.renderBackground(matrixStack.toMC(), tint)
         //#else
         matrixStack.runWithGlobalState {

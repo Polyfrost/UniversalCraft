@@ -25,6 +25,10 @@ import static org.lwjgl.opengl.GL11.GL_TEXTURE_BINDING_2D;
 import static org.lwjgl.opengl.GL13.GL_ACTIVE_TEXTURE;
 import static org.lwjgl.opengl.GL13.GL_TEXTURE0;
 
+//#if MC>=11904
+//$$ import net.minecraft.client.font.TextRenderer;
+//#endif
+
 //#if MC>=11900
 //$$ import net.minecraft.text.Text;
 //#endif
@@ -40,8 +44,6 @@ import static org.lwjgl.opengl.GL13.GL_TEXTURE0;
 //#if MC>=11602
 //$$ import net.minecraft.util.ResourceLocation;
 //$$ import net.minecraft.util.text.Style;
-//$$ import net.minecraft.util.math.vector.Quaternion;
-//$$ import net.minecraft.util.math.vector.Vector3f;
 //$$ import net.minecraft.util.text.CharacterManager;
 //$$ import net.minecraft.util.text.StringTextComponent;
 //$$ import net.minecraft.util.text.ITextProperties;
@@ -84,6 +86,12 @@ public class UGraphics {
     public static int ZERO_TEXT_ALPHA = 10;
     private WorldRenderer instance;
     private VertexFormat vertexFormat;
+
+    //#if MC>=11904
+    //$$ private static final TextRenderer.TextLayerType TEXT_LAYER_TYPE = TextRenderer.TextLayerType.NORMAL;
+    //#elseif MC>=11602
+    //$$ private static final boolean TEXT_LAYER_TYPE = false;
+    //#endif
 
     public UGraphics(WorldRenderer instance) {
         this.instance = instance;
@@ -194,7 +202,9 @@ public class UGraphics {
      */
     @Deprecated
     public static void disableTexture2D() {
-        //#if MC>=11502
+        //#if MC>=11904
+        //$$ // no-op
+        //#elseif MC>=11502
         //$$ RenderSystem.disableTexture();
         //#else
         GlStateManager.disableTexture2D();
@@ -244,7 +254,9 @@ public class UGraphics {
      */
     @Deprecated
     public static void enableTexture2D() {
-        //#if MC>=11502
+        //#if MC>=11904
+        //$$ // no-op
+        //#elseif MC>=11502
         //$$ RenderSystem.enableTexture();
         //#else
         GlStateManager.enableTexture2D();
@@ -379,7 +391,7 @@ public class UGraphics {
         if ((color >> 24 & 255) <= 10) return;
         //#if MC>=11602
         //$$ IRenderTypeBuffer.Impl irendertypebuffer$impl = IRenderTypeBuffer.getImpl(Tessellator.getInstance().getBuffer());
-        //$$ UMinecraft.getFontRenderer().renderString(text, x, y, color, shadow, stack.peek().getModel(), irendertypebuffer$impl, false, 0, 15728880);
+        //$$ UMinecraft.getFontRenderer().renderString(text, x, y, color, shadow, stack.peek().getModel(), irendertypebuffer$impl, TEXT_LAYER_TYPE, 0, 15728880);
         //$$ irendertypebuffer$impl.finish();
         //#else
         if (stack != UNIT_STACK) GL.pushMatrix();
@@ -407,8 +419,8 @@ public class UGraphics {
         String shadowText = ChatColor.Companion.stripColorCodes(text);
         //#if MC>=11602
         //$$ IRenderTypeBuffer.Impl irendertypebuffer$impl = IRenderTypeBuffer.getImpl(Tessellator.getInstance().getBuffer());
-        //$$ UMinecraft.getFontRenderer().renderString(shadowText, x + 1f, y + 1f, shadowColor, false, stack.peek().getModel(), irendertypebuffer$impl, false, 0, 15728880);
-        //$$ UMinecraft.getFontRenderer().renderString(text, x, y, color, false, stack.peek().getModel(), irendertypebuffer$impl, false, 0, 15728880);
+        //$$ UMinecraft.getFontRenderer().renderString(shadowText, x + 1f, y + 1f, shadowColor, false, stack.peek().getModel(), irendertypebuffer$impl, TEXT_LAYER_TYPE, 0, 15728880);
+        //$$ UMinecraft.getFontRenderer().renderString(text, x, y, color, false, stack.peek().getModel(), irendertypebuffer$impl, TEXT_LAYER_TYPE, 0, 15728880);
         //$$ irendertypebuffer$impl.finish();
         //#else
         if (stack != UNIT_STACK) GL.pushMatrix();
@@ -737,7 +749,7 @@ public class UGraphics {
         POSITION_TEXTURE_COLOR_NORMAL(DefaultVertexFormats.POSITION_TEX_COLOR_NORMAL),
         ;
 
-        private final VertexFormat mc;
+        public final VertexFormat mc;
 
         CommonVertexFormats(VertexFormat mc) {
             this.mc = mc;
@@ -815,7 +827,11 @@ public class UGraphics {
     public void drawDirect() {
         //#if MC>=11600
         //$$ if (renderLayer != null) {
-        //$$     renderLayer.finish(instance, 0, 0, 0);
+            //#if MC>=12000
+            //$$ renderLayer.draw(instance, RenderSystem.getVertexSorting());
+            //#else
+            //$$ renderLayer.finish(instance, 0, 0, 0);
+            //#endif
         //$$     return;
         //$$ }
         //#endif
@@ -825,11 +841,17 @@ public class UGraphics {
     public void drawSorted(int cameraX, int cameraY, int cameraZ) {
         //#if MC>=11600
         //$$ if (renderLayer != null) {
-        //$$     renderLayer.finish(instance, cameraX, cameraY, cameraZ);
+            //#if MC>=12000
+            //$$ renderLayer.draw(instance, RenderSystem.getVertexSorting());
+            //#else
+            //$$ renderLayer.finish(instance, cameraX, cameraY, cameraZ);
+            //#endif
         //$$     return;
         //$$ }
         //#endif
-        //#if MC>=11700
+        //#if MC>=12000
+        //$$ instance.setSorter(RenderSystem.getVertexSorting());
+        //#elseif MC>=11700
         //$$ instance.setCameraPosition(cameraX, cameraY, cameraZ);
         //#else
         instance.sortVertexData(cameraX, cameraY, cameraZ);

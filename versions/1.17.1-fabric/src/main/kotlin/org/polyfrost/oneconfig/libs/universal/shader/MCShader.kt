@@ -3,6 +3,7 @@ package org.polyfrost.oneconfig.libs.universal.shader
 
 import com.google.common.collect.ImmutableMap
 import org.polyfrost.oneconfig.libs.universal.UGraphics
+import org.polyfrost.oneconfig.libs.universal.UGraphics.CommonVertexFormats
 import net.minecraft.client.gl.GlUniform
 import net.minecraft.client.render.Shader
 import net.minecraft.client.render.VertexFormat
@@ -11,6 +12,10 @@ import net.minecraft.util.Identifier
 import org.apache.commons.codec.digest.DigestUtils
 import java.io.FileNotFoundException
 import kotlin.NoSuchElementException
+
+//#if MC>=11903
+//$$ import gg.essential.universal.DummyPack
+//#endif
 
 //#if MC>=11900
 //$$ import net.minecraft.resource.Resource
@@ -52,8 +57,8 @@ internal class MCShader(
     companion object {
         private val DEBUG_LEGACY = System.getProperty("universalcraft.shader.legacy.debug", "") == "true"
 
-        fun fromLegacyShader(vertSource: String, fragSource: String, blendState: BlendState): MCShader {
-            val transformer = ShaderTransformer()
+        fun fromLegacyShader(vertSource: String, fragSource: String, blendState: BlendState, vertexFormat: CommonVertexFormats?): MCShader {
+            val transformer = ShaderTransformer(vertexFormat)
 
             val transformedVertSource = transformer.transform(vertSource)
             val transformedFragSource = transformer.transform(fragSource)
@@ -94,18 +99,29 @@ internal class MCShader(
                     id.path.endsWith(".fsh") -> transformedFragSource
                     else -> throw FileNotFoundException(id.toString())
                 }
-                //#if MC>=11900
+                //#if MC>=11903
+                //$$ Optional.of(Resource(DummyPack, content::byteInputStream))
+                //#elseif MC>=11900
                 //$$ Optional.of(Resource("__generated__", content::byteInputStream))
                 //#else
                 ResourceImpl("__generated__", id, content.byteInputStream(), null)
                 //#endif
             }
 
-            // The actual element doesn't matter here, Shader only cares about the names
-            val vertexFormat = VertexFormat(ImmutableMap.copyOf(transformer.attributes.associateWith { VertexFormats.POSITION_ELEMENT }))
+            val shaderVertexFormat = if (vertexFormat != null) {
+                // Shader calls glBindAttribLocation using the names in the VertexFormat, not the shader json...
+                // Easiest way to work around this is to construct a custom VertexFormat with our prefixed names.
+                VertexFormat(ImmutableMap.copyOf(
+                    transformer.attributes.withIndex()
+                        .associate { it.value to vertexFormat.mc.elements[it.index] }))
+            } else {
+                // Legacy fallback: The actual element doesn't matter here, Shader only cares about the names
+                VertexFormat(ImmutableMap.copyOf(transformer.attributes.associateWith { VertexFormats.POSITION_ELEMENT }))
+            }
+
 
             val name = DigestUtils.sha1Hex(json).lowercase()
-            return MCShader(Shader(factory, name, vertexFormat), blendState)
+            return MCShader(Shader(factory, name, shaderVertexFormat), blendState)
         }
     }
 }
@@ -135,8 +151,8 @@ internal class MCSamplerUniform(val mc: Shader, val name: String) : SamplerUnifo
     }
 }
 
-internal class ShaderTransformer {
-    val attributes = mutableSetOf<String>()
+internal class ShaderTransformer(private val vertexFormat: CommonVertexFormats?) {
+    val attributes = mutableListOf<String>()
     val samplers = mutableSetOf<String>()
     val uniforms = mutableMapOf<String, UniformType>()
 
@@ -167,21 +183,32 @@ internal class ShaderTransformer {
             replacements["gl_Color"] = "uc_FrontColor"
         }
 
-        fun replaceAttribute(needle: String, type: String, replacementName: String = "uc_" + needle.substringAfter("_"), replacement: String = replacementName) {
+        fun replaceAttribute(newAttributes: MutableList<Pair<String, String>>, needle: String, type: String, replacementName: String = "uc_" + needle.substringAfter("_"), replacement: String = replacementName) {
             if (needle in source) {
                 replacements[needle] = replacement
-                if (replacementName !in attributes) {
-                    attributes.add(replacementName)
-                    transformed.add("in $type $replacementName;")
-                }
+                newAttributes.add(replacementName to "in $type $replacementName;")
             }
         }
         if (vert) {
-            replaceAttribute("gl_Vertex", "vec3", replacement = "vec4(uc_Vertex, 1.0)")
-            replaceAttribute("gl_Color", "vec4")
-            replaceAttribute("gl_MultiTexCoord0.st", "vec2", "uc_UV0")
-            replaceAttribute("gl_MultiTexCoord1.st", "vec2", "uc_UV1")
-            replaceAttribute("gl_MultiTexCoord2.st", "vec2", "uc_UV2")
+            val newAttributes = mutableListOf<Pair<String, String>>()
+            replaceAttribute(newAttributes, "gl_Vertex", "vec3", "uc_Position", replacement = "vec4(uc_Position, 1.0)")
+            replaceAttribute(newAttributes, "gl_Color", "vec4")
+            replaceAttribute(newAttributes, "gl_MultiTexCoord0.st", "vec2", "uc_UV0")
+            replaceAttribute(newAttributes, "gl_MultiTexCoord1.st", "vec2", "uc_UV1")
+            replaceAttribute(newAttributes, "gl_MultiTexCoord2.st", "vec2", "uc_UV2")
+
+            if (vertexFormat != null) {
+                newAttributes.sortedBy { vertexFormat.mc.shaderAttributes.indexOf(it.first.removePrefix("uc_")) }
+                    .forEach {
+                        attributes.add(it.first)
+                        transformed.add(it.second)
+                    }
+            } else {
+                newAttributes.forEach {
+                    attributes.add(it.first)
+                    transformed.add(it.second)
+                }
+            }
         }
 
         fun replaceUniform(needle: String, type: UniformType, replacementName: String, replacement: String = replacementName) {
