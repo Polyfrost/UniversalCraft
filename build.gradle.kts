@@ -33,37 +33,3 @@ tasks.jar {
         attributes(mapOf("FMLModType" to "LIBRARY"))
     }
 }
-
-publishing {
-    publications {
-        create<MavenPublication>("Maven") {
-            artifactId = "${rootProject.name.lowercase()}-${project.name}"
-            version = rootProject.version.toString()
-
-            artifact(tasks.getByName<Jar>("jar").archiveFile)
-
-            artifact(tasks.getByName<Jar>("sourcesJar").archiveFile) {
-                this.classifier = "sources"
-            }
-        }
-    }
-
-    repositories {
-        mavenLocal()
-        maven {
-            url = uri("https://repo.polyfrost.org/releases")
-            name = "releases"
-            credentials(PasswordCredentials::class)
-        }
-        maven {
-            url = uri("https://repo.polyfrost.org/snapshots")
-            name = "snapshots"
-            credentials(PasswordCredentials::class)
-        }
-        maven {
-            url = uri("https://repo.polyfrost.org/private")
-            name = "private"
-            credentials(PasswordCredentials::class)
-        }
-    }
-}
