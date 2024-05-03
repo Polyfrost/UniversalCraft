@@ -1,4 +1,5 @@
 import org.polyfrost.gradle.util.*
+import org.jetbrains.kotlin.gradle.tasks.KotlinCompile
 
 plugins {
     kotlin("jvm")
@@ -18,6 +19,13 @@ loom {
 
 dependencies {
     implementation("org.jetbrains.kotlin:kotlin-stdlib-jdk8:1.5.21")
+}
+
+tasks.withType<KotlinCompile> {
+    kotlinOptions {
+        languageVersion = "1.6"
+        apiVersion = "1.6"
+    }
 }
 
 tasks.jar {

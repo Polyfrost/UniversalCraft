@@ -6,7 +6,7 @@ pluginManagement {
         maven("https://repo.polyfrost.org/releases")
     }
     plugins {
-        val egtVersion = "0.4.1"
+        val egtVersion = "0.5.1"
         id("org.polyfrost.multi-version.root") version egtVersion
         id("org.polyfrost.multi-version.api-validation") version egtVersion
     }
@@ -40,7 +40,8 @@ listOf(
     "1.20.2-fabric",
     "1.20.2-forge",
     "1.20.4-fabric",
-    "1.20.4-forge"
+    "1.20.4-forge",
+    "1.20.6-fabric",
 ).forEach { version ->
     include(":$version")
     project(":$version").apply {
