@@ -4,7 +4,7 @@ plugins {
     id("org.polyfrost.multi-version.api-validation")
 }
 
-version = "297"
+version = "298"
 
 preprocess {
     val fabric12100 = createNode("1.21-fabric", 12100, "srg")
