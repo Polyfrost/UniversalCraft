@@ -4,7 +4,7 @@ plugins {
     id("org.polyfrost.multi-version.api-validation")
 }
 
-version = "298"
+version = "299"
 
 preprocess {
     val fabric12100 = createNode("1.21-fabric", 12100, "srg")
@@ -24,8 +24,8 @@ preprocess {
     val fabric11902 = createNode("1.19.2-fabric", 11902, "yarn")
     val fabric11901 = createNode("1.19.1-fabric", 11901, "yarn")
     val fabric11900 = createNode("1.19-fabric", 11900, "yarn")
-    val forge11801 = createNode("1.18.1-forge", 11801, "srg")
-    val fabric11801 = createNode("1.18.1-fabric", 11801, "yarn")
+    val forge11802 = createNode("1.18.2-forge", 11802, "srg")
+    val fabric11802 = createNode("1.18.2-fabric", 11802, "yarn")
     val forge11701 = createNode("1.17.1-forge", 11701, "srg")
     val fabric11701 = createNode("1.17.1-fabric", 11701, "yarn")
     val fabric11605 = createNode("1.16.5-fabric", 11605, "yarn")
@@ -51,9 +51,9 @@ preprocess {
     forge11902.link(fabric11902)
     fabric11902.link(fabric11901)
     fabric11901.link(fabric11900)
-    fabric11900.link(fabric11801)
-    forge11801.link(fabric11801)
-    fabric11801.link(fabric11701)
+    fabric11900.link(fabric11802)
+    forge11802.link(fabric11802)
+    fabric11802.link(fabric11701)
     forge11701.link(fabric11701)
     fabric11701.link(fabric11605, file("versions/1.17.1-1.16.5.txt"))
     fabric11605.link(forge11605)

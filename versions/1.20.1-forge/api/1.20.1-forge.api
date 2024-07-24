@@ -1,0 +1,794 @@
+public final class org/polyfrost/universal/ChatColor : java/lang/Enum {
+	public static final field AQUA Lorg/polyfrost/universal/ChatColor;
+	public static final field BLACK Lorg/polyfrost/universal/ChatColor;
+	public static final field BLUE Lorg/polyfrost/universal/ChatColor;
+	public static final field BOLD Lorg/polyfrost/universal/ChatColor;
+	public static final field COLOR_CHAR C
+	public static final field Companion Lorg/polyfrost/universal/ChatColor$Companion;
+	public static final field DARK_AQUA Lorg/polyfrost/universal/ChatColor;
+	public static final field DARK_BLUE Lorg/polyfrost/universal/ChatColor;
+	public static final field DARK_GRAY Lorg/polyfrost/universal/ChatColor;
+	public static final field DARK_GREEN Lorg/polyfrost/universal/ChatColor;
+	public static final field DARK_PURPLE Lorg/polyfrost/universal/ChatColor;
+	public static final field DARK_RED Lorg/polyfrost/universal/ChatColor;
+	public static final field GOLD Lorg/polyfrost/universal/ChatColor;
+	public static final field GRAY Lorg/polyfrost/universal/ChatColor;
+	public static final field GREEN Lorg/polyfrost/universal/ChatColor;
+	public static final field ITALIC Lorg/polyfrost/universal/ChatColor;
+	public static final field LIGHT_PURPLE Lorg/polyfrost/universal/ChatColor;
+	public static final field MAGIC Lorg/polyfrost/universal/ChatColor;
+	public static final field RED Lorg/polyfrost/universal/ChatColor;
+	public static final field RESET Lorg/polyfrost/universal/ChatColor;
+	public static final field STRIKETHROUGH Lorg/polyfrost/universal/ChatColor;
+	public static final field UNDERLINE Lorg/polyfrost/universal/ChatColor;
+	public static final field WHITE Lorg/polyfrost/universal/ChatColor;
+	public static final field YELLOW Lorg/polyfrost/universal/ChatColor;
+	public final fun getChar ()C
+	public final fun getColor ()Ljava/awt/Color;
+	public final fun isColor ()Z
+	public final fun isFormat ()Z
+	public final fun plus (Ljava/lang/String;)Ljava/lang/String;
+	public fun toString ()Ljava/lang/String;
+	public static fun valueOf (Ljava/lang/String;)Lorg/polyfrost/universal/ChatColor;
+	public static fun values ()[Lorg/polyfrost/universal/ChatColor;
+}
+
+public final class org/polyfrost/universal/ChatColor$Companion {
+	public final fun getCOLOR_CODE_PATTERN ()Lkotlin/text/Regex;
+	public final fun getFORMATTING_CODE_PATTERN ()Lkotlin/text/Regex;
+	public final fun stripColorCodes (Ljava/lang/String;)Ljava/lang/String;
+	public final fun stripControlCodes (Ljava/lang/String;)Ljava/lang/String;
+	public final fun translateAlternateColorCodes (CLjava/lang/String;)Ljava/lang/String;
+}
+
+public final class org/polyfrost/universal/GuiScale : java/lang/Enum {
+	public static final field Auto Lorg/polyfrost/universal/GuiScale;
+	public static final field Companion Lorg/polyfrost/universal/GuiScale$Companion;
+	public static final field Large Lorg/polyfrost/universal/GuiScale;
+	public static final field Medium Lorg/polyfrost/universal/GuiScale;
+	public static final field Small Lorg/polyfrost/universal/GuiScale;
+	public static final field VeryLarge Lorg/polyfrost/universal/GuiScale;
+	public static final fun fromNumber (I)Lorg/polyfrost/universal/GuiScale;
+	public static final fun scaleForScreenSize ()Lorg/polyfrost/universal/GuiScale;
+	public static final fun scaleForScreenSize (I)Lorg/polyfrost/universal/GuiScale;
+	public static fun valueOf (Ljava/lang/String;)Lorg/polyfrost/universal/GuiScale;
+	public static fun values ()[Lorg/polyfrost/universal/GuiScale;
+}
+
+public final class org/polyfrost/universal/GuiScale$Companion {
+	public final fun fromNumber (I)Lorg/polyfrost/universal/GuiScale;
+	public final fun scaleForScreenSize ()Lorg/polyfrost/universal/GuiScale;
+	public final fun scaleForScreenSize (I)Lorg/polyfrost/universal/GuiScale;
+	public static synthetic fun scaleForScreenSize$default (Lorg/polyfrost/universal/GuiScale$Companion;IILjava/lang/Object;)Lorg/polyfrost/universal/GuiScale;
+}
+
+public final class org/polyfrost/universal/UChat {
+	public static final field INSTANCE Lorg/polyfrost/universal/UChat;
+	public static final fun actionBar (Ljava/lang/Object;)V
+	public static final fun addColor (Ljava/lang/String;)Ljava/lang/String;
+	public static final fun chat (Ljava/lang/Object;)V
+	public static final fun say (Ljava/lang/String;)V
+}
+
+public final class org/polyfrost/universal/UDesktop {
+	public static final field INSTANCE Lorg/polyfrost/universal/UDesktop;
+	public static final fun browse (Ljava/net/URI;)Z
+	public static final fun edit (Ljava/io/File;)Z
+	public static final fun getClipboardString ()Ljava/lang/String;
+	public static final fun isGnome ()Z
+	public static final fun isKde ()Z
+	public static final fun isLinux ()Z
+	public static final fun isMac ()Z
+	public static final fun isWindows ()Z
+	public static final fun isXdg ()Z
+	public static final fun open (Ljava/io/File;)Z
+	public static final fun setClipboardString (Ljava/lang/String;)V
+}
+
+public class org/polyfrost/universal/UGraphics {
+	public static field EMPTY_WITH_FONT_ID Lnet/minecraft/network/chat/Style;
+	public static field ZERO_TEXT_ALPHA I
+	public fun <init> (Lcom/mojang/blaze3d/vertex/BufferBuilder;)V
+	public static fun activeTexture (I)V
+	public static fun areShadersSupported ()Z
+	public fun asUVertexConsumer ()Lorg/polyfrost/universal/vertex/UVertexConsumer;
+	public fun begin (ILcom/mojang/blaze3d/vertex/VertexFormat;)Lorg/polyfrost/universal/UGraphics;
+	public fun begin (ILorg/polyfrost/universal/UGraphics$CommonVertexFormats;)Lorg/polyfrost/universal/UGraphics;
+	public fun beginRenderLayer (Lnet/minecraft/client/renderer/RenderType;)Lorg/polyfrost/universal/UGraphics;
+	public fun beginWithActiveShader (Lorg/polyfrost/universal/UGraphics$DrawMode;Lcom/mojang/blaze3d/vertex/VertexFormat;)Lorg/polyfrost/universal/UGraphics;
+	public fun beginWithActiveShader (Lorg/polyfrost/universal/UGraphics$DrawMode;Lorg/polyfrost/universal/UGraphics$CommonVertexFormats;)Lorg/polyfrost/universal/UGraphics;
+	public fun beginWithDefaultShader (Lorg/polyfrost/universal/UGraphics$DrawMode;Lcom/mojang/blaze3d/vertex/VertexFormat;)Lorg/polyfrost/universal/UGraphics;
+	public fun beginWithDefaultShader (Lorg/polyfrost/universal/UGraphics$DrawMode;Lorg/polyfrost/universal/UGraphics$CommonVertexFormats;)Lorg/polyfrost/universal/UGraphics;
+	public static fun bindTexture (I)V
+	public static fun bindTexture (II)V
+	public static fun bindTexture (ILnet/minecraft/resources/ResourceLocation;)V
+	public static fun bindTexture (Lnet/minecraft/resources/ResourceLocation;)V
+	public static fun blendEquation (I)V
+	public fun color (FFFF)Lorg/polyfrost/universal/UGraphics;
+	public fun color (IIII)Lorg/polyfrost/universal/UGraphics;
+	public fun color (Ljava/awt/Color;)Lorg/polyfrost/universal/UGraphics;
+	public static fun color4f (FFFF)V
+	public static fun configureTexture (ILjava/lang/Runnable;)V
+	public static fun configureTextureUnit (ILjava/lang/Runnable;)V
+	public static fun cullFace (I)V
+	public static fun deleteTexture (I)V
+	public static fun depthFunc (I)V
+	public static fun depthMask (Z)V
+	public static fun directColor3f (FFF)V
+	public static fun disableAlpha ()V
+	public static fun disableBlend ()V
+	public static fun disableDepth ()V
+	public static fun disableLight (I)V
+	public static fun disableLighting ()V
+	public static fun disableTexture2D ()V
+	public static fun draw ()V
+	public fun drawDirect ()V
+	public fun drawSorted (III)V
+	public static fun drawString (Ljava/lang/String;FFII)V
+	public static fun drawString (Ljava/lang/String;FFIZ)V
+	public static fun drawString (Lorg/polyfrost/universal/UMatrixStack;Ljava/lang/String;FFII)V
+	public static fun drawString (Lorg/polyfrost/universal/UMatrixStack;Ljava/lang/String;FFIZ)V
+	public static fun enableAlpha ()V
+	public static fun enableBlend ()V
+	public static fun enableDepth ()V
+	public static fun enableLight (I)V
+	public static fun enableLighting ()V
+	public static fun enableTexture2D ()V
+	public fun endVertex ()Lorg/polyfrost/universal/UGraphics;
+	public static fun getActiveTexture ()I
+	public static fun getCharWidth (C)F
+	public static fun getEmptyTexture ()Lorg/polyfrost/universal/utils/ReleasedDynamicTexture;
+	public static fun getFontHeight ()I
+	public static fun getFromTessellator ()Lorg/polyfrost/universal/UGraphics;
+	public static fun getStringWidth (Ljava/lang/String;)I
+	public static fun getTessellator ()Lcom/mojang/blaze3d/vertex/Tesselator;
+	public static fun getTexture (Ljava/awt/image/BufferedImage;)Lorg/polyfrost/universal/utils/ReleasedDynamicTexture;
+	public static fun getTexture (Ljava/io/InputStream;)Lorg/polyfrost/universal/utils/ReleasedDynamicTexture;
+	public static fun glAttachShader (II)V
+	public static fun glClear (I)V
+	public static fun glClearStencil (I)V
+	public static fun glCompileShader (I)V
+	public static fun glCreateProgram ()I
+	public static fun glCreateShader (I)I
+	public static fun glGetProgramInfoLog (II)Ljava/lang/String;
+	public static fun glGetProgrami (II)I
+	public static fun glGetShaderInfoLog (II)Ljava/lang/String;
+	public static fun glGetShaderi (II)I
+	public static fun glLinkProgram (I)V
+	public static fun glUseProgram (I)V
+	public static fun isOpenGl21Supported ()Z
+	public fun light (II)Lorg/polyfrost/universal/UGraphics;
+	public static fun listFormattedStringToWidth (Ljava/lang/String;I)Ljava/util/List;
+	public static fun listFormattedStringToWidth (Ljava/lang/String;IZ)Ljava/util/List;
+	public fun norm (FFF)Lorg/polyfrost/universal/UGraphics;
+	public fun norm (Lorg/polyfrost/universal/UMatrixStack;FFF)Lorg/polyfrost/universal/UGraphics;
+	public fun overlay (II)Lorg/polyfrost/universal/UGraphics;
+	public fun pos (DDD)Lorg/polyfrost/universal/UGraphics;
+	public fun pos (Lorg/polyfrost/universal/UMatrixStack;DDD)Lorg/polyfrost/universal/UGraphics;
+	public static fun setActiveTexture (I)V
+	public static fun setShader (Ljava/util/function/Supplier;)V
+	public static fun shadeModel (I)V
+	public fun tex (DD)Lorg/polyfrost/universal/UGraphics;
+	public static fun tryBlendFuncSeparate (IIII)V
+}
+
+public final class org/polyfrost/universal/UGraphics$CommonVertexFormats : java/lang/Enum {
+	public static final field POSITION Lorg/polyfrost/universal/UGraphics$CommonVertexFormats;
+	public static final field POSITION_COLOR Lorg/polyfrost/universal/UGraphics$CommonVertexFormats;
+	public static final field POSITION_COLOR_TEXTURE_LIGHT Lorg/polyfrost/universal/UGraphics$CommonVertexFormats;
+	public static final field POSITION_TEXTURE Lorg/polyfrost/universal/UGraphics$CommonVertexFormats;
+	public static final field POSITION_TEXTURE_COLOR Lorg/polyfrost/universal/UGraphics$CommonVertexFormats;
+	public static final field POSITION_TEXTURE_COLOR_LIGHT Lorg/polyfrost/universal/UGraphics$CommonVertexFormats;
+	public static final field POSITION_TEXTURE_COLOR_NORMAL Lorg/polyfrost/universal/UGraphics$CommonVertexFormats;
+	public static final field POSITION_TEXTURE_LIGHT_COLOR Lorg/polyfrost/universal/UGraphics$CommonVertexFormats;
+	public final field mc Lcom/mojang/blaze3d/vertex/VertexFormat;
+	public static fun valueOf (Ljava/lang/String;)Lorg/polyfrost/universal/UGraphics$CommonVertexFormats;
+	public static fun values ()[Lorg/polyfrost/universal/UGraphics$CommonVertexFormats;
+}
+
+public final class org/polyfrost/universal/UGraphics$DrawMode : java/lang/Enum {
+	public static final field LINES Lorg/polyfrost/universal/UGraphics$DrawMode;
+	public static final field LINE_STRIP Lorg/polyfrost/universal/UGraphics$DrawMode;
+	public static final field QUADS Lorg/polyfrost/universal/UGraphics$DrawMode;
+	public static final field TRIANGLES Lorg/polyfrost/universal/UGraphics$DrawMode;
+	public static final field TRIANGLE_FAN Lorg/polyfrost/universal/UGraphics$DrawMode;
+	public static final field TRIANGLE_STRIP Lorg/polyfrost/universal/UGraphics$DrawMode;
+	public static fun fromGl (I)Lorg/polyfrost/universal/UGraphics$DrawMode;
+	public static fun fromRenderLayer (Lnet/minecraft/client/renderer/RenderType;)Lorg/polyfrost/universal/UGraphics$DrawMode;
+	public static fun valueOf (Ljava/lang/String;)Lorg/polyfrost/universal/UGraphics$DrawMode;
+	public static fun values ()[Lorg/polyfrost/universal/UGraphics$DrawMode;
+}
+
+public final class org/polyfrost/universal/UGuiButton {
+	public static final field INSTANCE Lorg/polyfrost/universal/UGuiButton;
+	public static final fun getX (Lnet/minecraft/client/gui/components/AbstractWidget;)I
+	public static final fun getY (Lnet/minecraft/client/gui/components/AbstractWidget;)I
+}
+
+public final class org/polyfrost/universal/UImage {
+	public static final field Companion Lorg/polyfrost/universal/UImage$Companion;
+	public fun <init> (Lcom/mojang/blaze3d/platform/NativeImage;)V
+	public final fun copy ()Lorg/polyfrost/universal/UImage;
+	public final fun copyFrom (Lorg/polyfrost/universal/UImage;)V
+	public final fun getHeight ()I
+	public final fun getNativeImage ()Lcom/mojang/blaze3d/platform/NativeImage;
+	public final fun getPixelRGBA (II)I
+	public final fun getWidth ()I
+	public static final fun ofSize (II)Lorg/polyfrost/universal/UImage;
+	public static final fun ofSize (IIZ)Lorg/polyfrost/universal/UImage;
+	public final fun setPixelRGBA (III)V
+}
+
+public final class org/polyfrost/universal/UImage$Companion {
+	public final fun ofSize (II)Lorg/polyfrost/universal/UImage;
+	public final fun ofSize (IIZ)Lorg/polyfrost/universal/UImage;
+	public static synthetic fun ofSize$default (Lorg/polyfrost/universal/UImage$Companion;IIZILjava/lang/Object;)Lorg/polyfrost/universal/UImage;
+}
+
+public final class org/polyfrost/universal/UKeyboard {
+	public static final field INSTANCE Lorg/polyfrost/universal/UKeyboard;
+	public static final field KEY_0 I
+	public static final field KEY_1 I
+	public static final field KEY_2 I
+	public static final field KEY_3 I
+	public static final field KEY_4 I
+	public static final field KEY_5 I
+	public static final field KEY_6 I
+	public static final field KEY_7 I
+	public static final field KEY_8 I
+	public static final field KEY_9 I
+	public static final field KEY_A I
+	public static final field KEY_ADD I
+	public static final field KEY_APOSTROPHE I
+	public static final field KEY_B I
+	public static final field KEY_BACKSLASH I
+	public static final field KEY_BACKSPACE I
+	public static final field KEY_C I
+	public static final field KEY_CAPITAL I
+	public static final field KEY_COMMA I
+	public static final field KEY_D I
+	public static final field KEY_DECIMAL I
+	public static final field KEY_DELETE I
+	public static final field KEY_DIVIDE I
+	public static final field KEY_DOWN I
+	public static final field KEY_E I
+	public static final field KEY_END I
+	public static final field KEY_ENTER I
+	public static final field KEY_EQUALS I
+	public static final field KEY_ESCAPE I
+	public static final field KEY_F I
+	public static final field KEY_F1 I
+	public static final field KEY_F10 I
+	public static final field KEY_F11 I
+	public static final field KEY_F12 I
+	public static final field KEY_F13 I
+	public static final field KEY_F14 I
+	public static final field KEY_F15 I
+	public static final field KEY_F16 I
+	public static final field KEY_F17 I
+	public static final field KEY_F18 I
+	public static final field KEY_F19 I
+	public static final field KEY_F2 I
+	public static final field KEY_F3 I
+	public static final field KEY_F4 I
+	public static final field KEY_F5 I
+	public static final field KEY_F6 I
+	public static final field KEY_F7 I
+	public static final field KEY_F8 I
+	public static final field KEY_F9 I
+	public static final field KEY_G I
+	public static final field KEY_GRAVE I
+	public static final field KEY_H I
+	public static final field KEY_HOME I
+	public static final field KEY_I I
+	public static final field KEY_J I
+	public static final field KEY_K I
+	public static final field KEY_L I
+	public static final field KEY_LBRACKET I
+	public static final field KEY_LCONTROL I
+	public static final field KEY_LEFT I
+	public static final field KEY_LMENU I
+	public static final field KEY_LMETA I
+	public static final field KEY_LSHIFT I
+	public static final field KEY_M I
+	public static final field KEY_MENU I
+	public static final field KEY_MINUS I
+	public static final field KEY_MULTIPLY I
+	public static final field KEY_N I
+	public static final field KEY_NONE I
+	public static final field KEY_NUMLOCK I
+	public static final field KEY_NUMPAD0 I
+	public static final field KEY_NUMPAD1 I
+	public static final field KEY_NUMPAD2 I
+	public static final field KEY_NUMPAD3 I
+	public static final field KEY_NUMPAD4 I
+	public static final field KEY_NUMPAD5 I
+	public static final field KEY_NUMPAD6 I
+	public static final field KEY_NUMPAD7 I
+	public static final field KEY_NUMPAD8 I
+	public static final field KEY_NUMPAD9 I
+	public static final field KEY_O I
+	public static final field KEY_P I
+	public static final field KEY_PERIOD I
+	public static final field KEY_Q I
+	public static final field KEY_R I
+	public static final field KEY_RBRACKET I
+	public static final field KEY_RCONTROL I
+	public static final field KEY_RIGHT I
+	public static final field KEY_RMENU I
+	public static final field KEY_RMETA I
+	public static final field KEY_RSHIFT I
+	public static final field KEY_S I
+	public static final field KEY_SCROLL I
+	public static final field KEY_SEMICOLON I
+	public static final field KEY_SLASH I
+	public static final field KEY_SPACE I
+	public static final field KEY_SUBTRACT I
+	public static final field KEY_T I
+	public static final field KEY_TAB I
+	public static final field KEY_U I
+	public static final field KEY_UP I
+	public static final field KEY_V I
+	public static final field KEY_W I
+	public static final field KEY_X I
+	public static final field KEY_Y I
+	public static final field KEY_Z I
+	public static final fun allowRepeatEvents (Z)V
+	public static final fun getKeyName (I)Ljava/lang/String;
+	public static final fun getKeyName (II)Ljava/lang/String;
+	public static final fun getKeyName (Lnet/minecraft/client/KeyMapping;)Ljava/lang/String;
+	public static final fun getModifiers ()Lorg/polyfrost/universal/UKeyboard$Modifiers;
+	public static final fun isAltKeyDown ()Z
+	public static final fun isCtrlKeyDown ()Z
+	public static final fun isKeyComboCtrlA (I)Z
+	public static final fun isKeyComboCtrlC (I)Z
+	public static final fun isKeyComboCtrlShiftZ (I)Z
+	public static final fun isKeyComboCtrlV (I)Z
+	public static final fun isKeyComboCtrlX (I)Z
+	public static final fun isKeyComboCtrlY (I)Z
+	public static final fun isKeyComboCtrlZ (I)Z
+	public static final fun isKeyDown (I)Z
+	public static final fun isShiftKeyDown ()Z
+}
+
+public final class org/polyfrost/universal/UKeyboard$Modifiers {
+	public fun <init> (ZZZ)V
+	public final fun component1 ()Z
+	public final fun component2 ()Z
+	public final fun component3 ()Z
+	public final fun copy (ZZZ)Lorg/polyfrost/universal/UKeyboard$Modifiers;
+	public static synthetic fun copy$default (Lorg/polyfrost/universal/UKeyboard$Modifiers;ZZZILjava/lang/Object;)Lorg/polyfrost/universal/UKeyboard$Modifiers;
+	public fun equals (Ljava/lang/Object;)Z
+	public fun hashCode ()I
+	public final fun isAlt ()Z
+	public final fun isCtrl ()Z
+	public final fun isShift ()Z
+	public fun toString ()Ljava/lang/String;
+}
+
+public final class org/polyfrost/universal/UMath {
+	public static final field INSTANCE Lorg/polyfrost/universal/UMath;
+	public static final fun clampFloat (FFF)F
+	public static final fun clampInt (III)I
+	public static final fun sqrtDouble (D)F
+	public static final fun wrapAngleTo180 (D)D
+}
+
+public final class org/polyfrost/universal/UMatrixStack {
+	public static final field Companion Lorg/polyfrost/universal/UMatrixStack$Companion;
+	public static final field UNIT Lorg/polyfrost/universal/UMatrixStack;
+	public fun <init> ()V
+	public fun <init> (Lcom/mojang/blaze3d/vertex/PoseStack$Pose;)V
+	public fun <init> (Lcom/mojang/blaze3d/vertex/PoseStack;)V
+	public final fun applyToGlobalState ()V
+	public final fun fork ()Lorg/polyfrost/universal/UMatrixStack;
+	public final fun isEmpty ()Z
+	public final fun multiply (Lorg/joml/Quaternionf;)V
+	public final fun peek ()Lorg/polyfrost/universal/UMatrixStack$Entry;
+	public final fun pop ()V
+	public final fun push ()V
+	public final fun replaceGlobalState ()V
+	public final fun rotate (FFFF)V
+	public final fun rotate (FFFFZ)V
+	public static synthetic fun rotate$default (Lorg/polyfrost/universal/UMatrixStack;FFFFZILjava/lang/Object;)V
+	public final fun runReplacingGlobalState (Ljava/lang/Runnable;)V
+	public final fun runReplacingGlobalState (Lkotlin/jvm/functions/Function0;)Ljava/lang/Object;
+	public final fun runWithGlobalState (Ljava/lang/Runnable;)V
+	public final fun runWithGlobalState (Lkotlin/jvm/functions/Function0;)Ljava/lang/Object;
+	public final fun scale (DDD)V
+	public final fun scale (FFF)V
+	public final fun toMC ()Lcom/mojang/blaze3d/vertex/PoseStack;
+	public final fun translate (DDD)V
+	public final fun translate (FFF)V
+}
+
+public final class org/polyfrost/universal/UMatrixStack$Companion {
+}
+
+public final class org/polyfrost/universal/UMatrixStack$Compat {
+	public static final field DEPRECATED Ljava/lang/String;
+	public static final field INSTANCE Lorg/polyfrost/universal/UMatrixStack$Compat;
+	public final fun get ()Lorg/polyfrost/universal/UMatrixStack;
+	public final fun runLegacyMethod (Lorg/polyfrost/universal/UMatrixStack;Lkotlin/jvm/functions/Function0;)Ljava/lang/Object;
+}
+
+public final class org/polyfrost/universal/UMatrixStack$Entry {
+	public fun <init> (Lorg/joml/Matrix4f;Lorg/joml/Matrix3f;)V
+	public final fun component1 ()Lorg/joml/Matrix4f;
+	public final fun component2 ()Lorg/joml/Matrix3f;
+	public final fun copy (Lorg/joml/Matrix4f;Lorg/joml/Matrix3f;)Lorg/polyfrost/universal/UMatrixStack$Entry;
+	public static synthetic fun copy$default (Lorg/polyfrost/universal/UMatrixStack$Entry;Lorg/joml/Matrix4f;Lorg/joml/Matrix3f;ILjava/lang/Object;)Lorg/polyfrost/universal/UMatrixStack$Entry;
+	public final fun deepCopy ()Lorg/polyfrost/universal/UMatrixStack$Entry;
+	public fun equals (Ljava/lang/Object;)Z
+	public final fun getModel ()Lorg/joml/Matrix4f;
+	public final fun getModelAsArray ()[F
+	public final fun getNormal ()Lorg/joml/Matrix3f;
+	public fun hashCode ()I
+	public final fun toMCStack ()Lcom/mojang/blaze3d/vertex/PoseStack;
+	public fun toString ()Ljava/lang/String;
+}
+
+public final class org/polyfrost/universal/UMinecraft {
+	public static final field INSTANCE Lorg/polyfrost/universal/UMinecraft;
+	public static final field isRunningOnMac Z
+	public static final fun getChatGUI ()Lnet/minecraft/client/gui/components/ChatComponent;
+	public static final fun getFontRenderer ()Lnet/minecraft/client/gui/Font;
+	public static final fun getGuiScale ()I
+	public static final fun getMinecraft ()Lnet/minecraft/client/Minecraft;
+	public static final fun getNetHandler ()Lnet/minecraft/client/multiplayer/ClientPacketListener;
+	public static final fun getPlayer ()Lnet/minecraft/client/player/LocalPlayer;
+	public static final fun getSettings ()Lnet/minecraft/client/Options;
+	public static final fun getTime ()J
+	public static final fun getWorld ()Lnet/minecraft/client/multiplayer/ClientLevel;
+	public static final fun setGuiScale (I)V
+}
+
+public final class org/polyfrost/universal/UMouse {
+	public static final field INSTANCE Lorg/polyfrost/universal/UMouse;
+	public static final fun getScaledX ()D
+	public static final fun getScaledY ()D
+	public static final fun getTrueX ()D
+	public static final fun getTrueY ()D
+}
+
+public final class org/polyfrost/universal/UMouse$Raw {
+	public static final field INSTANCE Lorg/polyfrost/universal/UMouse$Raw;
+	public static final fun getX ()D
+	public static final fun getY ()D
+}
+
+public final class org/polyfrost/universal/UMouse$Scaled {
+	public static final field INSTANCE Lorg/polyfrost/universal/UMouse$Scaled;
+	public static final fun getX ()D
+	public static final fun getY ()D
+}
+
+public final class org/polyfrost/universal/UPacket {
+	public static final field INSTANCE Lorg/polyfrost/universal/UPacket;
+	public static final fun sendActionBarMessage (Lorg/polyfrost/universal/wrappers/message/UTextComponent;)V
+	public static final fun sendChatMessage (Lorg/polyfrost/universal/wrappers/message/UTextComponent;)V
+}
+
+public final class org/polyfrost/universal/UResolution {
+	public static final field INSTANCE Lorg/polyfrost/universal/UResolution;
+	public static final fun getScaleFactor ()D
+	public static final fun getScaledHeight ()I
+	public static final fun getScaledWidth ()I
+	public static final fun getViewportHeight ()I
+	public static final fun getViewportWidth ()I
+	public static final fun getWindowHeight ()I
+	public static final fun getWindowWidth ()I
+}
+
+public abstract class org/polyfrost/universal/UScreen : net/minecraft/client/gui/screens/Screen {
+	public static final field Companion Lorg/polyfrost/universal/UScreen$Companion;
+	public fun <init> ()V
+	public fun <init> (Z)V
+	public fun <init> (ZI)V
+	public synthetic fun <init> (ZIILkotlin/jvm/internal/DefaultConstructorMarker;)V
+	public fun <init> (ZILjava/lang/String;)V
+	public synthetic fun <init> (ZILjava/lang/String;ILkotlin/jvm/internal/DefaultConstructorMarker;)V
+	public fun <init> (ZLorg/polyfrost/universal/GuiScale;)V
+	public final fun charTyped (CI)Z
+	public static final fun displayScreen (Lnet/minecraft/client/gui/screens/Screen;)V
+	public static final fun getCurrentScreen ()Lnet/minecraft/client/gui/screens/Screen;
+	public fun getNewGuiScale ()I
+	public final fun getRestoreCurrentGuiOnClose ()Z
+	public fun getTitle ()Lnet/minecraft/network/chat/Component;
+	public fun getUnlocalizedName ()Ljava/lang/String;
+	protected final fun init ()V
+	public fun initScreen (II)V
+	public final fun keyPressed (III)Z
+	public final fun keyReleased (III)Z
+	public final fun mouseClicked (DDI)Z
+	public final fun mouseDragged (DDIDD)Z
+	public final fun mouseReleased (DDI)Z
+	public final fun mouseScrolled (DDD)Z
+	public fun onDrawBackground (I)V
+	public fun onDrawBackground (Lorg/polyfrost/universal/UMatrixStack;I)V
+	public final fun onDrawBackgroundCompat (Lorg/polyfrost/universal/UMatrixStack;I)V
+	public fun onDrawScreen (IIF)V
+	public fun onDrawScreen (Lorg/polyfrost/universal/UMatrixStack;IIF)V
+	public fun onKeyPressed (ICLorg/polyfrost/universal/UKeyboard$Modifiers;)V
+	public fun onKeyReleased (ICLorg/polyfrost/universal/UKeyboard$Modifiers;)V
+	public fun onMouseClicked (DDI)V
+	public fun onMouseDragged (DDIJ)V
+	public fun onMouseReleased (DDI)V
+	public fun onMouseScrolled (D)V
+	public fun onScreenClose ()V
+	public fun onTick ()V
+	public final fun removed ()V
+	public final fun render (Lnet/minecraft/client/gui/GuiGraphics;IIF)V
+	public final fun renderBackground (Lnet/minecraft/client/gui/GuiGraphics;)V
+	public final fun restorePreviousScreen ()V
+	public fun setNewGuiScale (I)V
+	public fun setUnlocalizedName (Ljava/lang/String;)V
+	public final fun tick ()V
+	public fun uCharTyped (CLorg/polyfrost/universal/UKeyboard$Modifiers;)Z
+	public fun uKeyPressed (IILorg/polyfrost/universal/UKeyboard$Modifiers;)Z
+	public fun uKeyReleased (IILorg/polyfrost/universal/UKeyboard$Modifiers;)Z
+	public fun uMouseClicked (DDI)Z
+	public fun uMouseDragged (DDIJ)Z
+	public fun uMouseReleased (DDI)Z
+	public fun uMouseScrolled (D)Z
+	public fun updateGuiScale ()V
+}
+
+public final class org/polyfrost/universal/UScreen$Companion {
+	public final fun displayScreen (Lnet/minecraft/client/gui/screens/Screen;)V
+	public final fun getCurrentScreen ()Lnet/minecraft/client/gui/screens/Screen;
+}
+
+public final class org/polyfrost/universal/USound {
+	public static final field INSTANCE Lorg/polyfrost/universal/USound;
+	public final fun playButtonPress ()V
+	public final fun playButtonPress (F)V
+	public static synthetic fun playButtonPress$default (Lorg/polyfrost/universal/USound;FILjava/lang/Object;)V
+	public final fun playExpSound ()V
+	public final fun playLevelupSound ()V
+	public final fun playPlingSound ()V
+	public final fun playSoundStatic (Lnet/minecraft/core/Holder;FF)V
+	public final fun playSoundStatic (Lnet/minecraft/sounds/SoundEvent;FF)V
+}
+
+public final class org/polyfrost/universal/shader/BlendState {
+	public static final field Companion Lorg/polyfrost/universal/shader/BlendState$Companion;
+	public static final field DISABLED Lorg/polyfrost/universal/shader/BlendState;
+	public static final field NORMAL Lorg/polyfrost/universal/shader/BlendState;
+	public fun <init> (Lorg/polyfrost/universal/shader/BlendState$Equation;Lorg/polyfrost/universal/shader/BlendState$Param;Lorg/polyfrost/universal/shader/BlendState$Param;Lorg/polyfrost/universal/shader/BlendState$Param;Lorg/polyfrost/universal/shader/BlendState$Param;Z)V
+	public synthetic fun <init> (Lorg/polyfrost/universal/shader/BlendState$Equation;Lorg/polyfrost/universal/shader/BlendState$Param;Lorg/polyfrost/universal/shader/BlendState$Param;Lorg/polyfrost/universal/shader/BlendState$Param;Lorg/polyfrost/universal/shader/BlendState$Param;ZILkotlin/jvm/internal/DefaultConstructorMarker;)V
+	public final fun activate ()V
+	public static final fun active ()Lorg/polyfrost/universal/shader/BlendState;
+	public final fun component1 ()Lorg/polyfrost/universal/shader/BlendState$Equation;
+	public final fun component2 ()Lorg/polyfrost/universal/shader/BlendState$Param;
+	public final fun component3 ()Lorg/polyfrost/universal/shader/BlendState$Param;
+	public final fun component4 ()Lorg/polyfrost/universal/shader/BlendState$Param;
+	public final fun component5 ()Lorg/polyfrost/universal/shader/BlendState$Param;
+	public final fun component6 ()Z
+	public final fun copy (Lorg/polyfrost/universal/shader/BlendState$Equation;Lorg/polyfrost/universal/shader/BlendState$Param;Lorg/polyfrost/universal/shader/BlendState$Param;Lorg/polyfrost/universal/shader/BlendState$Param;Lorg/polyfrost/universal/shader/BlendState$Param;Z)Lorg/polyfrost/universal/shader/BlendState;
+	public static synthetic fun copy$default (Lorg/polyfrost/universal/shader/BlendState;Lorg/polyfrost/universal/shader/BlendState$Equation;Lorg/polyfrost/universal/shader/BlendState$Param;Lorg/polyfrost/universal/shader/BlendState$Param;Lorg/polyfrost/universal/shader/BlendState$Param;Lorg/polyfrost/universal/shader/BlendState$Param;ZILjava/lang/Object;)Lorg/polyfrost/universal/shader/BlendState;
+	public fun equals (Ljava/lang/Object;)Z
+	public final fun getDstAlpha ()Lorg/polyfrost/universal/shader/BlendState$Param;
+	public final fun getDstRgb ()Lorg/polyfrost/universal/shader/BlendState$Param;
+	public final fun getEnabled ()Z
+	public final fun getEquation ()Lorg/polyfrost/universal/shader/BlendState$Equation;
+	public final fun getMc ()Lcom/mojang/blaze3d/shaders/BlendMode;
+	public final fun getSeparate ()Z
+	public final fun getSrcAlpha ()Lorg/polyfrost/universal/shader/BlendState$Param;
+	public final fun getSrcRgb ()Lorg/polyfrost/universal/shader/BlendState$Param;
+	public fun hashCode ()I
+	public fun toString ()Ljava/lang/String;
+}
+
+public final class org/polyfrost/universal/shader/BlendState$Companion {
+	public final fun active ()Lorg/polyfrost/universal/shader/BlendState;
+}
+
+public final class org/polyfrost/universal/shader/BlendState$Equation : java/lang/Enum {
+	public static final field ADD Lorg/polyfrost/universal/shader/BlendState$Equation;
+	public static final field Companion Lorg/polyfrost/universal/shader/BlendState$Equation$Companion;
+	public static final field MAX Lorg/polyfrost/universal/shader/BlendState$Equation;
+	public static final field MIN Lorg/polyfrost/universal/shader/BlendState$Equation;
+	public static final field REVERSE_SUBTRACT Lorg/polyfrost/universal/shader/BlendState$Equation;
+	public static final field SUBTRACT Lorg/polyfrost/universal/shader/BlendState$Equation;
+	public static final fun fromGl (I)Lorg/polyfrost/universal/shader/BlendState$Equation;
+	public static fun valueOf (Ljava/lang/String;)Lorg/polyfrost/universal/shader/BlendState$Equation;
+	public static fun values ()[Lorg/polyfrost/universal/shader/BlendState$Equation;
+}
+
+public final class org/polyfrost/universal/shader/BlendState$Equation$Companion {
+	public final fun fromGl (I)Lorg/polyfrost/universal/shader/BlendState$Equation;
+}
+
+public final class org/polyfrost/universal/shader/BlendState$Param : java/lang/Enum {
+	public static final field Companion Lorg/polyfrost/universal/shader/BlendState$Param$Companion;
+	public static final field DST_ALPHA Lorg/polyfrost/universal/shader/BlendState$Param;
+	public static final field DST_COLOR Lorg/polyfrost/universal/shader/BlendState$Param;
+	public static final field ONE Lorg/polyfrost/universal/shader/BlendState$Param;
+	public static final field ONE_MINUS_DST_ALPHA Lorg/polyfrost/universal/shader/BlendState$Param;
+	public static final field ONE_MINUS_DST_COLOR Lorg/polyfrost/universal/shader/BlendState$Param;
+	public static final field ONE_MINUS_SRC_ALPHA Lorg/polyfrost/universal/shader/BlendState$Param;
+	public static final field ONE_MINUS_SRC_COLOR Lorg/polyfrost/universal/shader/BlendState$Param;
+	public static final field SRC_ALPHA Lorg/polyfrost/universal/shader/BlendState$Param;
+	public static final field SRC_COLOR Lorg/polyfrost/universal/shader/BlendState$Param;
+	public static final field ZERO Lorg/polyfrost/universal/shader/BlendState$Param;
+	public static final fun fromGl (I)Lorg/polyfrost/universal/shader/BlendState$Param;
+	public static fun valueOf (Ljava/lang/String;)Lorg/polyfrost/universal/shader/BlendState$Param;
+	public static fun values ()[Lorg/polyfrost/universal/shader/BlendState$Param;
+}
+
+public final class org/polyfrost/universal/shader/BlendState$Param$Companion {
+	public final fun fromGl (I)Lorg/polyfrost/universal/shader/BlendState$Param;
+}
+
+public abstract interface class org/polyfrost/universal/shader/Float2Uniform : org/polyfrost/universal/shader/ShaderUniform {
+	public abstract fun setValue (FF)V
+}
+
+public abstract interface class org/polyfrost/universal/shader/Float3Uniform : org/polyfrost/universal/shader/ShaderUniform {
+	public abstract fun setValue (FFF)V
+}
+
+public abstract interface class org/polyfrost/universal/shader/Float4Uniform : org/polyfrost/universal/shader/ShaderUniform {
+	public abstract fun setValue (FFFF)V
+}
+
+public abstract interface class org/polyfrost/universal/shader/FloatMatrixUniform : org/polyfrost/universal/shader/ShaderUniform {
+	public abstract fun setValue ([F)V
+}
+
+public abstract interface class org/polyfrost/universal/shader/FloatUniform : org/polyfrost/universal/shader/ShaderUniform {
+	public abstract fun setValue (F)V
+}
+
+public abstract interface class org/polyfrost/universal/shader/IntUniform : org/polyfrost/universal/shader/ShaderUniform {
+	public abstract fun setValue (I)V
+}
+
+public abstract interface class org/polyfrost/universal/shader/SamplerUniform : org/polyfrost/universal/shader/ShaderUniform {
+	public abstract fun setValue (I)V
+}
+
+public abstract interface class org/polyfrost/universal/shader/ShaderUniform {
+	public abstract fun getLocation ()I
+}
+
+public abstract interface class org/polyfrost/universal/shader/UShader {
+	public static final field Companion Lorg/polyfrost/universal/shader/UShader$Companion;
+	public abstract fun bind ()V
+	public fun getFloat2Uniform (Ljava/lang/String;)Lorg/polyfrost/universal/shader/Float2Uniform;
+	public abstract fun getFloat2UniformOrNull (Ljava/lang/String;)Lorg/polyfrost/universal/shader/Float2Uniform;
+	public fun getFloat3Uniform (Ljava/lang/String;)Lorg/polyfrost/universal/shader/Float3Uniform;
+	public abstract fun getFloat3UniformOrNull (Ljava/lang/String;)Lorg/polyfrost/universal/shader/Float3Uniform;
+	public fun getFloat4Uniform (Ljava/lang/String;)Lorg/polyfrost/universal/shader/Float4Uniform;
+	public abstract fun getFloat4UniformOrNull (Ljava/lang/String;)Lorg/polyfrost/universal/shader/Float4Uniform;
+	public fun getFloatMatrixUniform (Ljava/lang/String;)Lorg/polyfrost/universal/shader/FloatMatrixUniform;
+	public abstract fun getFloatMatrixUniformOrNull (Ljava/lang/String;)Lorg/polyfrost/universal/shader/FloatMatrixUniform;
+	public fun getFloatUniform (Ljava/lang/String;)Lorg/polyfrost/universal/shader/FloatUniform;
+	public abstract fun getFloatUniformOrNull (Ljava/lang/String;)Lorg/polyfrost/universal/shader/FloatUniform;
+	public fun getIntUniform (Ljava/lang/String;)Lorg/polyfrost/universal/shader/IntUniform;
+	public abstract fun getIntUniformOrNull (Ljava/lang/String;)Lorg/polyfrost/universal/shader/IntUniform;
+	public fun getSamplerUniform (Ljava/lang/String;)Lorg/polyfrost/universal/shader/SamplerUniform;
+	public abstract fun getSamplerUniformOrNull (Ljava/lang/String;)Lorg/polyfrost/universal/shader/SamplerUniform;
+	public abstract fun getUsable ()Z
+	public abstract fun unbind ()V
+}
+
+public final class org/polyfrost/universal/shader/UShader$Companion {
+	public final fun fromLegacyShader (Ljava/lang/String;Ljava/lang/String;Lorg/polyfrost/universal/shader/BlendState;)Lorg/polyfrost/universal/shader/UShader;
+	public final fun fromLegacyShader (Ljava/lang/String;Ljava/lang/String;Lorg/polyfrost/universal/shader/BlendState;Lorg/polyfrost/universal/UGraphics$CommonVertexFormats;)Lorg/polyfrost/universal/shader/UShader;
+	public final fun fromMcShader (Lnet/minecraft/client/renderer/ShaderInstance;Lorg/polyfrost/universal/shader/BlendState;)Lorg/polyfrost/universal/shader/UShader;
+}
+
+public final class org/polyfrost/universal/utils/ReleasedDynamicTexture : net/minecraft/client/renderer/texture/AbstractTexture {
+	public fun <init> (II)V
+	public fun <init> (Lcom/mojang/blaze3d/platform/NativeImage;)V
+	public fun close ()V
+	public final fun getDynamicGlId ()I
+	public final fun getHeight ()I
+	public fun getId ()I
+	public final fun getUploaded ()Z
+	public final fun getWidth ()I
+	public fun load (Lnet/minecraft/server/packs/resources/ResourceManager;)V
+	public fun releaseId ()V
+	public final fun setUploaded (Z)V
+	public final fun updateDynamicTexture ()V
+	public final fun uploadTexture ()V
+}
+
+public abstract interface class org/polyfrost/universal/vertex/UVertexConsumer {
+	public static final field Companion Lorg/polyfrost/universal/vertex/UVertexConsumer$Companion;
+	public fun color (FFFF)Lorg/polyfrost/universal/vertex/UVertexConsumer;
+	public abstract fun color (IIII)Lorg/polyfrost/universal/vertex/UVertexConsumer;
+	public fun color (Ljava/awt/Color;)Lorg/polyfrost/universal/vertex/UVertexConsumer;
+	public abstract fun endVertex ()Lorg/polyfrost/universal/vertex/UVertexConsumer;
+	public abstract fun light (II)Lorg/polyfrost/universal/vertex/UVertexConsumer;
+	public abstract fun norm (Lorg/polyfrost/universal/UMatrixStack;FFF)Lorg/polyfrost/universal/vertex/UVertexConsumer;
+	public static fun of (Lcom/mojang/blaze3d/vertex/VertexConsumer;)Lorg/polyfrost/universal/vertex/UVertexConsumer;
+	public abstract fun overlay (II)Lorg/polyfrost/universal/vertex/UVertexConsumer;
+	public abstract fun pos (Lorg/polyfrost/universal/UMatrixStack;DDD)Lorg/polyfrost/universal/vertex/UVertexConsumer;
+	public abstract fun tex (DD)Lorg/polyfrost/universal/vertex/UVertexConsumer;
+}
+
+public final class org/polyfrost/universal/vertex/UVertexConsumer$Companion {
+	public final fun of (Lcom/mojang/blaze3d/vertex/VertexConsumer;)Lorg/polyfrost/universal/vertex/UVertexConsumer;
+}
+
+public final class org/polyfrost/universal/wrappers/UPlayer {
+	public static final field INSTANCE Lorg/polyfrost/universal/wrappers/UPlayer;
+	public static final fun getPlayer ()Lnet/minecraft/client/player/LocalPlayer;
+	public static final fun getPosX ()D
+	public static final fun getPosY ()D
+	public static final fun getPosZ ()D
+	public static final fun getPrevPosX ()D
+	public static final fun getPrevPosY ()D
+	public static final fun getPrevPosZ ()D
+	public static final fun getUUID ()Ljava/util/UUID;
+	public static final fun hasPlayer ()Z
+	public static final fun sendClientSideMessage (Lorg/polyfrost/universal/wrappers/message/UTextComponent;)V
+}
+
+public final class org/polyfrost/universal/wrappers/message/UMessage {
+	public fun <init> (Lorg/polyfrost/universal/wrappers/message/UTextComponent;)V
+	public fun <init> ([Ljava/lang/Object;)V
+	public final fun actionBar ()V
+	public final fun addTextComponent (ILjava/lang/Object;)Lorg/polyfrost/universal/wrappers/message/UMessage;
+	public final fun addTextComponent (Ljava/lang/Object;)Lorg/polyfrost/universal/wrappers/message/UMessage;
+	public final fun chat ()V
+	public final fun edit ([Ljava/lang/Object;)V
+	public final fun getChatLineId ()I
+	public final fun getChatMessage ()Lorg/polyfrost/universal/wrappers/message/UTextComponent;
+	public final fun getFormattedText ()Ljava/lang/String;
+	public final fun getMessageParts ()Ljava/util/List;
+	public final fun getUnformattedText ()Ljava/lang/String;
+	public final fun isFormatted ()Z
+	public final fun isRecursive ()Z
+	public final fun mutable ()Lorg/polyfrost/universal/wrappers/message/UMessage;
+	public final fun setChatLineId (I)V
+	public final fun setFormatted (Z)V
+	public final fun setRecursive (Z)V
+	public final fun setTextComponent (ILjava/lang/Object;)Lorg/polyfrost/universal/wrappers/message/UMessage;
+}
+
+public final class org/polyfrost/universal/wrappers/message/UTextComponent : net/minecraft/network/chat/Component {
+	public static final field Companion Lorg/polyfrost/universal/wrappers/message/UTextComponent$Companion;
+	public fun <init> (Ljava/lang/String;)V
+	public fun <init> (Lnet/minecraft/network/chat/Component;)V
+	public fun <init> (Lnet/minecraft/network/chat/MutableComponent;)V
+	public final fun actionBar ()V
+	public final fun appendSibling (Lnet/minecraft/network/chat/Component;)Lnet/minecraft/network/chat/MutableComponent;
+	public final fun chat ()V
+	public fun copy ()Lnet/minecraft/network/chat/MutableComponent;
+	public final fun getClickAction ()Lnet/minecraft/network/chat/ClickEvent$Action;
+	public final fun getClickValue ()Ljava/lang/String;
+	public final fun getComponent ()Lnet/minecraft/network/chat/MutableComponent;
+	public fun getContents ()Lnet/minecraft/network/chat/ComponentContents;
+	public final fun getFormatted ()Z
+	public final fun getFormattedText ()Ljava/lang/String;
+	public final fun getHoverAction ()Lnet/minecraft/network/chat/HoverEvent$Action;
+	public final fun getHoverValue ()Ljava/lang/Object;
+	public fun getSiblings ()Ljava/util/List;
+	public fun getString ()Ljava/lang/String;
+	public fun getString (I)Ljava/lang/String;
+	public fun getStyle ()Lnet/minecraft/network/chat/Style;
+	public final fun getText ()Ljava/lang/String;
+	public final fun getUnformattedText ()Ljava/lang/String;
+	public fun getVisualOrderText ()Lnet/minecraft/util/FormattedCharSequence;
+	public fun plainCopy ()Lnet/minecraft/network/chat/MutableComponent;
+	public final fun setClick (Lnet/minecraft/network/chat/ClickEvent$Action;Ljava/lang/String;)Lorg/polyfrost/universal/wrappers/message/UTextComponent;
+	public final fun setClickAction (Lnet/minecraft/network/chat/ClickEvent$Action;)V
+	public final fun setClickValue (Ljava/lang/String;)V
+	public final fun setFormatted (Z)V
+	public final fun setHover (Lnet/minecraft/network/chat/HoverEvent$Action;Ljava/lang/Object;)Lorg/polyfrost/universal/wrappers/message/UTextComponent;
+	public final fun setHoverAction (Lnet/minecraft/network/chat/HoverEvent$Action;)V
+	public final fun setHoverValue (Ljava/lang/Object;)V
+	public final fun setText (Ljava/lang/String;)V
+	public fun visit (Lnet/minecraft/network/chat/FormattedText$ContentConsumer;)Ljava/util/Optional;
+	public fun visit (Lnet/minecraft/network/chat/FormattedText$StyledContentConsumer;Lnet/minecraft/network/chat/Style;)Ljava/util/Optional;
+}
+
+public final class org/polyfrost/universal/wrappers/message/UTextComponent$Companion {
+	public final fun from (Ljava/lang/Object;)Lorg/polyfrost/universal/wrappers/message/UTextComponent;
+	public final fun stripFormatting (Ljava/lang/String;)Ljava/lang/String;
+}
+
