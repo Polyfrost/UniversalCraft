@@ -90,6 +90,7 @@ public class org/polyfrost/universal/UGraphics {
 	public static field ZERO_TEXT_ALPHA I
 	public fun <init> (Lnet/minecraft/client/render/BufferBuilder;)V
 	public static fun activeTexture (I)V
+	public static fun alphaFunc (IF)V
 	public static fun areShadersSupported ()Z
 	public fun asUVertexConsumer ()Lorg/polyfrost/universal/vertex/UVertexConsumer;
 	public fun begin (ILnet/minecraft/client/render/VertexFormat;)Lorg/polyfrost/universal/UGraphics;
@@ -133,6 +134,7 @@ public class org/polyfrost/universal/UGraphics {
 	public static fun enableDepth ()V
 	public static fun enableLight (I)V
 	public static fun enableLighting ()V
+	public static fun enableStencil ()V
 	public static fun enableTexture2D ()V
 	public fun endVertex ()Lorg/polyfrost/universal/UGraphics;
 	public static fun getActiveTexture ()I
@@ -156,6 +158,7 @@ public class org/polyfrost/universal/UGraphics {
 	public static fun glGetShaderi (II)I
 	public static fun glLinkProgram (I)V
 	public static fun glUseProgram (I)V
+	public static fun isCoreProfile ()Z
 	public static fun isOpenGl21Supported ()Z
 	public fun light (II)Lorg/polyfrost/universal/UGraphics;
 	public static fun listFormattedStringToWidth (Ljava/lang/String;I)Ljava/util/List;
@@ -203,6 +206,11 @@ public final class org/polyfrost/universal/UGuiButton {
 	public static final field INSTANCE Lorg/polyfrost/universal/UGuiButton;
 	public static final fun getX (Lnet/minecraft/client/gui/widget/ClickableWidget;)I
 	public static final fun getY (Lnet/minecraft/client/gui/widget/ClickableWidget;)I
+}
+
+public final class org/polyfrost/universal/UI18n {
+	public static final field INSTANCE Lorg/polyfrost/universal/UI18n;
+	public final fun i18n (Ljava/lang/String;[Ljava/lang/Object;)Ljava/lang/String;
 }
 
 public final class org/polyfrost/universal/UImage {

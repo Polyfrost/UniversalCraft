@@ -102,6 +102,7 @@ public class org/polyfrost/universal/UGraphics {
 	@1.12.2-fabric,1.16.5-fabric,1.17.1-fabric,1.18.2-fabric,1.19-fabric,1.19.1-fabric,1.19.2-fabric,1.19.3-fabric,1.19.4-fabric,1.20-fabric,1.20.1-fabric,1.20.2-fabric,1.20.4-fabric,1.20.6-fabric,1.21-fabric,1.8.9-fabric
 	public fun <init> (Lnet/minecraft/client/render/BufferBuilder;)V
 	public static fun activeTexture (I)V
+	public static fun alphaFunc (IF)V
 	public static fun areShadersSupported ()Z
 	public fun asUVertexConsumer ()Lorg/polyfrost/universal/vertex/UVertexConsumer;
 	@1.17.1-forge,1.18.2-forge,1.19.2-forge,1.19.3-forge,1.19.4-forge,1.20.1-forge,1.20.2-forge,1.20.4-forge
@@ -174,6 +175,7 @@ public class org/polyfrost/universal/UGraphics {
 	public static fun enableDepth ()V
 	public static fun enableLight (I)V
 	public static fun enableLighting ()V
+	public static fun enableStencil ()V
 	public static fun enableTexture2D ()V
 	public fun endVertex ()Lorg/polyfrost/universal/UGraphics;
 	public static fun getActiveTexture ()I
@@ -202,6 +204,7 @@ public class org/polyfrost/universal/UGraphics {
 	public static fun glGetShaderi (II)I
 	public static fun glLinkProgram (I)V
 	public static fun glUseProgram (I)V
+	public static fun isCoreProfile ()Z
 	public static fun isOpenGl21Supported ()Z
 	public fun light (II)Lorg/polyfrost/universal/UGraphics;
 	public static fun listFormattedStringToWidth (Ljava/lang/String;I)Ljava/util/List;
@@ -302,6 +305,11 @@ public final class org/polyfrost/universal/UGuiButton {
 	public static final fun getX (Lnet/minecraft/client/gui/widget/ButtonWidget;)I
 	@1.12.2-fabric,1.8.9-fabric
 	public static final fun getY (Lnet/minecraft/client/gui/widget/ButtonWidget;)I
+}
+
+public final class org/polyfrost/universal/UI18n {
+	public static final field INSTANCE Lorg/polyfrost/universal/UI18n;
+	public final fun i18n (Ljava/lang/String;[Ljava/lang/Object;)Ljava/lang/String;
 }
 
 public final class org/polyfrost/universal/UImage {

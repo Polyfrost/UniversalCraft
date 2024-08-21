@@ -26,7 +26,7 @@ enum class ChatColor(val char: Char, val color: Color? = null, val isFormat: Boo
     ITALIC('o', isFormat = true),
     RESET('r');
 
-    override fun toString(): String = "$COLOR_CHAR$char"
+    override fun toString(): String = "${COLOR_CHAR}$char"
 
     fun isColor(): Boolean = color != null
 
