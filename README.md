@@ -55,67 +55,48 @@ Script to generate the Build Reference table:
 sed -n '/"1.8.9-forge"/,/)/p' settings.gradle.kts | sed '$d' | tr -d '", ' | tac | while read -r platform; do
     version=$(echo "$platform" | cut -d'-' -f1)
     loader=$(echo "$platform" | cut -d'-' -f2)
-    echo "<tr><td>$version</td><td>$loader</td><td><img alt=\"$platform\" src=\"https://img.shields.io/badge/dynamic/xml?color=A97BFF&label=%20&query=/metadata/versioning/versions/version[not(contains(text(),'%2B'))][last()]&url=https://repo.essential.gg/repository/maven-releases/gg/essential/universalcraft-$platform/maven-metadata.xml\"></td></tr>"
+    echo "<tr><td>$version</td><td>$loader</td><td><img alt=\"$platform\" src=\"https://img.shields.io/badge/dynamic/xml?color=A97BFF&label=%20&query=/metadata/versioning/versions/version[not(contains(text(),'%2B'))][last()]&url=https://repo.polyfrost.org/releases/org/polyfrost/universalcraft-$platform/maven-metadata.xml\"></td></tr>"
+done
+```
+On macOS (tac doesn't exist on macOS)
+```bash
+sed -n '/"1.8.9-forge"/,/)/p' settings.gradle.kts | sed '$d' | tr -d '", ' | tail -r | while read -r platform; do
+    version=$(echo "$platform" | cut -d'-' -f1)
+    loader=$(echo "$platform" | cut -d'-' -f2)
+    echo "<tr><td>$version</td><td>$loader</td><td><img alt=\"$platform\" src=\"https://img.shields.io/badge/dynamic/xml?color=A97BFF&label=%20&query=/metadata/versioning/versions/version[not(contains(text(),'%2B'))][last()]&url=https://repo.polyfrost.org/releases/org/polyfrost/universalcraft-$platform/maven-metadata.xml\"></td></tr>"
 done
 ```
 -->
 <details><summary>Build Reference</summary>
     <table>
       <tbody>
-        <tr>
-          <th>mcVersion</th>
-          <th>mcPlatform</th>
-          <th>buildNumber</th>
-        </tr>
-        <tr>
-          <td>1.18.1</td>
-          <td>fabric</td>
-          <td>
-            <img alt="1.18.1-fabric" src="https://badges.modcore.net/badge/dynamic/xml?color=A97BFF&label=%20&query=%2Fmetadata%2Fversioning%2Flatest&url=https://repo.polyfrost.cc/releases/cc/polyfrost/universalcraft-1.18.1-fabric/maven-metadata.xml">
-          </td>
-        </tr>
-        <tr>
-          <td>1.18.1</td>
-          <td>forge</td>
-          <td>
-            <img alt="1.18.1-forge" src="https://badges.modcore.net/badge/dynamic/xml?color=A97BFF&label=%20&query=%2Fmetadata%2Fversioning%2Flatest&url=https://repo.polyfrost.cc/releases/cc/polyfrost/universalcraft-1.18.1-forge/maven-metadata.xml">
-          </td>
-        </tr>
-        <tr>
-          <td>1.17.1</td>
-          <td>fabric</td>
-          <td>
-            <img alt="1.17.1-fabric" src="https://badges.modcore.net/badge/dynamic/xml?color=A97BFF&label=%20&query=%2Fmetadata%2Fversioning%2Flatest&url=https://repo.polyfrost.cc/releases/cc/polyfrost/universalcraft-1.17.1-fabric/maven-metadata.xml">
-          </td>
-        </tr>
-        <tr>
-          <td>1.17.1</td>
-          <td>forge</td>
-          <td>
-            <img alt="1.17.1-forge" src="https://badges.modcore.net/badge/dynamic/xml?color=A97BFF&label=%20&query=%2Fmetadata%2Fversioning%2Flatest&url=https://repo.polyfrost.cc/releases/cc/polyfrost/universalcraft-1.17.1-forge/maven-metadata.xml">
-          </td>
-        </tr>
-        <tr>
-          <td>1.16.2</td>
-          <td>forge</td>
-          <td>
-            <img alt="1.16.2-forge" src="https://badges.modcore.net/badge/dynamic/xml?color=A97BFF&label=%20&query=%2Fmetadata%2Fversioning%2Flatest&url=https://repo.polyfrost.cc/releases/cc/polyfrost/universalcraft-1.16.2-forge/maven-metadata.xml">
-          </td>
-        </tr>
-        <tr>
-          <td>1.12.2</td>
-          <td>forge</td>
-          <td>
-            <img alt="1.12.2-forge" src="https://badges.modcore.net/badge/dynamic/xml?color=A97BFF&label=%20&query=%2Fmetadata%2Fversioning%2Flatest&url=https://repo.polyfrost.cc/releases/cc/polyfrost/universalcraft-1.12.2-forge/maven-metadata.xml">
-          </td>
-        </tr>
-        <tr>
-          <td>1.8.9</td>
-          <td>forge</td>
-          <td>
-            <img alt="1.8.9-forge" src="https://badges.modcore.net/badge/dynamic/xml?color=A97BFF&label=%20&query=%2Fmetadata%2Fversioning%2Flatest&url=https://repo.polyfrost.cc/releases/cc/polyfrost/universalcraft-1.8.9-forge/maven-metadata.xml">
-          </td>
-        </tr>
+        <tr><td>1.21</td><td>fabric</td><td><img alt="1.21-fabric" src="https://img.shields.io/badge/dynamic/xml?color=A97BFF&label=%20&query=/metadata/versioning/versions/version[not(contains(text(),'%2B'))][last()]&url=https://repo.polyfrost.org/releases/org/polyfrost/universalcraft-1.21-fabric/maven-metadata.xml"></td></tr>
+<tr><td>1.20.6</td><td>fabric</td><td><img alt="1.20.6-fabric" src="https://img.shields.io/badge/dynamic/xml?color=A97BFF&label=%20&query=/metadata/versioning/versions/version[not(contains(text(),'%2B'))][last()]&url=https://repo.polyfrost.org/releases/org/polyfrost/universalcraft-1.20.6-fabric/maven-metadata.xml"></td></tr>
+<tr><td>1.20.4</td><td>forge</td><td><img alt="1.20.4-forge" src="https://img.shields.io/badge/dynamic/xml?color=A97BFF&label=%20&query=/metadata/versioning/versions/version[not(contains(text(),'%2B'))][last()]&url=https://repo.polyfrost.org/releases/org/polyfrost/universalcraft-1.20.4-forge/maven-metadata.xml"></td></tr>
+<tr><td>1.20.4</td><td>fabric</td><td><img alt="1.20.4-fabric" src="https://img.shields.io/badge/dynamic/xml?color=A97BFF&label=%20&query=/metadata/versioning/versions/version[not(contains(text(),'%2B'))][last()]&url=https://repo.polyfrost.org/releases/org/polyfrost/universalcraft-1.20.4-fabric/maven-metadata.xml"></td></tr>
+<tr><td>1.20.2</td><td>forge</td><td><img alt="1.20.2-forge" src="https://img.shields.io/badge/dynamic/xml?color=A97BFF&label=%20&query=/metadata/versioning/versions/version[not(contains(text(),'%2B'))][last()]&url=https://repo.polyfrost.org/releases/org/polyfrost/universalcraft-1.20.2-forge/maven-metadata.xml"></td></tr>
+<tr><td>1.20.2</td><td>fabric</td><td><img alt="1.20.2-fabric" src="https://img.shields.io/badge/dynamic/xml?color=A97BFF&label=%20&query=/metadata/versioning/versions/version[not(contains(text(),'%2B'))][last()]&url=https://repo.polyfrost.org/releases/org/polyfrost/universalcraft-1.20.2-fabric/maven-metadata.xml"></td></tr>
+<tr><td>1.20.1</td><td>forge</td><td><img alt="1.20.1-forge" src="https://img.shields.io/badge/dynamic/xml?color=A97BFF&label=%20&query=/metadata/versioning/versions/version[not(contains(text(),'%2B'))][last()]&url=https://repo.polyfrost.org/releases/org/polyfrost/universalcraft-1.20.1-forge/maven-metadata.xml"></td></tr>
+<tr><td>1.20.1</td><td>fabric</td><td><img alt="1.20.1-fabric" src="https://img.shields.io/badge/dynamic/xml?color=A97BFF&label=%20&query=/metadata/versioning/versions/version[not(contains(text(),'%2B'))][last()]&url=https://repo.polyfrost.org/releases/org/polyfrost/universalcraft-1.20.1-fabric/maven-metadata.xml"></td></tr>
+<tr><td>1.20</td><td>fabric</td><td><img alt="1.20-fabric" src="https://img.shields.io/badge/dynamic/xml?color=A97BFF&label=%20&query=/metadata/versioning/versions/version[not(contains(text(),'%2B'))][last()]&url=https://repo.polyfrost.org/releases/org/polyfrost/universalcraft-1.20-fabric/maven-metadata.xml"></td></tr>
+<tr><td>1.19.4</td><td>forge</td><td><img alt="1.19.4-forge" src="https://img.shields.io/badge/dynamic/xml?color=A97BFF&label=%20&query=/metadata/versioning/versions/version[not(contains(text(),'%2B'))][last()]&url=https://repo.polyfrost.org/releases/org/polyfrost/universalcraft-1.19.4-forge/maven-metadata.xml"></td></tr>
+<tr><td>1.19.4</td><td>fabric</td><td><img alt="1.19.4-fabric" src="https://img.shields.io/badge/dynamic/xml?color=A97BFF&label=%20&query=/metadata/versioning/versions/version[not(contains(text(),'%2B'))][last()]&url=https://repo.polyfrost.org/releases/org/polyfrost/universalcraft-1.19.4-fabric/maven-metadata.xml"></td></tr>
+<tr><td>1.19.3</td><td>forge</td><td><img alt="1.19.3-forge" src="https://img.shields.io/badge/dynamic/xml?color=A97BFF&label=%20&query=/metadata/versioning/versions/version[not(contains(text(),'%2B'))][last()]&url=https://repo.polyfrost.org/releases/org/polyfrost/universalcraft-1.19.3-forge/maven-metadata.xml"></td></tr>
+<tr><td>1.19.3</td><td>fabric</td><td><img alt="1.19.3-fabric" src="https://img.shields.io/badge/dynamic/xml?color=A97BFF&label=%20&query=/metadata/versioning/versions/version[not(contains(text(),'%2B'))][last()]&url=https://repo.polyfrost.org/releases/org/polyfrost/universalcraft-1.19.3-fabric/maven-metadata.xml"></td></tr>
+<tr><td>1.19.2</td><td>forge</td><td><img alt="1.19.2-forge" src="https://img.shields.io/badge/dynamic/xml?color=A97BFF&label=%20&query=/metadata/versioning/versions/version[not(contains(text(),'%2B'))][last()]&url=https://repo.polyfrost.org/releases/org/polyfrost/universalcraft-1.19.2-forge/maven-metadata.xml"></td></tr>
+<tr><td>1.19.2</td><td>fabric</td><td><img alt="1.19.2-fabric" src="https://img.shields.io/badge/dynamic/xml?color=A97BFF&label=%20&query=/metadata/versioning/versions/version[not(contains(text(),'%2B'))][last()]&url=https://repo.polyfrost.org/releases/org/polyfrost/universalcraft-1.19.2-fabric/maven-metadata.xml"></td></tr>
+<tr><td>1.19.1</td><td>fabric</td><td><img alt="1.19.1-fabric" src="https://img.shields.io/badge/dynamic/xml?color=A97BFF&label=%20&query=/metadata/versioning/versions/version[not(contains(text(),'%2B'))][last()]&url=https://repo.polyfrost.org/releases/org/polyfrost/universalcraft-1.19.1-fabric/maven-metadata.xml"></td></tr>
+<tr><td>1.19</td><td>fabric</td><td><img alt="1.19-fabric" src="https://img.shields.io/badge/dynamic/xml?color=A97BFF&label=%20&query=/metadata/versioning/versions/version[not(contains(text(),'%2B'))][last()]&url=https://repo.polyfrost.org/releases/org/polyfrost/universalcraft-1.19-fabric/maven-metadata.xml"></td></tr>
+<tr><td>1.18.2</td><td>forge</td><td><img alt="1.18.2-forge" src="https://img.shields.io/badge/dynamic/xml?color=A97BFF&label=%20&query=/metadata/versioning/versions/version[not(contains(text(),'%2B'))][last()]&url=https://repo.polyfrost.org/releases/org/polyfrost/universalcraft-1.18.2-forge/maven-metadata.xml"></td></tr>
+<tr><td>1.18.2</td><td>fabric</td><td><img alt="1.18.2-fabric" src="https://img.shields.io/badge/dynamic/xml?color=A97BFF&label=%20&query=/metadata/versioning/versions/version[not(contains(text(),'%2B'))][last()]&url=https://repo.polyfrost.org/releases/org/polyfrost/universalcraft-1.18.2-fabric/maven-metadata.xml"></td></tr>
+<tr><td>1.17.1</td><td>forge</td><td><img alt="1.17.1-forge" src="https://img.shields.io/badge/dynamic/xml?color=A97BFF&label=%20&query=/metadata/versioning/versions/version[not(contains(text(),'%2B'))][last()]&url=https://repo.polyfrost.org/releases/org/polyfrost/universalcraft-1.17.1-forge/maven-metadata.xml"></td></tr>
+<tr><td>1.17.1</td><td>fabric</td><td><img alt="1.17.1-fabric" src="https://img.shields.io/badge/dynamic/xml?color=A97BFF&label=%20&query=/metadata/versioning/versions/version[not(contains(text(),'%2B'))][last()]&url=https://repo.polyfrost.org/releases/org/polyfrost/universalcraft-1.17.1-fabric/maven-metadata.xml"></td></tr>
+<tr><td>1.16.5</td><td>fabric</td><td><img alt="1.16.5-fabric" src="https://img.shields.io/badge/dynamic/xml?color=A97BFF&label=%20&query=/metadata/versioning/versions/version[not(contains(text(),'%2B'))][last()]&url=https://repo.polyfrost.org/releases/org/polyfrost/universalcraft-1.16.5-fabric/maven-metadata.xml"></td></tr>
+<tr><td>1.16.5</td><td>forge</td><td><img alt="1.16.5-forge" src="https://img.shields.io/badge/dynamic/xml?color=A97BFF&label=%20&query=/metadata/versioning/versions/version[not(contains(text(),'%2B'))][last()]&url=https://repo.polyfrost.org/releases/org/polyfrost/universalcraft-1.16.5-forge/maven-metadata.xml"></td></tr>
+<tr><td>1.12.2</td><td>forge</td><td><img alt="1.12.2-forge" src="https://img.shields.io/badge/dynamic/xml?color=A97BFF&label=%20&query=/metadata/versioning/versions/version[not(contains(text(),'%2B'))][last()]&url=https://repo.polyfrost.org/releases/org/polyfrost/universalcraft-1.12.2-forge/maven-metadata.xml"></td></tr>
+<tr><td>1.12.2</td><td>fabric</td><td><img alt="1.12.2-fabric" src="https://img.shields.io/badge/dynamic/xml?color=A97BFF&label=%20&query=/metadata/versioning/versions/version[not(contains(text(),'%2B'))][last()]&url=https://repo.polyfrost.org/releases/org/polyfrost/universalcraft-1.12.2-fabric/maven-metadata.xml"></td></tr>
+<tr><td>1.8.9</td><td>fabric</td><td><img alt="1.8.9-fabric" src="https://img.shields.io/badge/dynamic/xml?color=A97BFF&label=%20&query=/metadata/versioning/versions/version[not(contains(text(),'%2B'))][last()]&url=https://repo.polyfrost.org/releases/org/polyfrost/universalcraft-1.8.9-fabric/maven-metadata.xml"></td></tr>
+<tr><td>1.8.9</td><td>forge</td><td><img alt="1.8.9-forge" src="https://img.shields.io/badge/dynamic/xml?color=A97BFF&label=%20&query=/metadata/versioning/versions/version[not(contains(text(),'%2B'))][last()]&url=https://repo.polyfrost.org/releases/org/polyfrost/universalcraft-1.8.9-forge/maven-metadata.xml"></td></tr>
       </tbody>
     </table>
 
@@ -188,3 +169,4 @@ tasks.reobfJar { dependsOn(tasks.shadowJar) }
 ```
 
 </details>
+[Elementa]: https://github.com/EssentialGG/Elementa
