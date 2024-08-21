@@ -27,3 +27,8 @@ tasks.withType<KotlinCompile> {
         apiVersion = "1.6"
     }
 }
+
+preprocess {
+    vars.put("STANDALONE", 0)
+    vars.put("!STANDALONE", 1)
+}

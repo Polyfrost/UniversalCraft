@@ -7,6 +7,8 @@ plugins {
 version = "299"
 
 preprocess {
+    strictExtraMappings.set(true)
+
     val fabric12100 = createNode("1.21-fabric", 12100, "srg")
     val fabric12006 = createNode("1.20.6-fabric", 12006, "srg")
     val forge12004 = createNode("1.20.4-forge", 12004, "srg")
@@ -59,6 +61,10 @@ preprocess {
     fabric11605.link(forge11605)
     forge11605.link(forge11202, file("versions/1.16.5-1.12.2.txt"))
     fabric11202.link(forge11202)
-    forge11202.link(forge10809, file("versions/1.12.2-1.8.9.txt"))
+    forge11202.link(forge10809)
     fabric10809.link(forge10809)
+}
+
+apiValidation {
+    ignoredProjects += listOf("standalone", "example")
 }

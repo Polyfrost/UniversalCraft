@@ -432,6 +432,7 @@ public final class org/polyfrost/universal/UMinecraft {
 	public static final field INSTANCE Lorg/polyfrost/universal/UMinecraft;
 	public static final field isRunningOnMac Z
 	public static final fun getChatGUI ()Lnet/minecraft/client/gui/components/ChatComponent;
+	public static final fun getCurrentScreenObj ()Ljava/lang/Object;
 	public static final fun getFontRenderer ()Lnet/minecraft/client/gui/Font;
 	public static final fun getGuiScale ()I
 	public static final fun getMinecraft ()Lnet/minecraft/client/Minecraft;
@@ -440,6 +441,8 @@ public final class org/polyfrost/universal/UMinecraft {
 	public static final fun getSettings ()Lnet/minecraft/client/Options;
 	public static final fun getTime ()J
 	public static final fun getWorld ()Lnet/minecraft/client/multiplayer/ClientLevel;
+	public static final fun isCallingFromMinecraftThread ()Z
+	public static final fun setCurrentScreenObj (Ljava/lang/Object;)V
 	public static final fun setGuiScale (I)V
 }
 

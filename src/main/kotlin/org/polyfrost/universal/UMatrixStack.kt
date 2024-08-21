@@ -165,6 +165,7 @@ class UMatrixStack private constructor(
         //$$ model.mul(quaternion)
         //$$ normal.mul(quaternion)
         //#else
+        @Suppress("UNUSED_EXPRESSION") quaternion
         TODO("lwjgl quaternion multiply") // there seems to be no existing methods to do this
         //#endif
     }
@@ -187,9 +188,6 @@ class UMatrixStack private constructor(
         //#if MC>=11700
         //#if MC>=12005
         //$$ RenderSystem.getModelViewStack().mul(stack.last.model)
-        //#elseif MC>=11800
-        //$$ // FIXME preprocessor bug: should remap the intermediary name to yarn no problem
-        //$$ RenderSystem.getModelViewStack().multiplyPositionMatrix(stack.last.model)
         //#else
         //$$ RenderSystem.getModelViewStack().method_34425(stack.last.model)
         //#endif

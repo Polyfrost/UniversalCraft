@@ -1,5 +1,11 @@
 package org.polyfrost.universal
 
+//#if STANDALONE
+//$$ import gg.essential.universal.standalone.glfw.Glfw
+//$$ import kotlinx.coroutines.Dispatchers
+//$$ import kotlinx.coroutines.runBlocking
+//$$ import org.lwjgl.glfw.GLFW
+//#else
 import net.minecraft.client.settings.KeyBinding
 
 //#if MC>=11600
@@ -13,12 +19,16 @@ import net.minecraft.client.settings.KeyBinding
 //#else
 import org.lwjgl.input.Keyboard
 import org.lwjgl.input.Mouse
-
+//#endif
 //#endif
 
 object UKeyboard {
     //#if MC>=11502
+    //#if STANDALONE
+    //$$ @JvmField val KEY_NONE: Int = noInline { -1 }
+    //#else
     //$$ @JvmField val KEY_NONE: Int = noInline { InputMappings.INPUT_INVALID.keyCode }
+    //#endif
     //$$ @JvmField val KEY_ESCAPE: Int = noInline { GLFW.GLFW_KEY_ESCAPE }
     //$$ @JvmField val KEY_LMETA: Int = noInline { GLFW.GLFW_KEY_LEFT_SUPER } // TODO: Correct?
     //$$ @JvmField val KEY_RMETA: Int = noInline { GLFW.GLFW_KEY_RIGHT_SUPER } // TODO: Correct?
@@ -250,6 +260,7 @@ object UKeyboard {
     fun allowRepeatEvents(enabled: Boolean) {
         //#if MC>=11903
         //$$ // Minecraft removed this function in 1.19.3, repeat events are now always enabled.
+        //$$ @Suppress("UNUSED_EXPRESSION") enabled
         //#elseif MC>=11502
         //$$ UMinecraft.getMinecraft().keyboardListener.enableRepeatEvents(enabled)
         //#else
@@ -292,6 +303,14 @@ object UKeyboard {
     @JvmStatic
     fun isKeyComboCtrlShiftZ(key: Int): Boolean = key == KEY_Z && isCtrlKeyDown() && isShiftKeyDown() && !isAltKeyDown()
 
+    //#if STANDALONE
+    //$$ internal val keysDown = mutableSetOf<Int>()
+    //$$
+    //$$ @JvmStatic
+    //$$ fun isKeyDown(key: Int): Boolean {
+    //$$     return key in keysDown
+    //$$ }
+    //#else
     @JvmStatic
     fun isKeyDown(key: Int): Boolean {
         if (key == KEY_NONE) return false
@@ -309,7 +328,9 @@ object UKeyboard {
         }
         //#endif
     }
+    //#endif
 
+    //#if !STANDALONE
     /**
      * Returns the name of the key assigned to the specified binding as appropriate for display to the user.
      *
@@ -342,21 +363,29 @@ object UKeyboard {
         //#endif
         //#endif
     }
+    //#endif
 
     @Deprecated("Does not work for mouse bindings", replaceWith = ReplaceWith("getKeyName(keyBinding)"))
     @JvmStatic
     fun getKeyName(keyCode: Int, scanCode: Int): String? {
         //#if MC>=11502
-        //$$ return GLFW.glfwGetKeyName(keyCode, scanCode)?.let {
+        //#if STANDALONE
+        //$$ val glfwName = runBlocking(Dispatchers.Glfw.immediate) { GLFW.glfwGetKeyName(keyCode, scanCode) }
+        //#else
+        //$$ val glfwName = GLFW.glfwGetKeyName(keyCode, scanCode)
+        //#endif
+        //$$ return glfwName?.let {
         //$$     // If it's a single character, GLFW will give us a lowercase version but that's very weird and
         //$$     // inconsistent with old versions, so we uppercase it. Longer ones are already fine (e.g. "Space").
         //$$     if (it.length == 1) it.uppercase() else it
         //$$ }
         //#else
+        @Suppress("UNUSED_EXPRESSION") scanCode
         return Keyboard.getKeyName(keyCode)
         //#endif
     }
 
+    @Suppress("DEPRECATION")
     @Deprecated("Does not work for mouse or scanCode-type bindings", replaceWith = ReplaceWith("getKeyName(keyCode, -1)"))
     @JvmStatic
     fun getKeyName(keyCode: Int): String? = getKeyName(keyCode, -1)

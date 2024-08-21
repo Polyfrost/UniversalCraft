@@ -6,7 +6,7 @@ pluginManagement {
         maven("https://repo.polyfrost.org/releases")
     }
     plugins {
-        val egtVersion = "0.6.5"
+        val egtVersion = "0.6.7"
         id("org.polyfrost.multi-version.root") version egtVersion
         id("org.polyfrost.multi-version.api-validation") version egtVersion
     }
@@ -14,6 +14,9 @@ pluginManagement {
 
 rootProject.name = "UniversalCraft"
 rootProject.buildFileName = "root.gradle.kts"
+
+include(":standalone")
+include(":standalone:example")
 
 listOf(
     "1.8.9-forge",
