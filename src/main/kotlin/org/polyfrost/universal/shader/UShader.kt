@@ -3,7 +3,7 @@ package org.polyfrost.universal.shader
 import org.polyfrost.universal.UGraphics
 
 //#if STANDALONE
-//$$ import gg.essential.universal.standalone.render.VertexFormat.Part
+//$$ import org.polyfrost.universal.standalone.render.VertexFormat.Part
 //$$ import org.lwjgl.opengl.GL
 //$$ import org.lwjgl.opengl.GL20C
 //#elseif MC>=11700

@@ -1,7 +1,7 @@
 package org.polyfrost.universal
 
 //#if STANDALONE
-//$$ import gg.essential.universal.standalone.glfw.Glfw
+//$$ import org.polyfrost.universal.standalone.glfw.Glfw
 //$$ import kotlinx.coroutines.Dispatchers
 //$$ import kotlinx.coroutines.runBlocking
 //$$ import org.lwjgl.glfw.GLFW

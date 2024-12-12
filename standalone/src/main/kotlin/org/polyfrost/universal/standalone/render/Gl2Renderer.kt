@@ -1,6 +1,6 @@
 package org.polyfrost.universal.standalone.render
 
-import gg.essential.universal.UGraphics
+import org.polyfrost.universal.UGraphics
 import org.lwjgl.opengl.GL
 import org.lwjgl.opengl.GL20C
 import org.lwjgl.opengl.GL30C

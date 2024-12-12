@@ -4,8 +4,9 @@ package org.polyfrost.universal
 import org.polyfrost.universal.wrappers.UPlayer
 import org.polyfrost.universal.wrappers.message.UMessage
 import org.polyfrost.universal.wrappers.message.UTextComponent
-import java.util.regex.Pattern
 //#endif
+
+import java.util.regex.Pattern
 
 object UChat {
     private val ampersandPattern = Pattern.compile("(?<!\\\\)&(?![^0-9a-fklmnor]|$)")

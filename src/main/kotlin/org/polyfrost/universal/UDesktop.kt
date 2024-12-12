@@ -7,8 +7,8 @@ import java.net.URI
 import java.util.concurrent.TimeUnit
 
 //#if STANDALONE
-//$$ import gg.essential.universal.standalone.glfw.Glfw
-//$$ import gg.essential.universal.standalone.glfw.GlfwWindow
+//$$ import org.polyfrost.universal.standalone.glfw.Glfw
+//$$ import org.polyfrost.universal.standalone.glfw.GlfwWindow
 //$$ import kotlinx.coroutines.Dispatchers
 //$$ import kotlinx.coroutines.runBlocking
 //$$ import kotlinx.coroutines.withContext
