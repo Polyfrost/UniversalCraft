@@ -4,7 +4,7 @@ plugins {
     id("org.polyfrost.multi-version.api-validation")
 }
 
-version = "299"
+version = "2.0.0"
 
 preprocess {
     strictExtraMappings.set(true)
