@@ -1,3 +1,7 @@
+Fork of UniversalCraft to add Legacy Fabric support.
+
+NOTE: We generally use [OmniCore](https://github.com/Deftu/OmniCore) instead of UC; this fork is mainly for maintaining mods still using EssentialGG's Elementa library. Please use OmniCore / PolyUI / OneConfig when possible!
+
 # UniversalCraft
 
 A full Java interop library that wraps Minecraft classes which allows you to write code for multiple versions at the same time. Built using ReplayMod's [Preprocessor](https://github.com/ReplayMod/preprocessor).
@@ -20,12 +24,12 @@ In your repository block, add:
 Groovy
 ```groovy
 maven {
-    url = "https://repo.essential.gg/repository/maven-public"
+    url = "https://repo.polyfrost.org/releases"
 }
 ```
 Kotlin
 ```kotlin
-maven(url = "https://repo.essential.gg/repository/maven-public")
+maven(url = "https://repo.polyfrost.org/releases")
 ```
 
 To use the latest builds, use the following dependency format, use the build reference to find the correct replacements:
@@ -33,18 +37,18 @@ To use the latest builds, use the following dependency format, use the build ref
 <details><summary>Forge</summary>
 
 ```kotlin
-implementation("gg.essential:universalcraft-$mcVersion-$mcPlatform:$buildNumber")
+implementation("org.polyfrost:universalcraft-$mcVersion-$mcPlatform:$buildNumber")
 ```
 </details>
 <details><summary>Fabric</summary>
 
 Groovy
 ```groovy
-modImplementation(include("gg.essential:universalcraft-$mcVersion-$mcPlatform:$buildNumber"))
+modImplementation(include("org.polyfrost:universalcraft-$mcVersion-$mcPlatform:$buildNumber"))
 ```
 Kotlin
 ```kotlin
-modImplementation(include("gg.essential:universalcraft-$mcVersion-$mcPlatform:$buildNumber")!!)
+modImplementation(include("org.polyfrost:universalcraft-$mcVersion-$mcPlatform:$buildNumber")!!)
 ```
 </details>
 
@@ -63,53 +67,8 @@ done
     <table>
       <tbody>
         <tr>
-          <th>mcVersion</th>
-          <th>mcPlatform</th>
-          <th>buildNumber</th>
-        </tr>
-        <tr>
-          <td>standalone</td>
-          <td>N/A</td>
-          <td>
-            <img alt="standalone" src="https://img.shields.io/badge/dynamic/xml?color=A97BFF&label=%20&query=/metadata/versioning/versions/version[not(contains(text(),'%2B'))][last()]&url=https://repo.essential.gg/repository/maven-releases/gg/essential/universalcraft-standalone/maven-metadata.xml">
-          </td>
-        </tr>
-        <tr><td>1.21.4</td><td>neoforge</td><td><img alt="1.21.4-neoforge" src="https://img.shields.io/badge/dynamic/xml?color=A97BFF&label=%20&query=/metadata/versioning/versions/version[not(contains(text(),'%2B'))][last()]&url=https://repo.essential.gg/repository/maven-releases/gg/essential/universalcraft-1.21.4-neoforge/maven-metadata.xml"></td></tr>
-        <tr><td>1.21.4</td><td>forge</td><td><img alt="1.21.4-forge" src="https://img.shields.io/badge/dynamic/xml?color=A97BFF&label=%20&query=/metadata/versioning/versions/version[not(contains(text(),'%2B'))][last()]&url=https://repo.essential.gg/repository/maven-releases/gg/essential/universalcraft-1.21.4-forge/maven-metadata.xml"></td></tr>
-        <tr><td>1.21.4</td><td>fabric</td><td><img alt="1.21.4-fabric" src="https://img.shields.io/badge/dynamic/xml?color=A97BFF&label=%20&query=/metadata/versioning/versions/version[not(contains(text(),'%2B'))][last()]&url=https://repo.essential.gg/repository/maven-releases/gg/essential/universalcraft-1.21.4-fabric/maven-metadata.xml"></td></tr>
-        <tr><td>1.21.3</td><td>neoforge</td><td><img alt="1.21.3-neoforge" src="https://img.shields.io/badge/dynamic/xml?color=A97BFF&label=%20&query=/metadata/versioning/versions/version[not(contains(text(),'%2B'))][last()]&url=https://repo.essential.gg/repository/maven-releases/gg/essential/universalcraft-1.21.3-neoforge/maven-metadata.xml"></td></tr>
-        <tr><td>1.21.3</td><td>forge</td><td><img alt="1.21.3-forge" src="https://img.shields.io/badge/dynamic/xml?color=A97BFF&label=%20&query=/metadata/versioning/versions/version[not(contains(text(),'%2B'))][last()]&url=https://repo.essential.gg/repository/maven-releases/gg/essential/universalcraft-1.21.3-forge/maven-metadata.xml"></td></tr>
-        <tr><td>1.21.3</td><td>fabric</td><td><img alt="1.21.3-fabric" src="https://img.shields.io/badge/dynamic/xml?color=A97BFF&label=%20&query=/metadata/versioning/versions/version[not(contains(text(),'%2B'))][last()]&url=https://repo.essential.gg/repository/maven-releases/gg/essential/universalcraft-1.21.3-fabric/maven-metadata.xml"></td></tr>
-        <tr><td>1.21</td><td>neoforge</td><td><img alt="1.21-neoforge" src="https://img.shields.io/badge/dynamic/xml?color=A97BFF&label=%20&query=/metadata/versioning/versions/version[not(contains(text(),'%2B'))][last()]&url=https://repo.essential.gg/repository/maven-releases/gg/essential/universalcraft-1.21-neoforge/maven-metadata.xml"></td></tr>
-        <tr><td>1.21</td><td>forge</td><td><img alt="1.21-forge" src="https://img.shields.io/badge/dynamic/xml?color=A97BFF&label=%20&query=/metadata/versioning/versions/version[not(contains(text(),'%2B'))][last()]&url=https://repo.essential.gg/repository/maven-releases/gg/essential/universalcraft-1.21-forge/maven-metadata.xml"></td></tr>
-        <tr><td>1.21</td><td>fabric</td><td><img alt="1.21-fabric" src="https://img.shields.io/badge/dynamic/xml?color=A97BFF&label=%20&query=/metadata/versioning/versions/version[not(contains(text(),'%2B'))][last()]&url=https://repo.essential.gg/repository/maven-releases/gg/essential/universalcraft-1.21-fabric/maven-metadata.xml"></td></tr>
-        <tr><td>1.20.6</td><td>neoforge</td><td><img alt="1.20.6-neoforge" src="https://img.shields.io/badge/dynamic/xml?color=A97BFF&label=%20&query=/metadata/versioning/versions/version[not(contains(text(),'%2B'))][last()]&url=https://repo.essential.gg/repository/maven-releases/gg/essential/universalcraft-1.20.6-neoforge/maven-metadata.xml"></td></tr>
-        <tr><td>1.20.6</td><td>forge</td><td><img alt="1.20.6-forge" src="https://img.shields.io/badge/dynamic/xml?color=A97BFF&label=%20&query=/metadata/versioning/versions/version[not(contains(text(),'%2B'))][last()]&url=https://repo.essential.gg/repository/maven-releases/gg/essential/universalcraft-1.20.6-forge/maven-metadata.xml"></td></tr>
-        <tr><td>1.20.6</td><td>fabric</td><td><img alt="1.20.6-fabric" src="https://img.shields.io/badge/dynamic/xml?color=A97BFF&label=%20&query=/metadata/versioning/versions/version[not(contains(text(),'%2B'))][last()]&url=https://repo.essential.gg/repository/maven-releases/gg/essential/universalcraft-1.20.6-fabric/maven-metadata.xml"></td></tr>
-        <tr><td>1.20.4</td><td>neoforge</td><td><img alt="1.20.4-neoforge" src="https://img.shields.io/badge/dynamic/xml?color=A97BFF&label=%20&query=/metadata/versioning/versions/version[not(contains(text(),'%2B'))][last()]&url=https://repo.essential.gg/repository/maven-releases/gg/essential/universalcraft-1.20.4-neoforge/maven-metadata.xml"></td></tr>
-        <tr><td>1.20.4</td><td>forge</td><td><img alt="1.20.4-forge" src="https://img.shields.io/badge/dynamic/xml?color=A97BFF&label=%20&query=/metadata/versioning/versions/version[not(contains(text(),'%2B'))][last()]&url=https://repo.essential.gg/repository/maven-releases/gg/essential/universalcraft-1.20.4-forge/maven-metadata.xml"></td></tr>
-        <tr><td>1.20.4</td><td>fabric</td><td><img alt="1.20.4-fabric" src="https://img.shields.io/badge/dynamic/xml?color=A97BFF&label=%20&query=/metadata/versioning/versions/version[not(contains(text(),'%2B'))][last()]&url=https://repo.essential.gg/repository/maven-releases/gg/essential/universalcraft-1.20.4-fabric/maven-metadata.xml"></td></tr>
-        <tr><td>1.20.2</td><td>forge</td><td><img alt="1.20.2-forge" src="https://img.shields.io/badge/dynamic/xml?color=A97BFF&label=%20&query=/metadata/versioning/versions/version[not(contains(text(),'%2B'))][last()]&url=https://repo.essential.gg/repository/maven-releases/gg/essential/universalcraft-1.20.2-forge/maven-metadata.xml"></td></tr>
-        <tr><td>1.20.2</td><td>fabric</td><td><img alt="1.20.2-fabric" src="https://img.shields.io/badge/dynamic/xml?color=A97BFF&label=%20&query=/metadata/versioning/versions/version[not(contains(text(),'%2B'))][last()]&url=https://repo.essential.gg/repository/maven-releases/gg/essential/universalcraft-1.20.2-fabric/maven-metadata.xml"></td></tr>
-        <tr><td>1.20.1</td><td>forge</td><td><img alt="1.20.1-forge" src="https://img.shields.io/badge/dynamic/xml?color=A97BFF&label=%20&query=/metadata/versioning/versions/version[not(contains(text(),'%2B'))][last()]&url=https://repo.essential.gg/repository/maven-releases/gg/essential/universalcraft-1.20.1-forge/maven-metadata.xml"></td></tr>
-        <tr><td>1.20.1</td><td>fabric</td><td><img alt="1.20.1-fabric" src="https://img.shields.io/badge/dynamic/xml?color=A97BFF&label=%20&query=/metadata/versioning/versions/version[not(contains(text(),'%2B'))][last()]&url=https://repo.essential.gg/repository/maven-releases/gg/essential/universalcraft-1.20.1-fabric/maven-metadata.xml"></td></tr>
-        <tr><td>1.20</td><td>fabric</td><td><img alt="1.20-fabric" src="https://img.shields.io/badge/dynamic/xml?color=A97BFF&label=%20&query=/metadata/versioning/versions/version[not(contains(text(),'%2B'))][last()]&url=https://repo.essential.gg/repository/maven-releases/gg/essential/universalcraft-1.20-fabric/maven-metadata.xml"></td></tr>
-        <tr><td>1.19.4</td><td>forge</td><td><img alt="1.19.4-forge" src="https://img.shields.io/badge/dynamic/xml?color=A97BFF&label=%20&query=/metadata/versioning/versions/version[not(contains(text(),'%2B'))][last()]&url=https://repo.essential.gg/repository/maven-releases/gg/essential/universalcraft-1.19.4-forge/maven-metadata.xml"></td></tr>
-        <tr><td>1.19.4</td><td>fabric</td><td><img alt="1.19.4-fabric" src="https://img.shields.io/badge/dynamic/xml?color=A97BFF&label=%20&query=/metadata/versioning/versions/version[not(contains(text(),'%2B'))][last()]&url=https://repo.essential.gg/repository/maven-releases/gg/essential/universalcraft-1.19.4-fabric/maven-metadata.xml"></td></tr>
-        <tr><td>1.19.3</td><td>forge</td><td><img alt="1.19.3-forge" src="https://img.shields.io/badge/dynamic/xml?color=A97BFF&label=%20&query=/metadata/versioning/versions/version[not(contains(text(),'%2B'))][last()]&url=https://repo.essential.gg/repository/maven-releases/gg/essential/universalcraft-1.19.3-forge/maven-metadata.xml"></td></tr>
-        <tr><td>1.19.3</td><td>fabric</td><td><img alt="1.19.3-fabric" src="https://img.shields.io/badge/dynamic/xml?color=A97BFF&label=%20&query=/metadata/versioning/versions/version[not(contains(text(),'%2B'))][last()]&url=https://repo.essential.gg/repository/maven-releases/gg/essential/universalcraft-1.19.3-fabric/maven-metadata.xml"></td></tr>
-        <tr><td>1.19.2</td><td>forge</td><td><img alt="1.19.2-forge" src="https://img.shields.io/badge/dynamic/xml?color=A97BFF&label=%20&query=/metadata/versioning/versions/version[not(contains(text(),'%2B'))][last()]&url=https://repo.essential.gg/repository/maven-releases/gg/essential/universalcraft-1.19.2-forge/maven-metadata.xml"></td></tr>
-        <tr><td>1.19.2</td><td>fabric</td><td><img alt="1.19.2-fabric" src="https://img.shields.io/badge/dynamic/xml?color=A97BFF&label=%20&query=/metadata/versioning/versions/version[not(contains(text(),'%2B'))][last()]&url=https://repo.essential.gg/repository/maven-releases/gg/essential/universalcraft-1.19.2-fabric/maven-metadata.xml"></td></tr>
-        <tr><td>1.19.1</td><td>fabric</td><td><img alt="1.19.1-fabric" src="https://img.shields.io/badge/dynamic/xml?color=A97BFF&label=%20&query=/metadata/versioning/versions/version[not(contains(text(),'%2B'))][last()]&url=https://repo.essential.gg/repository/maven-releases/gg/essential/universalcraft-1.19.1-fabric/maven-metadata.xml"></td></tr>
-        <tr><td>1.19</td><td>fabric</td><td><img alt="1.19-fabric" src="https://img.shields.io/badge/dynamic/xml?color=A97BFF&label=%20&query=/metadata/versioning/versions/version[not(contains(text(),'%2B'))][last()]&url=https://repo.essential.gg/repository/maven-releases/gg/essential/universalcraft-1.19-fabric/maven-metadata.xml"></td></tr>
-        <tr><td>1.18.1</td><td>forge</td><td><img alt="1.18.1-forge" src="https://img.shields.io/badge/dynamic/xml?color=A97BFF&label=%20&query=/metadata/versioning/versions/version[not(contains(text(),'%2B'))][last()]&url=https://repo.essential.gg/repository/maven-releases/gg/essential/universalcraft-1.18.1-forge/maven-metadata.xml"></td></tr>
-        <tr><td>1.18.1</td><td>fabric</td><td><img alt="1.18.1-fabric" src="https://img.shields.io/badge/dynamic/xml?color=A97BFF&label=%20&query=/metadata/versioning/versions/version[not(contains(text(),'%2B'))][last()]&url=https://repo.essential.gg/repository/maven-releases/gg/essential/universalcraft-1.18.1-fabric/maven-metadata.xml"></td></tr>
-        <tr><td>1.17.1</td><td>forge</td><td><img alt="1.17.1-forge" src="https://img.shields.io/badge/dynamic/xml?color=A97BFF&label=%20&query=/metadata/versioning/versions/version[not(contains(text(),'%2B'))][last()]&url=https://repo.essential.gg/repository/maven-releases/gg/essential/universalcraft-1.17.1-forge/maven-metadata.xml"></td></tr>
-        <tr><td>1.17.1</td><td>fabric</td><td><img alt="1.17.1-fabric" src="https://img.shields.io/badge/dynamic/xml?color=A97BFF&label=%20&query=/metadata/versioning/versions/version[not(contains(text(),'%2B'))][last()]&url=https://repo.essential.gg/repository/maven-releases/gg/essential/universalcraft-1.17.1-fabric/maven-metadata.xml"></td></tr>
-        <tr><td>1.16.2</td><td>fabric</td><td><img alt="1.16.2-fabric" src="https://img.shields.io/badge/dynamic/xml?color=A97BFF&label=%20&query=/metadata/versioning/versions/version[not(contains(text(),'%2B'))][last()]&url=https://repo.essential.gg/repository/maven-releases/gg/essential/universalcraft-1.16.2-fabric/maven-metadata.xml"></td></tr>
-        <tr><td>1.16.2</td><td>forge</td><td><img alt="1.16.2-forge" src="https://img.shields.io/badge/dynamic/xml?color=A97BFF&label=%20&query=/metadata/versioning/versions/version[not(contains(text(),'%2B'))][last()]&url=https://repo.essential.gg/repository/maven-releases/gg/essential/universalcraft-1.16.2-forge/maven-metadata.xml"></td></tr>
-        <tr><td>1.12.2</td><td>forge</td><td><img alt="1.12.2-forge" src="https://img.shields.io/badge/dynamic/xml?color=A97BFF&label=%20&query=/metadata/versioning/versions/version[not(contains(text(),'%2B'))][last()]&url=https://repo.essential.gg/repository/maven-releases/gg/essential/universalcraft-1.12.2-forge/maven-metadata.xml"></td></tr>
-        <tr><td>1.8.9</td><td>forge</td><td><img alt="1.8.9-forge" src="https://img.shields.io/badge/dynamic/xml?color=A97BFF&label=%20&query=/metadata/versioning/versions/version[not(contains(text(),'%2B'))][last()]&url=https://repo.essential.gg/repository/maven-releases/gg/essential/universalcraft-1.8.9-forge/maven-metadata.xml"></td></tr>
+        <img src="https://img.shields.io/badge/dynamic/xml?color=A97BFF&label=%20&query=/metadata/versioning/versions/version[not(contains(text(),'%2B'))][last()]&url=https://repo.polyfrost.org/releases/org/polyfrost/universalcraft-1.8.9-forge/maven-metadata.xml"></td>
+    </tr>
       </tbody>
     </table>
 
