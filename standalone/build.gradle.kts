@@ -2,13 +2,13 @@ import com.replaymod.gradle.preprocess.PreprocessTask
 
 plugins {
     kotlin("jvm")
-    id("gg.essential.defaults")
-    id("gg.essential.defaults.maven-publish")
+    id("org.polyfrost.defaults")
+    id("org.polyfrost.defaults.maven-publish")
 }
 
 val parent = evaluationDependsOn(project.parent!!.path)
 
-group = "gg.essential"
+group = "org.polyfrost"
 version = parent.version
 base.archivesName = "universalcraft-standalone"
 kotlin.compilerOptions.moduleName = "universalcraft-standalone"

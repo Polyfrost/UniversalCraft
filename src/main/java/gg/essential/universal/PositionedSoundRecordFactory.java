@@ -14,7 +14,7 @@ import java.lang.reflect.Constructor;
 class PositionedSoundRecordFactory {
     //#if MC>10809
     //$$ public static PositionedSoundRecord makeRecord(SoundEvent event, float volume, float pitch) {
-    //$$     return PositionedSoundRecord.func_194007_a(event, pitch, volume);
+    //$$     return PositionedSoundRecord.getRecord(event, pitch, volume);
     //$$ }
     //#else
     private static final MethodHandle constructor;

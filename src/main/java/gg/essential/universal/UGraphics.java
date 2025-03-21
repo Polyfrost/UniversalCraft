@@ -247,7 +247,7 @@ public class UGraphics {
 
     @Deprecated // only works on Forge 1.12.2 and below (relies on a Forge patch)
     public static void enableStencil() {
-        //#if MC<11400
+        //#if MC<11400 && FORGE
         Framebuffer framebuffer = Minecraft.getMinecraft().getFramebuffer();
         if (!framebuffer.isStencilEnabled()) {
             framebuffer.enableStencil();

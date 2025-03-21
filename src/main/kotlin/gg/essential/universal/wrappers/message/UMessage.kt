@@ -24,10 +24,18 @@ class UMessage {
         }
 
     val formattedText: String
+        //#if FORGE==1 || MC>=11400
         get() = chatMessage.formattedText
+        //#else
+        //$$ get() = chatMessage.asFormattedString()
+        //#endif
 
     val unformattedText: String
+        //#if FORGE==1 || MC>=11400
         get() = chatMessage.unformattedText
+        //#else
+        //$$ get() = chatMessage.getString()
+        //#endif
 
     var chatLineId: Int = -1
     var isRecursive: Boolean = false

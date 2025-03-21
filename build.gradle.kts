@@ -1,14 +1,14 @@
-import gg.essential.gradle.util.*
+import org.polyfrost.gradle.util.*
 import org.jetbrains.kotlin.gradle.tasks.KotlinCompile
 
 plugins {
     kotlin("jvm")
-    id("gg.essential.multi-version")
-    id("gg.essential.defaults")
-    id("gg.essential.defaults.maven-publish")
+    id("org.polyfrost.multi-version")
+    id("org.polyfrost.defaults")
+    id("org.polyfrost.defaults.maven-publish")
 }
 
-group = "gg.essential"
+group = "org.polyfrost"
 
 java.withSourcesJar()
 tasks.compileKotlin.setJvmDefault(if (platform.mcVersion >= 11400) "all" else "all-compatibility")
